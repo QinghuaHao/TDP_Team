@@ -10,8 +10,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.12470965636968931 -0.12482042973797261 0.9843106023650167 4.6974862855287425
-  position 0.07312023618071589 8.926824728987539 3.1082912153381583
+  orientation -0.21937949470502224 -0.3029008871561813 0.9274285362565504 4.957183167392461
+  position -3.929177791744031 10.631406395265522 5.830333069626262
 }
 TexturedBackground {
 }
@@ -588,6 +588,7 @@ DEF Red_Goalkeeper Robot {
                     RotationalMotor {
                       name "RElbowRoll"
                       maxVelocity 7.19407
+                      minPosition -1.1016109649224254e-08
                       maxPosition 1.54462
                       maxTorque 5
                     }
@@ -596,19 +597,8 @@ DEF Red_Goalkeeper Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
-                    hidden rotation_0 0 0 1 2.8740318897345554e-07
-                    hidden position_0_0 -1.0618448931980324e-07
-                    hidden rotation_1 -0.9999999999999999 0 0 1.0745380149674385e-07
-                    hidden position_1_0 -2.212985350524832e-11
-                    hidden position_1_1 -2.213251804050742e-11
-                    hidden position_1_2 7.575954105592596e-11
-                    hidden position_2_0 4.085454197226649e-11
-                    hidden rotation_3 0 0.9999999999999999 0 0.9599999999591455
-                    hidden position_3_0 1.8732793096055243e-11
-                    hidden position_5_0 4.08634237612706e-11
-                    hidden rotation_6 0 1 0 0.9599999999591369
-                    hidden position_6_0 1.8732682072599122e-11
-                    hidden position_8_0 1.1133205476678392e-11
+                    hidden rotation_3 0 1 0 0.959999999918291
+                    hidden rotation_6 0 1 0 0.9599999999182718
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -776,6 +766,7 @@ DEF Red_Goalkeeper Robot {
                       name "LElbowRoll"
                       maxVelocity 7.19407
                       minPosition -1.54462
+                      maxPosition 1.1016111375063625e-08
                       maxTorque 5
                     }
                     PositionSensor {
@@ -783,19 +774,8 @@ DEF Red_Goalkeeper Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
-                    hidden rotation_0 0 0 -1 2.8740318897345554e-07
-                    hidden position_0_0 1.0618448573714047e-07
-                    hidden rotation_1 1 0 0 1.0745380149674385e-07
-                    hidden position_1_0 -2.213162986208772e-11
-                    hidden position_1_1 -2.2144064359963522e-11
-                    hidden position_1_2 7.576915137037086e-11
-                    hidden position_2_0 4.0866532380661744e-11
-                    hidden rotation_3 0 1 0 0.9599999999591335
-                    hidden position_3_0 1.8729462429557353e-11
-                    hidden position_5_0 4.086331273524851e-11
-                    hidden rotation_6 0 0.9999999999999999 0 0.9599999999591369
-                    hidden position_6_0 1.8731127761019848e-11
-                    hidden position_8_0 1.1122103246743856e-11
+                    hidden rotation_3 0 1 0 0.9599999999182669
+                    hidden rotation_6 0 1 0 0.9599999999182737
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -1116,8 +1096,6 @@ DEF Red_Goalkeeper Robot {
                                           }
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -4.634054249208791e-09 -4.427679872044361e-08 7.142925210982764e-06
-                                          angularVelocity 1.3471686994971768e-05 -9.24359040849194e-07 1.6492729043301434e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -1239,8 +1217,6 @@ DEF Red_Goalkeeper Robot {
                                           5.87505e-06 0.000139133 -1.88492e-05
                                         ]
                                       }
-                                      linearVelocity -1.8405451562878083e-08 1.3775247860860865e-07 7.111878938857652e-06
-                                      angularVelocity 1.3474203109990656e-05 -9.242048835833029e-07 1.6843499481538716e-06
                                     }
                                   }
                                 ]
@@ -1259,8 +1235,6 @@ DEF Red_Goalkeeper Robot {
                                     6.434e-08 3.87466e-06 -4.58e-09
                                   ]
                                 }
-                                linearVelocity -5.934028068118501e-08 -9.901918522079905e-08 7.048444483775396e-06
-                                angularVelocity 6.8041167696893814e-06 -9.224125023266972e-07 1.7268723315909122e-06
                               }
                             }
                           ]
@@ -1285,8 +1259,6 @@ DEF Red_Goalkeeper Robot {
                               -8.965e-07 2.79969e-05 -3.8476e-05
                             ]
                           }
-                          linearVelocity -9.850716149275755e-08 -1.2187747515887615e-07 6.9604777438899275e-06
-                          angularVelocity 6.819043226003015e-06 -9.215329120363631e-07 1.7677167724103221e-06
                         }
                       }
                     ]
@@ -1311,8 +1283,6 @@ DEF Red_Goalkeeper Robot {
                         -8.3954e-07 8.5883e-05 -3.91763e-05
                       ]
                     }
-                    linearVelocity -1.8602138630916096e-07 -4.931782454804724e-07 6.889468283793779e-06
-                    angularVelocity 6.863630248029372e-06 -9.165004354176588e-07 1.808553832082485e-06
                   }
                 }
               ]
@@ -1336,8 +1306,6 @@ DEF Red_Goalkeeper Robot {
                   -1.919e-08 -4.10822e-06 2.51e-09
                 ]
               }
-              linearVelocity -2.3373348711811516e-07 -5.69198855608234e-07 6.832029330193542e-06
-              angularVelocity 6.937027963520993e-06 -9.077862121208342e-07 1.8493839113503741e-06
             }
           }
         ]
@@ -1582,8 +1550,6 @@ DEF Red_Goalkeeper Robot {
                                           physics USE FSR_Physics
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -4.63379735072543e-09 4.427622801620538e-08 7.142930476877368e-06
-                                          angularVelocity -1.3471574233710929e-05 -9.243576848378745e-07 -1.649269603843329e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -1696,8 +1662,6 @@ DEF Red_Goalkeeper Robot {
                                           -5.69572e-06 0.000139379 1.87409e-05
                                         ]
                                       }
-                                      linearVelocity -1.8405276993083245e-08 -1.377540064939679e-07 7.111883935087715e-06
-                                      angularVelocity -1.3474090435658013e-05 -9.242034741613106e-07 -1.684346597939178e-06
                                     }
                                   }
                                 ]
@@ -1714,8 +1678,6 @@ DEF Red_Goalkeeper Robot {
                                     -2.634e-08 3.86194e-06 1.834e-08
                                   ]
                                 }
-                                linearVelocity -5.934014380286595e-08 9.901314929997095e-08 7.048449322400978e-06
-                                angularVelocity -6.8040048773024155e-06 -9.22412123191619e-07 -1.7268688739468786e-06
                               }
                             }
                           ]
@@ -1732,8 +1694,6 @@ DEF Red_Goalkeeper Robot {
                               6.3362e-07 3.6497e-05 3.94952e-05
                             ]
                           }
-                          linearVelocity -9.850709562814596e-08 1.2186619346037604e-07 6.960482959798716e-06
-                          angularVelocity -6.818930839914285e-06 -9.215320404019983e-07 -1.767713294432198e-06
                         }
                       }
                     ]
@@ -1750,8 +1710,6 @@ DEF Red_Goalkeeper Robot {
                         9.2451e-07 8.53067e-05 3.83616e-05
                       ]
                     }
-                    linearVelocity -1.8602133021184246e-07 4.931561960872629e-07 6.8894736600502574e-06
-                    angularVelocity -6.863517873664645e-06 -9.16499539599815e-07 -1.808550389544147e-06
                   }
                 }
               ]
@@ -1768,8 +1726,6 @@ DEF Red_Goalkeeper Robot {
                   -2.233e-08 -4.08164e-06 -4.19e-09
                 ]
               }
-              linearVelocity -2.337334811328994e-07 5.69171280940521e-07 6.832034656351531e-06
-              angularVelocity -6.936915018423372e-06 -9.077854327830185e-07 -1.8493804107772232e-06
             }
           }
         ]
@@ -2408,6 +2364,7 @@ DEF Red_Striker_1 Robot {
                     RotationalMotor {
                       name "RElbowRoll"
                       maxVelocity 7.19407
+                      minPosition -1.101610374431088e-08
                       maxPosition 1.54462
                       maxTorque 5
                     }
@@ -2416,19 +2373,8 @@ DEF Red_Striker_1 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
-                    hidden rotation_0 0 0 1 2.8740318897345554e-07
-                    hidden position_0_0 -1.0618448875732156e-07
-                    hidden rotation_1 -0.9999999999999999 0 0 1.0745380149674385e-07
-                    hidden position_1_0 -2.213429439734682e-11
-                    hidden position_1_1 -2.2139623467865022e-11
-                    hidden position_1_2 7.576483413107529e-11
-                    hidden position_2_0 4.0857428559810794e-11
-                    hidden rotation_3 0 1 0 0.9599999999591426
-                    hidden position_3_0 1.8735790698118304e-11
-                    hidden position_5_0 4.0864533988251097e-11
-                    hidden rotation_6 0 0.9999999999999999 0 0.9599999999591354
-                    hidden position_6_0 1.8733903320087348e-11
-                    hidden position_8_0 1.1129874799849771e-11
+                    hidden rotation_3 0 1 0 0.9599999999182852
+                    hidden rotation_6 0 1 0 0.9599999999182708
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -2596,6 +2542,7 @@ DEF Red_Striker_1 Robot {
                       name "LElbowRoll"
                       maxVelocity 7.19407
                       minPosition -1.54462
+                      maxPosition 1.101610909055155e-08
                       maxTorque 5
                     }
                     PositionSensor {
@@ -2603,19 +2550,8 @@ DEF Red_Striker_1 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
-                    hidden rotation_0 0 0 -1 2.8740318897345554e-07
-                    hidden position_0_0 1.0618448715160838e-07
-                    hidden rotation_1 1 0 0 1.0745380149674385e-07
-                    hidden position_1_0 -2.213518257576652e-11
-                    hidden position_1_1 -2.213873528944532e-11
-                    hidden position_1_2 7.577035792534588e-11
-                    hidden position_2_0 4.086786464979891e-11
-                    hidden rotation_3 0 1 0 0.9599999999591321
-                    hidden position_3_0 1.872935140843907e-11
-                    hidden position_5_0 4.0852765616125214e-11
-                    hidden rotation_6 0 1 0 0.9599999999591475
-                    hidden position_6_0 1.8738122165047296e-11
-                    hidden position_8_0 1.112265836971185e-11
+                    hidden rotation_3 0 1 0 0.9599999999182641
+                    hidden rotation_6 0 1 0 0.9599999999182939
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -2936,8 +2872,6 @@ DEF Red_Striker_1 Robot {
                                           }
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -4.634054252411766e-09 -4.427679825713499e-08 7.142925217926976e-06
-                                          angularVelocity 1.3471687016235256e-05 -9.243591023143027e-07 1.649272872416447e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -3059,8 +2993,6 @@ DEF Red_Striker_1 Robot {
                                           5.87505e-06 0.000139133 -1.88492e-05
                                         ]
                                       }
-                                      linearVelocity -1.8405449971445857e-08 1.3775247889243885e-07 7.111878939002578e-06
-                                      angularVelocity 1.3474203419622113e-05 -9.242049982837477e-07 1.6843499224703724e-06
                                     }
                                   }
                                 ]
@@ -3079,8 +3011,6 @@ DEF Red_Striker_1 Robot {
                                     6.434e-08 3.87466e-06 -4.58e-09
                                   ]
                                 }
-                                linearVelocity -5.934027780685278e-08 -9.901919152580253e-08 7.048444487744892e-06
-                                angularVelocity 6.804116927116674e-06 -9.224127216932693e-07 1.7268722760585634e-06
                               }
                             }
                           ]
@@ -3105,8 +3035,6 @@ DEF Red_Striker_1 Robot {
                               -8.965e-07 2.79969e-05 -3.8476e-05
                             ]
                           }
-                          linearVelocity -9.850715616408154e-08 -1.21877482194075e-07 6.960477742229393e-06
-                          angularVelocity 6.819043241335538e-06 -9.215329673065982e-07 1.767716742209154e-06
                         }
                       }
                     ]
@@ -3131,8 +3059,6 @@ DEF Red_Striker_1 Robot {
                         -8.3954e-07 8.5883e-05 -3.91763e-05
                       ]
                     }
-                    linearVelocity -1.860213820548927e-07 -4.93178251505927e-07 6.889468281557684e-06
-                    angularVelocity 6.863630274960132e-06 -9.165005174153389e-07 1.8085537843949028e-06
                   }
                 }
               ]
@@ -3156,8 +3082,6 @@ DEF Red_Striker_1 Robot {
                   -1.919e-08 -4.10822e-06 2.51e-09
                 ]
               }
-              linearVelocity -2.3373348115839698e-07 -5.691988607451206e-07 6.83202932973194e-06
-              angularVelocity 6.937027616943774e-06 -9.077862022302967e-07 1.8493838249719462e-06
             }
           }
         ]
@@ -3402,8 +3326,6 @@ DEF Red_Striker_1 Robot {
                                           physics USE FSR_Physics
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -4.633796985141794e-09 4.427622877387563e-08 7.1429304758828975e-06
-                                          angularVelocity -1.3471574536285477e-05 -9.243575927039838e-07 -1.6492695769708448e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -3516,8 +3438,6 @@ DEF Red_Striker_1 Robot {
                                           -5.69572e-06 0.000139379 1.87409e-05
                                         ]
                                       }
-                                      linearVelocity -1.8405276345058853e-08 -1.377540052559857e-07 7.11188393601258e-06
-                                      angularVelocity -1.3474090734649493e-05 -9.242033613156814e-07 -1.6843465551646781e-06
                                     }
                                   }
                                 ]
@@ -3534,8 +3454,6 @@ DEF Red_Striker_1 Robot {
                                     -2.634e-08 3.86194e-06 1.834e-08
                                   ]
                                 }
-                                linearVelocity -5.9340144218436814e-08 9.901314769021503e-08 7.0484493323355326e-06
-                                angularVelocity -6.804003511920841e-06 -9.224119832019926e-07 -1.7268689105028045e-06
                               }
                             }
                           ]
@@ -3552,8 +3470,6 @@ DEF Red_Striker_1 Robot {
                               6.3362e-07 3.6497e-05 3.94952e-05
                             ]
                           }
-                          linearVelocity -9.850708998836116e-08 1.2186620237843363e-07 6.960482967785063e-06
-                          angularVelocity -6.818930855676285e-06 -9.215320346530782e-07 -1.7677132447245624e-06
                         }
                       }
                     ]
@@ -3570,8 +3486,6 @@ DEF Red_Striker_1 Robot {
                         9.2451e-07 8.53067e-05 3.83616e-05
                       ]
                     }
-                    linearVelocity -1.8602133150714581e-07 4.931562030827809e-07 6.889473667124664e-06
-                    angularVelocity -6.863517907081479e-06 -9.164994855017437e-07 -1.8085503172406607e-06
                   }
                 }
               ]
@@ -3588,8 +3502,6 @@ DEF Red_Striker_1 Robot {
                   -2.233e-08 -4.08164e-06 -4.19e-09
                 ]
               }
-              linearVelocity -2.3373348096424866e-07 5.691712880010317e-07 6.832034662633415e-06
-              angularVelocity -6.93691442650387e-06 -9.077852588739525e-07 -1.8493803408818226e-06
             }
           }
         ]
@@ -4228,6 +4140,7 @@ DEF Red_Defender_1 Robot {
                     RotationalMotor {
                       name "RElbowRoll"
                       maxVelocity 7.19407
+                      minPosition -1.101610748656258e-08
                       maxPosition 1.54462
                       maxTorque 5
                     }
@@ -4236,19 +4149,8 @@ DEF Red_Defender_1 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
-                    hidden rotation_0 0 0 1 2.8740318897345554e-07
-                    hidden position_0_0 -1.0618448775091373e-07
-                    hidden rotation_1 -1 0 0 1.0745380149674385e-07
-                    hidden position_1_0 -2.213340621892712e-11
-                    hidden position_1_1 -2.213518257576652e-11
-                    hidden position_1_2 7.576542117222765e-11
-                    hidden position_2_0 4.085909389439788e-11
-                    hidden rotation_3 0 1 0 0.9599999999591412
-                    hidden position_3_0 1.8730572648625477e-11
-                    hidden position_5_0 4.086175842406847e-11
-                    hidden rotation_6 0 1 0 0.9599999999591383
-                    hidden position_6_0 1.873434740784444e-11
-                    hidden position_8_0 1.1130540938331464e-11
+                    hidden rotation_3 0 0.9999999999999999 0 0.9599999999182823
+                    hidden rotation_6 0 1 0 0.9599999999182766
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -4416,6 +4318,7 @@ DEF Red_Defender_1 Robot {
                       name "LElbowRoll"
                       maxVelocity 7.19407
                       minPosition -1.54462
+                      maxPosition 1.1016101613357038e-08
                       maxTorque 5
                     }
                     PositionSensor {
@@ -4423,19 +4326,8 @@ DEF Red_Defender_1 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
-                    hidden rotation_0 0 0 -1 2.8740318897345554e-07
-                    hidden position_0_0 1.0618448887315492e-07
-                    hidden rotation_1 0.9999999999999999 0 0 1.0745380149674385e-07
-                    hidden position_1_0 -2.213784711102562e-11
-                    hidden position_1_1 -2.2140511646284722e-11
-                    hidden position_1_2 7.576863946500137e-11
-                    hidden position_2_0 4.087219453082826e-11
-                    hidden rotation_3 0 1 0 0.9599999999591278
-                    hidden position_3_0 1.8732126963715758e-11
-                    hidden position_5_0 4.085920490918719e-11
-                    hidden rotation_6 0 1 0 0.9599999999591408
-                    hidden position_6_0 1.8736234786168108e-11
-                    hidden position_8_0 1.1124767779879094e-11
+                    hidden rotation_3 0 1 0 0.9599999999182554
+                    hidden rotation_6 0 1 0 0.9599999999182814
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -4756,8 +4648,6 @@ DEF Red_Defender_1 Robot {
                                           }
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -4.634054233273678e-09 -4.4276799194209453e-08 7.142925212980155e-06
-                                          angularVelocity 1.3471687142293817e-05 -9.243593046223128e-07 1.6492728147314327e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -4879,8 +4769,6 @@ DEF Red_Defender_1 Robot {
                                           5.87505e-06 0.000139133 -1.88492e-05
                                         ]
                                       }
-                                      linearVelocity -1.8405445616832786e-08 1.377524756735733e-07 7.111878937094495e-06
-                                      angularVelocity 1.3474203502195049e-05 -9.242051047424452e-07 1.6843498669942426e-06
                                     }
                                   }
                                 ]
@@ -4899,8 +4787,6 @@ DEF Red_Defender_1 Robot {
                                     6.434e-08 3.87466e-06 -4.58e-09
                                   ]
                                 }
-                                linearVelocity -5.9340275354819996e-08 -9.901919110207771e-08 7.0484444840307745e-06
-                                angularVelocity 6.804116619911056e-06 -9.22412526646862e-07 1.7268722328994787e-06
                               }
                             }
                           ]
@@ -4925,8 +4811,6 @@ DEF Red_Defender_1 Robot {
                               -8.965e-07 2.79969e-05 -3.8476e-05
                             ]
                           }
-                          linearVelocity -9.850715075731037e-08 -1.2187748431318946e-07 6.96047774071118e-06
-                          angularVelocity 6.819043218107102e-06 -9.215330654927275e-07 1.7677166850593646e-06
                         }
                       }
                     ]
@@ -4951,8 +4835,6 @@ DEF Red_Defender_1 Robot {
                         -8.3954e-07 8.5883e-05 -3.91763e-05
                       ]
                     }
-                    linearVelocity -1.8602138201542357e-07 -4.931782524323232e-07 6.8894682794971945e-06
-                    angularVelocity 6.8636302497453455e-06 -9.165005914261505e-07 1.8085537395090998e-06
                   }
                 }
               ]
@@ -4976,8 +4858,6 @@ DEF Red_Defender_1 Robot {
                   -1.919e-08 -4.10822e-06 2.51e-09
                 ]
               }
-              linearVelocity -2.3373348083013203e-07 -5.691988584220796e-07 6.832029324807688e-06
-              angularVelocity 6.937027873515695e-06 -9.077864028538485e-07 1.8493837670922956e-06
             }
           }
         ]
@@ -5222,8 +5102,6 @@ DEF Red_Defender_1 Robot {
                                           physics USE FSR_Physics
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -4.633797801124375e-09 4.42762268853352e-08 7.1429304800838015e-06
-                                          angularVelocity -1.3471574125606083e-05 -9.243574869143268e-07 -1.6492695362080447e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -5336,8 +5214,6 @@ DEF Red_Defender_1 Robot {
                                           -5.69572e-06 0.000139379 1.87409e-05
                                         ]
                                       }
-                                      linearVelocity -1.840528054617642e-08 -1.3775400821627955e-07 7.111883932708885e-06
-                                      angularVelocity -1.3474090386249222e-05 -9.242032000808782e-07 -1.6843465155225884e-06
                                     }
                                   }
                                 ]
@@ -5354,8 +5230,6 @@ DEF Red_Defender_1 Robot {
                                     -2.634e-08 3.86194e-06 1.834e-08
                                   ]
                                 }
-                                linearVelocity -5.9340146345907756e-08 9.901314092158613e-08 7.0484493341376324e-06
-                                angularVelocity -6.804003795251634e-06 -9.224114455526695e-07 -1.7268688724929995e-06
                               }
                             }
                           ]
@@ -5372,8 +5246,6 @@ DEF Red_Defender_1 Robot {
                               6.3362e-07 3.6497e-05 3.94952e-05
                             ]
                           }
-                          linearVelocity -9.850708625453859e-08 1.218661892757535e-07 6.960482964731634e-06
-                          angularVelocity -6.818930980331083e-06 -9.215318321361492e-07 -1.7677132183353496e-06
                         }
                       }
                     ]
@@ -5390,8 +5262,6 @@ DEF Red_Defender_1 Robot {
                         9.2451e-07 8.53067e-05 3.83616e-05
                       ]
                     }
-                    linearVelocity -1.86021316688541e-07 4.931562021539835e-07 6.889473663817742e-06
-                    angularVelocity -6.863517983649859e-06 -9.164993199270282e-07 -1.8085502923314495e-06
                   }
                 }
               ]
@@ -5408,8 +5278,6 @@ DEF Red_Defender_1 Robot {
                   -2.233e-08 -4.08164e-06 -4.19e-09
                 ]
               }
-              linearVelocity -2.3373345845404718e-07 5.691712865571317e-07 6.832034668768111e-06
-              angularVelocity -6.936915459654496e-06 -9.07785301333704e-07 -1.8493803403473266e-06
             }
           }
         ]
@@ -6048,6 +5916,7 @@ DEF Red_Defender_2 Robot {
                     RotationalMotor {
                       name "RElbowRoll"
                       maxVelocity 7.19407
+                      minPosition -1.1016110172518773e-08
                       maxPosition 1.54462
                       maxTorque 5
                     }
@@ -6056,19 +5925,8 @@ DEF Red_Defender_2 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
-                    hidden rotation_0 0 0 1 2.8740318897345554e-07
-                    hidden position_0_0 -1.0618448760539414e-07
-                    hidden rotation_1 -1 0 0 1.0745380149674385e-07
-                    hidden position_1_0 -2.213251804050742e-11
-                    hidden position_1_1 -2.213162986208772e-11
-                    hidden position_1_2 7.576660371165602e-11
-                    hidden position_2_0 4.08558742452632e-11
-                    hidden rotation_3 0 0.9999999999999999 0 0.9599999999591441
-                    hidden position_3_0 1.873179389524777e-11
-                    hidden position_5_0 4.0861425370394505e-11
-                    hidden rotation_6 0 1 0 0.9599999999591389
-                    hidden position_6_0 1.8735901720494583e-11
-                    hidden position_8_0 1.1131096050762275e-11
+                    hidden rotation_3 0 1 0 0.9599999999182881
+                    hidden rotation_6 0 1 0 0.9599999999182776
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -6236,6 +6094,7 @@ DEF Red_Defender_2 Robot {
                       name "LElbowRoll"
                       maxVelocity 7.19407
                       minPosition -1.54462
+                      maxPosition 1.1016107167287699e-08
                       maxTorque 5
                     }
                     PositionSensor {
@@ -6243,19 +6102,8 @@ DEF Red_Defender_2 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
-                    hidden rotation_0 0 0 -1 2.8740318897345554e-07
-                    hidden position_0_0 1.0618448633790461e-07
-                    hidden rotation_1 1 0 0 1.0745380149674385e-07
-                    hidden position_1_0 -2.213695893260592e-11
-                    hidden position_1_1 -2.2139623467865022e-11
-                    hidden position_1_2 7.576400515018142e-11
-                    hidden position_2_0 4.087374884051539e-11
-                    hidden rotation_3 0 1 0 0.9599999999591263
-                    hidden position_3_0 1.872768607443344e-11
-                    hidden position_5_0 4.085420892438467e-11
-                    hidden rotation_6 0 1 0 0.9599999999591461
-                    hidden position_6_0 1.873867727679045e-11
-                    hidden position_8_0 1.1128209465043764e-11
+                    hidden rotation_3 0 1 0 0.9599999999182525
+                    hidden rotation_6 0 1 0 0.959999999918292
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -6576,8 +6424,6 @@ DEF Red_Defender_2 Robot {
                                           }
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -4.634054369733923e-09 -4.42767984242866e-08 7.142925218048533e-06
-                                          angularVelocity 1.3471686951240643e-05 -9.243592878038545e-07 1.6492728179085112e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -6699,8 +6545,6 @@ DEF Red_Defender_2 Robot {
                                           5.87505e-06 0.000139133 -1.88492e-05
                                         ]
                                       }
-                                      linearVelocity -1.8405447104717107e-08 1.377524784421817e-07 7.111878940016407e-06
-                                      angularVelocity 1.3474203216635556e-05 -9.242049298237884e-07 1.684349875041634e-06
                                     }
                                   }
                                 ]
@@ -6719,8 +6563,6 @@ DEF Red_Defender_2 Robot {
                                     6.434e-08 3.87466e-06 -4.58e-09
                                   ]
                                 }
-                                linearVelocity -5.9340272047581766e-08 -9.90191848968073e-08 7.048444493709234e-06
-                                angularVelocity 6.804117061197166e-06 -9.224126999163729e-07 1.7268722100003176e-06
                               }
                             }
                           ]
@@ -6745,8 +6587,6 @@ DEF Red_Defender_2 Robot {
                               -8.965e-07 2.79969e-05 -3.8476e-05
                             ]
                           }
-                          linearVelocity -9.850714914956575e-08 -1.2187747108735688e-07 6.960477747400596e-06
-                          angularVelocity 6.819043157692667e-06 -9.215330033311606e-07 1.7677166805424983e-06
                         }
                       }
                     ]
@@ -6771,8 +6611,6 @@ DEF Red_Defender_2 Robot {
                         -8.3954e-07 8.5883e-05 -3.91763e-05
                       ]
                     }
-                    linearVelocity -1.8602137472136018e-07 -4.931782366217557e-07 6.889468292506576e-06
-                    angularVelocity 6.86363019519246e-06 -9.165005391805048e-07 1.8085537344267395e-06
                   }
                 }
               ]
@@ -6796,8 +6634,6 @@ DEF Red_Defender_2 Robot {
                   -1.919e-08 -4.10822e-06 2.51e-09
                 ]
               }
-              linearVelocity -2.337334716246417e-07 -5.691988432218779e-07 6.832029334901157e-06
-              angularVelocity 6.937027568307508e-06 -9.077863384002783e-07 1.8493837757518353e-06
             }
           }
         ]
@@ -7042,8 +6878,6 @@ DEF Red_Defender_2 Robot {
                                           physics USE FSR_Physics
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -4.633797858566936e-09 4.427622633677184e-08 7.142930475127899e-06
-                                          angularVelocity -1.3471573989698426e-05 -9.243576073427444e-07 -1.6492695278665487e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -7156,8 +6990,6 @@ DEF Red_Defender_2 Robot {
                                           -5.69572e-06 0.000139379 1.87409e-05
                                         ]
                                       }
-                                      linearVelocity -1.840527823491602e-08 -1.3775400638082188e-07 7.1118839276567015e-06
-                                      angularVelocity -1.3474090331345885e-05 -9.242032905049219e-07 -1.6843465174811115e-06
                                     }
                                   }
                                 ]
@@ -7174,8 +7006,6 @@ DEF Red_Defender_2 Robot {
                                     -2.634e-08 3.86194e-06 1.834e-08
                                   ]
                                 }
-                                linearVelocity -5.934014533256902e-08 9.901314087452572e-08 7.048449330078261e-06
-                                angularVelocity -6.8040040080232575e-06 -9.224113356221127e-07 -1.7268688258191876e-06
                               }
                             }
                           ]
@@ -7192,8 +7022,6 @@ DEF Red_Defender_2 Robot {
                               6.3362e-07 3.6497e-05 3.94952e-05
                             ]
                           }
-                          linearVelocity -9.850708291654156e-08 1.2186619389455917e-07 6.9604829652998256e-06
-                          angularVelocity -6.818931001255943e-06 -9.215318316406256e-07 -1.767713158243847e-06
                         }
                       }
                     ]
@@ -7210,8 +7038,6 @@ DEF Red_Defender_2 Robot {
                         9.2451e-07 8.53067e-05 3.83616e-05
                       ]
                     }
-                    linearVelocity -1.8602130854845746e-07 4.931562055558193e-07 6.889473664714944e-06
-                    angularVelocity -6.8635180265316084e-06 -9.164993181961122e-07 -1.8085502595853125e-06
                   }
                 }
               ]
@@ -7228,8 +7054,6 @@ DEF Red_Defender_2 Robot {
                   -2.233e-08 -4.08164e-06 -4.19e-09
                 ]
               }
-              linearVelocity -2.3373344768707054e-07 5.691712971627564e-07 6.8320346642096825e-06
-              angularVelocity -6.936915047231269e-06 -9.077853931929455e-07 -1.8493802058949468e-06
             }
           }
         ]
@@ -7305,16 +7129,6 @@ RobocupSoccerBall {
   hidden angularVelocity_0 0 -0.06189166327384975 0
   translation -0.004775110344990658 0 0.07987585558867413
   rotation 0 -0.9999999999999999 0 0.0682159138778208
-}
-DEF SUPERVISOR Robot {
-  translation 0.1 0 0.1
-  children [
-    DEF EMITTER Emitter {
-    }
-  ]
-  name "supervisor"
-  controller "supervisor"
-  supervisor TRUE
 }
 DEF Blue_Goalkeeper Robot {
   translation 2.5131988849377582 1.833677884827588 0.3152564575231523
@@ -7974,7 +7788,7 @@ DEF Blue_Goalkeeper Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 1 0 0.9599999997346719
+                                      rotation 0 1 0 0.9599999989207633
                                       children [
                                         USE PHALANX_TRANS
                                         DEF RPhalanx3 HingeJoint {
@@ -7986,6 +7800,7 @@ DEF Blue_Goalkeeper Robot {
                                           device [
                                             RotationalMotor {
                                               name "RPhalanx3"
+                                              minPosition -5.266128647085264e-11
                                               maxPosition 1
                                             }
                                             PositionSensor {
@@ -7994,7 +7809,7 @@ DEF Blue_Goalkeeper Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999973665733
+                                            rotation 0 0.9999999999999999 0 0.9599999975772184
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -8004,8 +7819,6 @@ DEF Blue_Goalkeeper Robot {
                                             physics DEF FINGER_PHYSICS Physics {
                                               density 200
                                             }
-                                            linearVelocity 2.7459616213789044e-07 3.8040158442258333e-07 9.351546868523324e-07
-                                            angularVelocity 1.3494624654187687e-06 -1.9774689110662563e-06 -3.803730894620711e-06
                                           }
                                         }
                                       ]
@@ -8013,8 +7826,6 @@ DEF Blue_Goalkeeper Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 3.080974182699311e-07 4.161225259518781e-07 9.284729528168385e-07
-                                      angularVelocity 1.3496784325110966e-06 -1.977275595663757e-06 -3.804209687154996e-06
                                     }
                                   }
                                 ]
@@ -8022,8 +7833,6 @@ DEF Blue_Goalkeeper Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 3.4212645637203706e-07 4.078410743298582e-07 9.448667184557021e-07
-                                angularVelocity 1.3481231907457167e-06 -1.9786663388166332e-06 -3.800762772349398e-06
                               }
                             }
                             DEF RPhalanx4 HingeJoint {
@@ -8044,7 +7853,7 @@ DEF Blue_Goalkeeper Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 0.013 -0.005
-                                rotation 0 1 0 0.9600000074099637
+                                rotation 0 1 0 0.9600000061396055
                                 children [
                                   USE PHALANX_TRANS
                                   DEF RPhalanx5 HingeJoint {
@@ -8064,7 +7873,7 @@ DEF Blue_Goalkeeper Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 1 0 0.9599999922007957
+                                      rotation 0 1 0 0.9599999905260038
                                       children [
                                         USE PHALANX_TRANS
                                         DEF RPhalanx6 HingeJoint {
@@ -8076,7 +7885,7 @@ DEF Blue_Goalkeeper Robot {
                                           device [
                                             RotationalMotor {
                                               name "RPhalanx6"
-                                              minPosition -2.7478476806889055e-11
+                                              minPosition -1.0898596257567644e-10
                                               maxPosition 1
                                             }
                                             PositionSensor {
@@ -8085,7 +7894,7 @@ DEF Blue_Goalkeeper Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999993383913
+                                            rotation 0 1 0 0.9599999997743358
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -8093,8 +7902,6 @@ DEF Blue_Goalkeeper Robot {
                                             contactMaterial "NAO finger material"
                                             boundingObject USE PHALANX_TRANS
                                             physics USE FINGER_PHYSICS
-                                            linearVelocity 1.9647917062018384e-07 3.8856382158225513e-07 9.031916523126092e-07
-                                            angularVelocity 1.3494622327870194e-06 -1.977469213579218e-06 -3.8037307436464737e-06
                                           }
                                         }
                                       ]
@@ -8102,8 +7909,6 @@ DEF Blue_Goalkeeper Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 2.2998040047191413e-07 4.242847655933745e-07 8.965099022417906e-07
-                                      angularVelocity 1.3496782162167061e-06 -1.9772760569778916e-06 -3.804209409971072e-06
                                     }
                                   }
                                 ]
@@ -8111,8 +7916,6 @@ DEF Blue_Goalkeeper Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 2.6400939262165216e-07 4.1600331775201235e-07 9.129036472397373e-07
-                                angularVelocity 1.3481229353467036e-06 -1.9786668170264554e-06 -3.800762797382991e-06
                               }
                             }
                             DEF RPhalanx7 HingeJoint {
@@ -8152,7 +7955,7 @@ DEF Blue_Goalkeeper Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 -1 0 0.9599999979863014
+                                      rotation 0 -0.9999999999999999 0 0.9599999976506094
                                       children [
                                         USE PHALANX_TRANS
                                       ]
@@ -8160,8 +7963,6 @@ DEF Blue_Goalkeeper Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 2.654678864694724e-07 3.860561668163237e-07 9.290027780691852e-07
-                                      angularVelocity 1.3442956763953806e-06 -1.9820881478831813e-06 -3.7922822039551216e-06
                                     }
                                   }
                                 ]
@@ -8169,8 +7970,6 @@ DEF Blue_Goalkeeper Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 2.4200608179805566e-07 3.394293382450282e-07 9.450538408367156e-07
-                                angularVelocity 1.3445783288745073e-06 -1.981835170229357e-06 -3.792908694876437e-06
                               }
                             }
                             DEF MAIN_HAND_SHAPE Shape {
@@ -8251,8 +8050,6 @@ DEF Blue_Goalkeeper Robot {
                               5.71599e-06 -2.24744e-05 3.17771e-06
                             ]
                           }
-                          linearVelocity 3.088170122646951e-07 2.613699761826953e-07 1.009500130326741e-06
-                          angularVelocity 1.3455081708910379e-06 -1.981004004296406e-06 -3.7949693524271798e-06
                         }
                       }
                       Shape {
@@ -8509,7 +8306,7 @@ DEF Blue_Goalkeeper Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 -0.013 -0.005
-                                rotation 0 1 0 0.9600000074251517
+                                rotation 0 1 0 0.9600000061623063
                                 children [
                                   DEF HAND_SLOT Transform {
                                     rotation 0 -1 0 0.96
@@ -8548,7 +8345,7 @@ DEF Blue_Goalkeeper Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 1 0 0.9599999921828101
+                                      rotation 0 1 0 0.9599999904879429
                                       children [
                                         USE PHALANX_TRANS
                                         DEF LPhalanx3 HingeJoint {
@@ -8560,7 +8357,7 @@ DEF Blue_Goalkeeper Robot {
                                           device [
                                             RotationalMotor {
                                               name "LPhalanx3"
-                                              minPosition -2.758451531951196e-11
+                                              minPosition -1.0785324371958353e-10
                                               maxPosition 1
                                             }
                                             PositionSensor {
@@ -8569,7 +8366,7 @@ DEF Blue_Goalkeeper Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999993407418
+                                            rotation 0 0.9999999999999999 0 0.9599999997721547
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -8579,8 +8376,6 @@ DEF Blue_Goalkeeper Robot {
                                             physics DEF FINGER_PHYSICS Physics {
                                               density 200
                                             }
-                                            linearVelocity -2.5979685162102676e-07 -4.779689828790436e-08 7.301865276562237e-07
-                                            angularVelocity 2.852083163355534e-07 -1.9894928668021084e-06 -4.120486428520833e-07
                                           }
                                         }
                                       ]
@@ -8588,8 +8383,6 @@ DEF Blue_Goalkeeper Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -2.620619183892932e-07 -4.393001389489094e-08 7.099424356836808e-07
-                                      angularVelocity 2.8498984496400373e-07 -1.9893026515276957e-06 -4.1157604457210377e-07
                                     }
                                   }
                                 ]
@@ -8597,8 +8390,6 @@ DEF Blue_Goalkeeper Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -2.7659572844211413e-07 -4.565230888709974e-08 7.081384139812335e-07
-                                angularVelocity 2.86574366767753e-07 -1.990682532560645e-06 -4.15004277910713e-07
                               }
                             }
                             DEF LPhalanx4 HingeJoint {
@@ -8638,7 +8429,7 @@ DEF Blue_Goalkeeper Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 1 0 0.959999992187418
+                                      rotation 0 1 0 0.9599999904930345
                                       children [
                                         USE PHALANX_TRANS
                                         DEF LPhalanx6 HingeJoint {
@@ -8650,6 +8441,7 @@ DEF Blue_Goalkeeper Robot {
                                           device [
                                             RotationalMotor {
                                               name "LPhalanx6"
+                                              minPosition -5.13191339781618e-11
                                               maxPosition 1
                                             }
                                             PositionSensor {
@@ -8658,7 +8450,7 @@ DEF Blue_Goalkeeper Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999973621918
+                                            rotation 0 0.9999999999999999 0 0.9599999975674688
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -8666,8 +8458,6 @@ DEF Blue_Goalkeeper Robot {
                                             contactMaterial "NAO finger material"
                                             boundingObject USE PHALANX_TRANS
                                             physics USE FINGER_PHYSICS
-                                            linearVelocity -2.193749493602092e-07 -4.569388636002472e-08 7.480252035660799e-07
-                                            angularVelocity 2.852082962274361e-07 -1.9894930355050764e-06 -4.1204871439824475e-07
                                           }
                                         }
                                       ]
@@ -8675,8 +8465,6 @@ DEF Blue_Goalkeeper Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -2.2164000709631928e-07 -4.182699743162614e-08 7.277811174066932e-07
-                                      angularVelocity 2.8498988683457587e-07 -1.9893027905372018e-06 -4.115760818518931e-07
                                     }
                                   }
                                 ]
@@ -8684,8 +8472,6 @@ DEF Blue_Goalkeeper Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -2.361737919693278e-07 -4.354928985556779e-08 7.259771052243424e-07
-                                angularVelocity 2.865740035124447e-07 -1.990682730550234e-06 -4.1500473927795956e-07
                               }
                             }
                             DEF LPhalanx7 HingeJoint {
@@ -8697,6 +8483,7 @@ DEF Blue_Goalkeeper Robot {
                               device [
                                 RotationalMotor {
                                   name "LPhalanx7"
+                                  minPosition -7.780660962239475e-11
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -8725,7 +8512,7 @@ DEF Blue_Goalkeeper Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 -1 0 0.9599999979820445
+                                      rotation 0 -1 0 0.959999997642875
                                       children [
                                         USE PHALANX_TRANS
                                       ]
@@ -8733,8 +8520,6 @@ DEF Blue_Goalkeeper Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -2.497704667858165e-07 -4.719400804631867e-08 7.338962436124556e-07
-                                      angularVelocity 2.8900946390669014e-07 -1.992804323613925e-06 -4.2027400399798794e-07
                                     }
                                   }
                                 ]
@@ -8742,8 +8527,6 @@ DEF Blue_Goalkeeper Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -2.5409044580925305e-07 -5.2748949158276694e-08 7.572942807826418e-07
-                                angularVelocity 2.887212926161462e-07 -1.9925533419918123e-06 -4.1965025250843856e-07
                               }
                             }
                             DEF MAIN_HAND_SHAPE Shape {
@@ -8824,8 +8607,6 @@ DEF Blue_Goalkeeper Robot {
                               5.71599e-06 -2.24744e-05 3.17771e-06
                             ]
                           }
-                          linearVelocity -3.023347158345009e-07 -6.42897488468453e-08 7.788420886550023e-07
-                          angularVelocity 2.892340270055051e-07 -1.9929999279939407e-06 -4.2076004412079136e-07
                         }
                       }
                       Shape {
@@ -9187,8 +8968,6 @@ DEF Blue_Goalkeeper Robot {
                                           }
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity 1.205077786058629e-08 3.90581938466649e-08 1.0816764208804816e-06
-                                          angularVelocity -6.2208519627384e-06 -4.005668404818698e-06 -6.866340611320233e-07
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -9310,8 +9089,6 @@ DEF Blue_Goalkeeper Robot {
                                           5.87505e-06 0.000139133 -1.88492e-05
                                         ]
                                       }
-                                      linearVelocity 1.356595144559658e-07 1.4859276063225763e-08 1.0742961279460133e-06
-                                      angularVelocity -6.221788360312239e-06 -4.007364422444884e-06 -7.094173726101599e-07
                                     }
                                   }
                                 ]
@@ -9330,8 +9107,6 @@ DEF Blue_Goalkeeper Robot {
                                     6.434e-08 3.87466e-06 -4.58e-09
                                   ]
                                 }
-                                linearVelocity 1.3771474803135054e-07 1.260175178097799e-07 1.1834314961501892e-06
-                                angularVelocity -1.288061270126201e-06 -3.9508617515904205e-06 -7.344685284564744e-07
                               }
                             }
                           ]
@@ -9356,8 +9131,6 @@ DEF Blue_Goalkeeper Robot {
                               -8.965e-07 2.79969e-05 -3.8476e-05
                             ]
                           }
-                          linearVelocity 1.5275639123562073e-07 1.1570360078586495e-07 1.0520416174430714e-06
-                          angularVelocity -1.292405925817914e-06 -3.958327466395168e-06 -7.567112370526328e-07
                         }
                       }
                     ]
@@ -9382,8 +9155,6 @@ DEF Blue_Goalkeeper Robot {
                         -8.3954e-07 8.5883e-05 -3.91763e-05
                       ]
                     }
-                    linearVelocity -2.5654311548233276e-08 1.4411033060468689e-07 1.0477794860578984e-06
-                    angularVelocity -1.3039536569437418e-06 -3.982214638990346e-06 -7.829691318547488e-07
                   }
                 }
               ]
@@ -9407,8 +9178,6 @@ DEF Blue_Goalkeeper Robot {
                   -1.919e-08 -4.10822e-06 2.51e-09
                 ]
               }
-              linearVelocity -2.815044048257269e-08 8.11422748651113e-08 1.2137034111988487e-06
-              angularVelocity -1.3248939069767295e-06 -3.839960607292147e-06 -8.078572818598549e-07
             }
           }
         ]
@@ -9653,8 +9422,6 @@ DEF Blue_Goalkeeper Robot {
                                           physics USE FSR_Physics
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -4.137068427066904e-09 -4.206436182893016e-08 1.145643429243143e-06
-                                          angularVelocity 6.830995406795517e-06 5.581427865576544e-06 1.1833457103982035e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -9767,8 +9534,6 @@ DEF Blue_Goalkeeper Robot {
                                           -5.69572e-06 0.000139379 1.87409e-05
                                         ]
                                       }
-                                      linearVelocity -1.212453001601492e-07 -2.57084809134121e-08 1.1945575114912034e-06
-                                      angularVelocity 6.83196516513045e-06 5.583346231246849e-06 1.2243294336298747e-06
                                     }
                                   }
                                 ]
@@ -9785,8 +9550,6 @@ DEF Blue_Goalkeeper Robot {
                                     -2.634e-08 3.86194e-06 1.834e-08
                                   ]
                                 }
-                                linearVelocity -6.737805199938611e-08 -1.4791745844383805e-07 1.07373393769924e-06
-                                angularVelocity 1.9198914492943645e-06 5.527029105788356e-06 1.2653345968367876e-06
                               }
                             }
                           ]
@@ -9803,8 +9566,6 @@ DEF Blue_Goalkeeper Robot {
                               6.3362e-07 3.6497e-05 3.94952e-05
                             ]
                           }
-                          linearVelocity -1.9282304153027852e-08 -1.7751047320977967e-07 1.2322030478585773e-06
-                          angularVelocity 1.92423710363908e-06 5.536300980248212e-06 1.3035090389268635e-06
                         }
                       }
                     ]
@@ -9821,8 +9582,6 @@ DEF Blue_Goalkeeper Robot {
                         9.2451e-07 8.53067e-05 3.83616e-05
                       ]
                     }
-                    linearVelocity 2.937386164326297e-07 -2.588269287984902e-07 1.2230971873345175e-06
-                    angularVelocity 1.9358605561350366e-06 5.559525896297136e-06 1.3457647190472548e-06
                   }
                 }
               ]
@@ -9839,8 +9598,6 @@ DEF Blue_Goalkeeper Robot {
                   -2.233e-08 -4.08164e-06 -4.19e-09
                 ]
               }
-              linearVelocity 3.783613591291767e-07 -1.9499661314348802e-07 1.0545421603651138e-06
-              angularVelocity 2.0155604301280706e-06 9.622617136330216e-07 1.4619041290729416e-06
             }
           }
         ]
@@ -10519,6 +10276,7 @@ DEF Blue_Striker_1 Robot {
                               device [
                                 RotationalMotor {
                                   name "RPhalanx1"
+                                  minPosition -2.866892823622002e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -10527,7 +10285,7 @@ DEF Blue_Striker_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 -0.013 -0.005
-                                rotation 0 1 0 0.9599999933730075
+                                rotation 0 1 0 0.9599999945197653
                                 children [
                                   DEF HAND_SLOT Transform {
                                     rotation 0 -1 0 0.96
@@ -10558,7 +10316,7 @@ DEF Blue_Striker_1 Robot {
                                     device [
                                       RotationalMotor {
                                         name "RPhalanx2"
-                                        minPosition -1.0754203804949425e-10
+                                        minPosition -4.049811224631963e-10
                                         maxPosition 1
                                       }
                                       PositionSensor {
@@ -10567,7 +10325,7 @@ DEF Blue_Striker_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 0.9999999999999999 0 0.9600000008808415
+                                      rotation 0 1 0 0.960000002500765
                                       children [
                                         USE PHALANX_TRANS
                                         DEF RPhalanx3 HingeJoint {
@@ -10587,7 +10345,7 @@ DEF Blue_Striker_1 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 0.9999999999999999 0 0.9599999970610404
+                                            rotation 0 0.9999999999999999 0 0.9599999966268001
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -10597,8 +10355,6 @@ DEF Blue_Striker_1 Robot {
                                             physics DEF FINGER_PHYSICS Physics {
                                               density 200
                                             }
-                                            linearVelocity -2.7005448790896633e-05 -1.870222901167139e-05 -1.552918614330822e-05
-                                            angularVelocity -4.57707725393252e-06 -4.675815170878695e-05 0.00014154287274458933
                                           }
                                         }
                                       ]
@@ -10606,8 +10362,6 @@ DEF Blue_Striker_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -2.8118658998474246e-05 -2.000495951814021e-05 -1.5987953832688124e-05
-                                      angularVelocity -4.576849370477948e-06 -4.6757948338964506e-05 0.00014154236828456423
                                     }
                                   }
                                 ]
@@ -10615,8 +10369,6 @@ DEF Blue_Striker_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -2.996299247130902e-05 -1.991810410188022e-05 -1.6041878177701e-05
-                                angularVelocity -4.5761461058936375e-06 -4.675732284973769e-05 0.0001415408130422824
                               }
                             }
                             DEF RPhalanx4 HingeJoint {
@@ -10628,7 +10380,7 @@ DEF Blue_Striker_1 Robot {
                               device [
                                 RotationalMotor {
                                   name "RPhalanx4"
-                                  minPosition -2.2213553562235434e-10
+                                  minPosition -7.496496729627057e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -10657,7 +10409,7 @@ DEF Blue_Striker_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 0.9999999999999999 0 0.9599999916551025
+                                      rotation 0 1 0 0.9599999899512462
                                       children [
                                         USE PHALANX_TRANS
                                         DEF RPhalanx6 HingeJoint {
@@ -10678,7 +10430,7 @@ DEF Blue_Striker_1 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.959999999314576
+                                            rotation 0 1 0 0.9599999991056899
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -10686,8 +10438,6 @@ DEF Blue_Striker_1 Robot {
                                             contactMaterial "NAO finger material"
                                             boundingObject USE PHALANX_TRANS
                                             physics USE FINGER_PHYSICS
-                                            linearVelocity -2.673247992995483e-05 -2.002480689812971e-05 -1.607530492969583e-05
-                                            angularVelocity -4.574776424090813e-06 -4.6756103134301315e-05 0.00014153778301999987
                                           }
                                         }
                                       ]
@@ -10695,8 +10445,6 @@ DEF Blue_Striker_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -2.784564879494323e-05 -2.1327489352466464e-05 -1.6534034631508742e-05
-                                      angularVelocity -4.574548347595934e-06 -4.675590010688573e-05 0.00014153727864514598
                                     }
                                   }
                                 ]
@@ -10704,8 +10452,6 @@ DEF Blue_Striker_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -2.9689953173709717e-05 -2.124062271536257e-05 -1.6587941369974088e-05
-                                angularVelocity -4.576103728735187e-06 -4.675728505126643e-05 0.0001415407188425871
                               }
                             }
                             DEF RPhalanx7 HingeJoint {
@@ -10717,6 +10463,7 @@ DEF Blue_Striker_1 Robot {
                               device [
                                 RotationalMotor {
                                   name "RPhalanx7"
+                                  minPosition -7.56577341356182e-11
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -10745,7 +10492,7 @@ DEF Blue_Striker_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 -0.9999999999999999 0 0.9599999978504047
+                                      rotation 0 -1 0 0.9599999975107314
                                       children [
                                         USE PHALANX_TRANS
                                       ]
@@ -10753,8 +10500,6 @@ DEF Blue_Striker_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -2.83434620939732e-05 -1.9566707902433818e-05 -1.5931122660508677e-05
-                                      angularVelocity -4.574423608299182e-06 -4.675578921189901e-05 0.00014153700372698938
                                     }
                                   }
                                 ]
@@ -10762,8 +10507,6 @@ DEF Blue_Striker_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -2.7909425833952938e-05 -1.7966183581014475e-05 -1.5408631687180054e-05
-                                angularVelocity -4.574140752389352e-06 -4.6755537381243415e-05 0.0001415363777865238
                               }
                             }
                             DEF MAIN_HAND_SHAPE Shape {
@@ -10844,8 +10587,6 @@ DEF Blue_Striker_1 Robot {
                               5.71599e-06 -2.24744e-05 3.17771e-06
                             ]
                           }
-                          linearVelocity -3.2662204421106934e-05 -1.5886151066625863e-05 -1.4968533881246711e-05
-                          angularVelocity -4.574659363394573e-06 -4.675599925883853e-05 0.0001415375252534242
                         }
                       }
                       Shape {
@@ -11093,7 +10834,7 @@ DEF Blue_Striker_1 Robot {
                               device [
                                 RotationalMotor {
                                   name "LPhalanx1"
-                                  minPosition -2.2257058486221824e-10
+                                  minPosition -7.442921850349404e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -11141,7 +10882,7 @@ DEF Blue_Striker_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 1 0 0.9599999916625195
+                                      rotation 0 1 0 0.9599999900480373
                                       children [
                                         USE PHALANX_TRANS
                                         DEF LPhalanx3 HingeJoint {
@@ -11162,7 +10903,7 @@ DEF Blue_Striker_1 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999993179602
+                                            rotation 0 1 0 0.9599999991065573
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -11172,8 +10913,6 @@ DEF Blue_Striker_1 Robot {
                                             physics DEF FINGER_PHYSICS Physics {
                                               density 200
                                             }
-                                            linearVelocity 3.1968048406394326e-06 -1.9476295915358353e-05 -1.4471796522693368e-05
-                                            angularVelocity -6.554411218481391e-06 -4.523131099577159e-05 0.0001397411260701706
                                           }
                                         }
                                       ]
@@ -11181,8 +10920,6 @@ DEF Blue_Striker_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 4.470387875837294e-06 -2.0733549168276486e-05 -1.4816472850370585e-05
-                                      angularVelocity -6.554654154360216e-06 -4.5231098473887886e-05 0.0001397416527322535
                                     }
                                   }
                                 ]
@@ -11190,8 +10927,6 @@ DEF Blue_Striker_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 5.832686200757131e-06 -2.0597180758761135e-05 -1.4737240500998041e-05
-                                angularVelocity -6.5554496871396786e-06 -4.5230401857283776e-05 0.00013974337756285843
                               }
                             }
                             DEF LPhalanx4 HingeJoint {
@@ -11203,6 +10938,7 @@ DEF Blue_Striker_1 Robot {
                               device [
                                 RotationalMotor {
                                   name "LPhalanx4"
+                                  minPosition -2.835135591801477e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -11211,7 +10947,7 @@ DEF Blue_Striker_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 0.013 -0.005
-                                rotation 0 1 0 0.9599999933221128
+                                rotation 0 1 0 0.9599999944561667
                                 children [
                                   USE PHALANX_TRANS
                                   DEF LPhalanx5 HingeJoint {
@@ -11231,7 +10967,7 @@ DEF Blue_Striker_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 0.9999999999999999 0 0.9599999916677795
+                                      rotation 0 1 0 0.959999990054003
                                       children [
                                         USE PHALANX_TRANS
                                         DEF LPhalanx6 HingeJoint {
@@ -11251,7 +10987,7 @@ DEF Blue_Striker_1 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999970567253
+                                            rotation 0 1 0 0.95999999661917
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -11259,8 +10995,6 @@ DEF Blue_Striker_1 Robot {
                                             contactMaterial "NAO finger material"
                                             boundingObject USE PHALANX_TRANS
                                             physics USE FINGER_PHYSICS
-                                            linearVelocity 5.393014336268341e-06 -1.8183857137081545e-05 -1.3836253648932171e-05
-                                            angularVelocity -6.55438478870807e-06 -4.5231334552962896e-05 0.00013974106733031426
                                           }
                                         }
                                       ]
@@ -11268,8 +11002,6 @@ DEF Blue_Striker_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 6.666597104473467e-06 -1.9441109854926326e-05 -1.4180930263951093e-05
-                                      angularVelocity -6.554627589618964e-06 -4.523112213685045e-05 0.00013974159396091962
                                     }
                                   }
                                 ]
@@ -11277,8 +11009,6 @@ DEF Blue_Striker_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 8.028894982491348e-06 -1.93047416369297e-05 -1.4101697954828094e-05
-                                angularVelocity -6.555422290093187e-06 -4.523042606325694e-05 0.00013974331834785348
                               }
                             }
                             DEF LPhalanx7 HingeJoint {
@@ -11318,7 +11048,7 @@ DEF Blue_Striker_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 -0.9999999999999999 0 0.9599999978505798
+                                      rotation 0 -1 0 0.9599999975271282
                                       children [
                                         USE PHALANX_TRANS
                                       ]
@@ -11326,8 +11056,6 @@ DEF Blue_Striker_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 5.474738796987878e-06 -1.8990569123035092e-05 -1.4169689440392329e-05
-                                      angularVelocity -6.557623933546273e-06 -4.5228500209733587e-05 0.00013974809016988144
                                     }
                                   }
                                 ]
@@ -11335,8 +11063,6 @@ DEF Blue_Striker_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 4.614218725621582e-06 -1.7420198137148303e-05 -1.3718877644308448e-05
-                                angularVelocity -6.557479096064529e-06 -4.5228627029261034e-05 0.00013974777604061528
                               }
                             }
                             DEF MAIN_HAND_SHAPE Shape {
@@ -11417,8 +11143,6 @@ DEF Blue_Striker_1 Robot {
                               5.71599e-06 -2.24744e-05 3.17771e-06
                             ]
                           }
-                          linearVelocity 7.424552603809556e-06 -1.5232980030083107e-05 -1.298528672692664e-05
-                          angularVelocity -6.556927993455689e-06 -4.522910930975936e-05 0.0001397465813849636
                         }
                       }
                       Shape {
@@ -11780,8 +11504,6 @@ DEF Blue_Striker_1 Robot {
                                           }
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity 1.7852554881590218e-05 8.915430754981641e-07 -9.225346098808984e-06
-                                          angularVelocity 1.412404793038115e-05 -5.352281683800832e-05 0.00014049845251960178
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -11903,8 +11625,6 @@ DEF Blue_Striker_1 Robot {
                                           5.87505e-06 0.000139133 -1.88492e-05
                                         ]
                                       }
-                                      linearVelocity 1.4391465243724281e-05 -6.551735578214846e-08 -9.59496343186667e-06
-                                      angularVelocity 1.4122391658719384e-05 -5.3503970890634604e-05 0.000140296535586274
                                     }
                                   }
                                 ]
@@ -11923,8 +11643,6 @@ DEF Blue_Striker_1 Robot {
                                     6.434e-08 3.87466e-06 -4.58e-09
                                   ]
                                 }
-                                linearVelocity 8.993318038216038e-06 2.7454119201145015e-06 -8.47594308139449e-06
-                                angularVelocity 2.588627934163238e-05 -5.320904726453725e-05 0.00014011355580446764
                               }
                             }
                           ]
@@ -11949,8 +11667,6 @@ DEF Blue_Striker_1 Robot {
                               -8.965e-07 2.79969e-05 -3.8476e-05
                             ]
                           }
-                          linearVelocity 3.3214359805560536e-06 -2.5496702867239776e-06 -1.019571815039131e-05
-                          angularVelocity 2.581019560374828e-05 -5.271743256528741e-05 0.00013990409879537254
                         }
                       }
                     ]
@@ -11975,8 +11691,6 @@ DEF Blue_Striker_1 Robot {
                         -8.3954e-07 8.5883e-05 -3.91763e-05
                       ]
                     }
-                    linearVelocity -4.772830339490236e-06 -4.672965416567309e-06 -1.0630324503376032e-05
-                    angularVelocity 2.5755234160358475e-05 -4.8484984920551135e-05 0.00013965467022511885
                   }
                 }
               ]
@@ -12000,8 +11714,6 @@ DEF Blue_Striker_1 Robot {
                   -1.919e-08 -4.10822e-06 2.51e-09
                 ]
               }
-              linearVelocity -1.0404133329979866e-05 3.159654896909185e-07 -8.753626773275781e-06
-              angularVelocity 2.5738299980687883e-05 -4.804537543306313e-05 0.00013947386519152244
             }
           }
         ]
@@ -12246,8 +11958,6 @@ DEF Blue_Striker_1 Robot {
                                           physics USE FSR_Physics
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -1.8299388631677782e-05 -1.0769425149259936e-06 -8.68646219591597e-06
-                                          angularVelocity 2.3258178145105072e-05 -3.549534462487585e-05 0.0001394475227075238
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -12360,8 +12070,6 @@ DEF Blue_Striker_1 Robot {
                                           -5.69572e-06 0.000139379 1.87409e-05
                                         ]
                                       }
-                                      linearVelocity -1.5516873194642276e-05 -1.9428741936570557e-06 -8.826856355417688e-06
-                                      angularVelocity 2.3258081532869997e-05 -3.551433117444563e-05 0.00013924394866950032
                                     }
                                   }
                                 ]
@@ -12378,8 +12086,6 @@ DEF Blue_Striker_1 Robot {
                                     -2.634e-08 3.86194e-06 1.834e-08
                                   ]
                                 }
-                                linearVelocity -1.3939874541320028e-05 7.667794548221006e-07 -8.058859074185344e-06
-                                angularVelocity 1.8062792445916234e-05 -3.5736109333408603e-05 0.00013906720209445197
                               }
                             }
                           ]
@@ -12396,8 +12102,6 @@ DEF Blue_Striker_1 Robot {
                               6.3362e-07 3.6497e-05 3.94952e-05
                             ]
                           }
-                          linearVelocity -1.1650910486490124e-05 -4.033849548497848e-06 -9.577010179529176e-06
-                          angularVelocity 1.8146240305674433e-05 -4.31038709659715e-05 0.0001390092096737582
                         }
                       }
                     ]
@@ -12414,8 +12118,6 @@ DEF Blue_Striker_1 Robot {
                         9.2451e-07 8.53067e-05 3.83616e-05
                       ]
                     }
-                    linearVelocity -1.1998384731191127e-05 -5.325265273818286e-06 -9.93458465201211e-06
-                    angularVelocity 1.815589868802876e-05 -4.335567887797373e-05 0.00013883382369726457
                   }
                 }
               ]
@@ -12432,8 +12134,6 @@ DEF Blue_Striker_1 Robot {
                   -2.233e-08 -4.08164e-06 -4.19e-09
                 ]
               }
-              linearVelocity -1.0828926670049286e-05 1.0795498816038087e-07 -8.194265006976781e-06
-              angularVelocity 1.817264387177559e-05 -4.381142196305436e-05 0.00013865908637281137
             }
           }
         ]
@@ -13112,6 +12812,7 @@ DEF Blue_Defender_2 Robot {
                               device [
                                 RotationalMotor {
                                   name "RPhalanx1"
+                                  minPosition -2.8919667081342527e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -13120,7 +12821,7 @@ DEF Blue_Defender_2 Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 -0.013 -0.005
-                                rotation 0 1 0 0.9599999933755147
+                                rotation 0 1 0 0.9599999945323009
                                 children [
                                   DEF HAND_SLOT Transform {
                                     rotation 0 -1 0 0.96
@@ -13160,7 +12861,7 @@ DEF Blue_Defender_2 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 1 0 0.9600000002912034
+                                      rotation 0 1 0 0.9599999995525741
                                       children [
                                         USE PHALANX_TRANS
                                         DEF RPhalanx3 HingeJoint {
@@ -13180,7 +12881,7 @@ DEF Blue_Defender_2 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999970611005
+                                            rotation 0 1 0 0.9599999966271007
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -13190,8 +12891,6 @@ DEF Blue_Defender_2 Robot {
                                             physics DEF FINGER_PHYSICS Physics {
                                               density 200
                                             }
-                                            linearVelocity -3.9631816204122436e-06 -2.820549778563097e-06 1.302352074130039e-06
-                                            angularVelocity 1.2358671040392641e-05 -1.8561777322338245e-05 4.153603645743819e-06
                                           }
                                         }
                                       ]
@@ -13199,8 +12898,6 @@ DEF Blue_Defender_2 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -3.9847989128306494e-06 -2.849571418538888e-06 1.2369861076034103e-06
-                                      angularVelocity 1.235889590883798e-05 -1.856157642357081e-05 4.153105662027055e-06
                                     }
                                   }
                                 ]
@@ -13208,8 +12905,6 @@ DEF Blue_Defender_2 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -4.1222302274958325e-06 -2.9074581649724205e-06 1.3872639278335261e-06
-                                angularVelocity 1.235963238043594e-05 -1.8560917859822027e-05 4.151474080217994e-06
                               }
                             }
                             DEF RPhalanx4 HingeJoint {
@@ -13221,7 +12916,7 @@ DEF Blue_Defender_2 Robot {
                               device [
                                 RotationalMotor {
                                   name "RPhalanx4"
-                                  minPosition -2.2213553562235434e-10
+                                  minPosition -7.463515138875507e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -13250,7 +12945,7 @@ DEF Blue_Defender_2 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 1 0 0.959999991681173
+                                      rotation 0 1 0 0.9599999900815989
                                       children [
                                         USE PHALANX_TRANS
                                         DEF RPhalanx6 HingeJoint {
@@ -13271,7 +12966,7 @@ DEF Blue_Defender_2 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999993146361
+                                            rotation 0 0.9999999999999999 0 0.9599999991059913
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -13279,8 +12974,6 @@ DEF Blue_Defender_2 Robot {
                                             contactMaterial "NAO finger material"
                                             boundingObject USE PHALANX_TRANS
                                             physics USE FINGER_PHYSICS
-                                            linearVelocity -4.338648256232857e-06 -3.1370430919934688e-06 1.0049001956729866e-06
-                                            angularVelocity 1.2358671539673613e-05 -1.8561777524854594e-05 4.153604319293431e-06
                                           }
                                         }
                                       ]
@@ -13288,8 +12981,6 @@ DEF Blue_Defender_2 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -4.360265716267381e-06 -3.1660649081477596e-06 9.395340880872317e-07
-                                      angularVelocity 1.2358896248285562e-05 -1.8561576667096078e-05 4.153106315015692e-06
                                     }
                                   }
                                 ]
@@ -13297,8 +12988,6 @@ DEF Blue_Defender_2 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -4.4976973114491285e-06 -3.22395193935485e-06 1.089811676665935e-06
-                                angularVelocity 1.2359632085219207e-05 -1.8560918272279523e-05 4.151474139508257e-06
                               }
                             }
                             DEF RPhalanx7 HingeJoint {
@@ -13310,6 +12999,7 @@ DEF Blue_Defender_2 Robot {
                               device [
                                 RotationalMotor {
                                   name "RPhalanx7"
+                                  minPosition -7.573176770743567e-11
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -13338,7 +13028,7 @@ DEF Blue_Defender_2 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 -0.9999999999999999 0 0.9599999978552055
+                                      rotation 0 -1 0 0.9599999975347352
                                       children [
                                         USE PHALANX_TRANS
                                       ]
@@ -13346,8 +13036,6 @@ DEF Blue_Defender_2 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -4.248512388898648e-06 -3.0238889823169047e-06 1.242322355138593e-06
-                                      angularVelocity 1.2361736588506554e-05 -1.855903693210491e-05 4.146812262837253e-06
                                     }
                                   }
                                 ]
@@ -13355,8 +13043,6 @@ DEF Blue_Defender_2 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -4.289565556651888e-06 -3.017422643860492e-06 1.3935958591294715e-06
-                                angularVelocity 1.236160268565581e-05 -1.855915684789052e-05 4.147108876666357e-06
                               }
                             }
                             DEF MAIN_HAND_SHAPE Shape {
@@ -13437,8 +13123,6 @@ DEF Blue_Defender_2 Robot {
                               5.71599e-06 -2.24744e-05 3.17771e-06
                             ]
                           }
-                          linearVelocity -4.743017414293761e-06 -3.185988522102729e-06 1.9904899849990092e-06
-                          angularVelocity 1.2361085343244477e-05 -1.8559619366635958e-05 4.148255353667237e-06
                         }
                       }
                       Shape {
@@ -13686,7 +13370,7 @@ DEF Blue_Defender_2 Robot {
                               device [
                                 RotationalMotor {
                                   name "LPhalanx1"
-                                  minPosition -2.2257058486221824e-10
+                                  minPosition -7.448949096802019e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -13734,7 +13418,7 @@ DEF Blue_Defender_2 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 0.9999999999999999 0 0.9599999916519375
+                                      rotation 0 1 0 0.9599999899951274
                                       children [
                                         USE PHALANX_TRANS
                                         DEF LPhalanx3 HingeJoint {
@@ -13755,7 +13439,7 @@ DEF Blue_Defender_2 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999993188243
+                                            rotation 0 0.9999999999999999 0 0.9599999991108777
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -13765,8 +13449,6 @@ DEF Blue_Defender_2 Robot {
                                             physics DEF FINGER_PHYSICS Physics {
                                               density 200
                                             }
-                                            linearVelocity -4.173329638432972e-06 -2.5107319893814353e-06 -1.353125386760685e-06
-                                            angularVelocity 9.660922201312423e-06 -1.859838759777557e-05 -2.5928140856261917e-06
                                           }
                                         }
                                       ]
@@ -13774,8 +13456,6 @@ DEF Blue_Defender_2 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -4.183549150994241e-06 -2.48120478778756e-06 -1.6028909446786025e-06
-                                      angularVelocity 9.660689961242127e-06 -1.859818532885121e-05 -2.5923114082849703e-06
                                     }
                                   }
                                 ]
@@ -13783,8 +13463,6 @@ DEF Blue_Defender_2 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -4.3048192662345265e-06 -2.5307156138110154e-06 -1.6996533560380566e-06
-                                angularVelocity 9.662281245198444e-06 -1.8599571500072268e-05 -2.5957568246112095e-06
                               }
                             }
                             DEF LPhalanx4 HingeJoint {
@@ -13796,6 +13474,7 @@ DEF Blue_Defender_2 Robot {
                               device [
                                 RotationalMotor {
                                   name "LPhalanx4"
+                                  minPosition -2.8584057655968657e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -13804,7 +13483,7 @@ DEF Blue_Defender_2 Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 0.013 -0.005
-                                rotation 0 0.9999999999999999 0 0.9599999933244402
+                                rotation 0 1 0 0.9599999944678032
                                 children [
                                   USE PHALANX_TRANS
                                   DEF LPhalanx5 HingeJoint {
@@ -13824,7 +13503,7 @@ DEF Blue_Defender_2 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 0.9999999999999999 0 0.9599999916571057
+                                      rotation 0 1 0 0.959999990000634
                                       children [
                                         USE PHALANX_TRANS
                                         DEF LPhalanx6 HingeJoint {
@@ -13844,7 +13523,7 @@ DEF Blue_Defender_2 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 0.9999999999999999 0 0.9599999970575981
+                                            rotation 0 1 0 0.9599999966235346
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -13852,8 +13531,6 @@ DEF Blue_Defender_2 Robot {
                                             contactMaterial "NAO finger material"
                                             boundingObject USE PHALANX_TRANS
                                             physics USE FINGER_PHYSICS
-                                            linearVelocity -3.7842197745857725e-06 -2.323151084124199e-06 -1.2486047290449947e-06
-                                            angularVelocity 9.660921881262921e-06 -1.8598387304728294e-05 -2.5928139878340996e-06
                                           }
                                         }
                                       ]
@@ -13861,8 +13538,6 @@ DEF Blue_Defender_2 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -3.7944391064845048e-06 -2.2936237987955843e-06 -1.4983702326752309e-06
-                                      angularVelocity 9.660689693676016e-06 -1.859818478854925e-05 -2.5923113715757973e-06
                                     }
                                   }
                                 ]
@@ -13870,8 +13545,6 @@ DEF Blue_Defender_2 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -3.915708917866137e-06 -2.343134474796148e-06 -1.5951325556439107e-06
-                                angularVelocity 9.662281676002491e-06 -1.859957180175972e-05 -2.5957566016445982e-06
                               }
                             }
                             DEF LPhalanx7 HingeJoint {
@@ -13911,7 +13584,7 @@ DEF Blue_Defender_2 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 -0.9999999999999999 0 0.9599999978486212
+                                      rotation 0 -1 0 0.9599999975173358
                                       children [
                                         USE PHALANX_TRANS
                                       ]
@@ -13919,8 +13592,6 @@ DEF Blue_Defender_2 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity -4.063081692176706e-06 -2.4446093560433278e-06 -1.416734945762295e-06
-                                      angularVelocity 9.660557404946134e-06 -1.8598070055982486e-05 -2.5920269333001996e-06
                                     }
                                   }
                                 ]
@@ -13928,8 +13599,6 @@ DEF Blue_Defender_2 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity -4.1098643720073355e-06 -2.504004761832357e-06 -1.1650679828184324e-06
-                                angularVelocity 9.660267837918066e-06 -1.859781779150779e-05 -2.5914002659613077e-06
                               }
                             }
                             DEF MAIN_HAND_SHAPE Shape {
@@ -14010,8 +13679,6 @@ DEF Blue_Defender_2 Robot {
                               5.71599e-06 -2.24744e-05 3.17771e-06
                             ]
                           }
-                          linearVelocity -4.524395702591204e-06 -2.7214454062663144e-06 -1.150021906096356e-06
-                          angularVelocity 9.660803887645828e-06 -1.8598284884719914e-05 -2.592560237628887e-06
                         }
                       }
                       Shape {
@@ -14373,8 +14040,6 @@ DEF Blue_Defender_2 Robot {
                                           }
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -4.300920856559484e-08 2.419275380765263e-08 2.417430710447875e-06
-                                          angularVelocity 3.4806629419092514e-06 -1.8920405148511618e-05 1.6715880953922787e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -14496,8 +14161,6 @@ DEF Blue_Defender_2 Robot {
                                           5.87505e-06 0.000139133 -1.88492e-05
                                         ]
                                       }
-                                      linearVelocity -1.3825073417465946e-07 -1.0541315614102186e-07 2.2299431378139255e-06
-                                      angularVelocity 3.479431720653928e-06 -1.8920385395104273e-05 1.7153020112479605e-06
                                     }
                                   }
                                 ]
@@ -14516,8 +14179,6 @@ DEF Blue_Defender_2 Robot {
                                     6.434e-08 3.87466e-06 -4.58e-09
                                   ]
                                 }
-                                linearVelocity -8.209222384745638e-07 -3.315990558692432e-07 2.7128348891905565e-06
-                                angularVelocity 8.683749207363349e-06 -1.8853830690760265e-05 1.7577184988847317e-06
                               }
                             }
                           ]
@@ -14542,8 +14203,6 @@ DEF Blue_Defender_2 Robot {
                               -8.965e-07 2.79969e-05 -3.8476e-05
                             ]
                           }
-                          linearVelocity -1.4714578384235086e-06 -8.058000491917203e-07 2.175399892459306e-06
-                          angularVelocity 8.678690510824892e-06 -1.8858852068138443e-05 1.8031805012111952e-06
                         }
                       }
                     ]
@@ -14568,8 +14227,6 @@ DEF Blue_Defender_2 Robot {
                         -8.3954e-07 8.5883e-05 -3.91763e-05
                       ]
                     }
-                    linearVelocity -3.0362732454157825e-06 -1.6430505228014108e-06 2.222733244739116e-06
-                    angularVelocity 8.664615137466532e-06 -1.8863624554799505e-05 1.843424837639403e-06
                   }
                 }
               ]
@@ -14593,8 +14250,6 @@ DEF Blue_Defender_2 Robot {
                   -1.919e-08 -4.10822e-06 2.51e-09
                 ]
               }
-              linearVelocity -3.7484721633226278e-06 -2.0118541687655237e-06 3.0496377193381454e-06
-              angularVelocity 8.641733011217665e-06 -1.8862124018581263e-05 1.8886142187898656e-06
             }
           }
         ]
@@ -14839,8 +14494,6 @@ DEF Blue_Defender_2 Robot {
                                           physics USE FSR_Physics
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity -1.2669417465804722e-07 -1.2816955897283545e-07 1.2012338495841826e-06
-                                          angularVelocity 1.725953683947687e-05 -1.4926226464060445e-05 -8.675226865614516e-07
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -14953,8 +14606,6 @@ DEF Blue_Defender_2 Robot {
                                           -5.69572e-06 0.000139379 1.87409e-05
                                         ]
                                       }
-                                      linearVelocity -2.890391089110953e-07 -1.6076653539788193e-07 1.1211608159429292e-06
-                                      angularVelocity 1.726037146742762e-05 -1.4924890163551845e-05 -9.058042296940786e-07
                                     }
                                   }
                                 ]
@@ -14971,8 +14622,6 @@ DEF Blue_Defender_2 Robot {
                                     -2.634e-08 3.86194e-06 1.834e-08
                                   ]
                                 }
-                                linearVelocity -9.154730464798177e-07 -7.22230896961466e-07 1.5784891705434927e-06
-                                angularVelocity 1.2288601017223755e-05 -1.49868499287718e-05 -9.43591520285543e-07
                               }
                             }
                           ]
@@ -14989,8 +14638,6 @@ DEF Blue_Defender_2 Robot {
                               6.3362e-07 3.6497e-05 3.94952e-05
                             ]
                           }
-                          linearVelocity -1.518829578075285e-06 -1.046176792875524e-06 1.126972246534003e-06
-                          angularVelocity 1.229354744630672e-05 -1.498489384394406e-05 -9.842161716786396e-07
                         }
                       }
                     ]
@@ -15007,8 +14654,6 @@ DEF Blue_Defender_2 Robot {
                         9.2451e-07 8.53067e-05 3.83616e-05
                       ]
                     }
-                    linearVelocity -2.845128951454321e-06 -1.99834720622898e-06 1.1832984766455985e-06
-                    angularVelocity 1.2307439463766788e-05 -1.4975962625518356e-05 -1.0197368490077926e-06
                   }
                 }
               ]
@@ -15025,8 +14670,6 @@ DEF Blue_Defender_2 Robot {
                   -2.233e-08 -4.08164e-06 -4.19e-09
                 ]
               }
-              linearVelocity -3.4711430454798288e-06 -2.4380491119806098e-06 1.9623566723994396e-06
-              angularVelocity 1.2389812074240004e-05 -1.949999770252352e-05 -9.837435691496095e-07
             }
           }
         ]
@@ -15705,6 +15348,7 @@ DEF Blue_Defender_1 Robot {
                               device [
                                 RotationalMotor {
                                   name "RPhalanx1"
+                                  minPosition -2.889870120765434e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -15713,7 +15357,7 @@ DEF Blue_Defender_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 -0.013 -0.005
-                                rotation 0 1 0 0.9599999936102958
+                                rotation 0 1 0 0.9599999947662434
                                 children [
                                   DEF HAND_SLOT Transform {
                                     rotation 0 -1 0 0.96
@@ -15753,7 +15397,7 @@ DEF Blue_Defender_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 1 0 0.9600000001782386
+                                      rotation 0 1 0 0.9599999994179195
                                       children [
                                         USE PHALANX_TRANS
                                         DEF RPhalanx3 HingeJoint {
@@ -15773,7 +15417,7 @@ DEF Blue_Defender_1 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999970611015
+                                            rotation 0 0.9999999999999999 0 0.9599999966271054
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -15783,8 +15427,6 @@ DEF Blue_Defender_1 Robot {
                                             physics DEF FINGER_PHYSICS Physics {
                                               density 200
                                             }
-                                            linearVelocity 5.1533554046078885e-06 3.514562232381127e-08 5.97113346515154e-05
-                                            angularVelocity -1.2578078447112408e-06 1.8467397602631203e-05 1.0489098343303781e-06
                                           }
                                         }
                                       ]
@@ -15792,8 +15434,6 @@ DEF Blue_Defender_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 5.131276155204231e-06 2.4655489918598713e-08 5.986944700869142e-05
-                                      angularVelocity -1.2575823838339372e-06 1.846759909889222e-05 1.0484102035501748e-06
                                     }
                                   }
                                 ]
@@ -15801,8 +15441,6 @@ DEF Blue_Defender_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 5.208579899253468e-06 3.121473910902522e-08 5.98464063231448e-05
-                                angularVelocity -1.2567829093632803e-06 1.8468314035874985e-05 1.0466385075187974e-06
                               }
                             }
                             DEF RPhalanx4 HingeJoint {
@@ -15814,7 +15452,7 @@ DEF Blue_Defender_1 Robot {
                               device [
                                 RotationalMotor {
                                   name "RPhalanx4"
-                                  minPosition -2.2213553562235434e-10
+                                  minPosition -7.461213240067488e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -15843,7 +15481,7 @@ DEF Blue_Defender_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 0.9999999999999999 0 0.9599999917834408
+                                      rotation 0 1 0 0.9599999901621958
                                       children [
                                         USE PHALANX_TRANS
                                         DEF RPhalanx6 HingeJoint {
@@ -15864,7 +15502,7 @@ DEF Blue_Defender_1 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999993146476
+                                            rotation 0 1 0 0.959999999106049
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -15872,8 +15510,6 @@ DEF Blue_Defender_1 Robot {
                                             contactMaterial "NAO finger material"
                                             boundingObject USE PHALANX_TRANS
                                             physics USE FINGER_PHYSICS
-                                            linearVelocity 5.5735984351527385e-06 5.259380958306013e-08 5.9907817580484475e-05
-                                            angularVelocity -1.2578080192971114e-06 1.8467397457741894e-05 1.0489100884911076e-06
                                           }
                                         }
                                       ]
@@ -15881,8 +15517,6 @@ DEF Blue_Defender_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 5.5515193371302545e-06 4.210365952879486e-08 6.0065930005852685e-05
-                                      angularVelocity -1.257582639965948e-06 1.8467599280830443e-05 1.0484103790451355e-06
                                     }
                                   }
                                 ]
@@ -15890,8 +15524,6 @@ DEF Blue_Defender_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 5.628823352639413e-06 4.8662884710850054e-08 6.004288943753937e-05
-                                angularVelocity -1.256782817695378e-06 1.846831401059271e-05 1.0466386962411291e-06
                               }
                             }
                             DEF RPhalanx7 HingeJoint {
@@ -15903,6 +15535,7 @@ DEF Blue_Defender_1 Robot {
                               device [
                                 RotationalMotor {
                                   name "RPhalanx7"
+                                  minPosition -7.56772611092739e-11
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -15931,7 +15564,7 @@ DEF Blue_Defender_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 -1 0 0.9599999978811586
+                                      rotation 0 -1 0 0.95999999755658
                                       children [
                                         USE PHALANX_TRANS
                                       ]
@@ -15939,8 +15572,6 @@ DEF Blue_Defender_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 5.411387489036649e-06 4.6202710148825555e-08 5.982574603209895e-05
-                                      angularVelocity -1.2546671991612202e-06 1.8470205614520257e-05 1.0419492058350663e-06
                                     }
                                   }
                                 ]
@@ -15948,8 +15579,6 @@ DEF Blue_Defender_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 5.475393686218946e-06 6.18649640110892e-08 5.962536137280658e-05
-                                angularVelocity -1.2548128379413877e-06 1.847007533335121e-05 1.0422718267867105e-06
                               }
                             }
                             DEF MAIN_HAND_SHAPE Shape {
@@ -16030,8 +15659,6 @@ DEF Blue_Defender_1 Robot {
                               5.71599e-06 -2.24744e-05 3.17771e-06
                             ]
                           }
-                          linearVelocity 5.785744152324439e-06 9.956371543914238e-08 5.9331257424237395e-05
-                          angularVelocity -1.255330232158391e-06 1.8469612882948902e-05 1.0434185929043463e-06
                         }
                       }
                       Shape {
@@ -16279,7 +15906,7 @@ DEF Blue_Defender_1 Robot {
                               device [
                                 RotationalMotor {
                                   name "LPhalanx1"
-                                  minPosition -2.2257058486221824e-10
+                                  minPosition -7.446589118608e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -16327,7 +15954,7 @@ DEF Blue_Defender_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 1 0 0.9599999916579764
+                                      rotation 0 1 0 0.9599999900253221
                                       children [
                                         USE PHALANX_TRANS
                                         DEF LPhalanx3 HingeJoint {
@@ -16348,7 +15975,7 @@ DEF Blue_Defender_1 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 1 0 0.9599999993188484
+                                            rotation 0 1 0 0.9599999991109979
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -16358,8 +15985,6 @@ DEF Blue_Defender_1 Robot {
                                             physics DEF FINGER_PHYSICS Physics {
                                               density 200
                                             }
-                                            linearVelocity 5.048739104456204e-06 6.677018634962599e-07 6.0431021483345516e-05
-                                            angularVelocity -4.024476731799474e-06 1.8429710339814285e-05 -5.733548656137014e-06
                                           }
                                         }
                                       ]
@@ -16367,8 +15992,6 @@ DEF Blue_Defender_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 4.987268508281089e-06 7.163371697557293e-07 6.063056853428465e-05
-                                      angularVelocity -4.02470879250687e-06 1.8429912787932962e-05 -5.733046396214391e-06
                                     }
                                   }
                                 ]
@@ -16376,8 +15999,6 @@ DEF Blue_Defender_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 5.012700621701609e-06 7.319921020231877e-07 6.066303959418768e-05
-                                angularVelocity -4.023104023127457e-06 1.842851365761922e-05 -5.736520649256607e-06
                               }
                             }
                             DEF LPhalanx4 HingeJoint {
@@ -16389,6 +16010,7 @@ DEF Blue_Defender_1 Robot {
                               device [
                                 RotationalMotor {
                                   name "LPhalanx4"
+                                  minPosition -2.856053077774842e-10
                                   maxPosition 1
                                 }
                                 PositionSensor {
@@ -16397,7 +16019,7 @@ DEF Blue_Defender_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0.069 0.013 -0.005
-                                rotation 0 0.9999999999999999 0 0.9599999933242045
+                                rotation 0 1 0 0.9599999944666251
                                 children [
                                   USE PHALANX_TRANS
                                   DEF LPhalanx5 HingeJoint {
@@ -16417,7 +16039,7 @@ DEF Blue_Defender_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 1 0 0.9599999916631268
+                                      rotation 0 1 0 0.9599999900307398
                                       children [
                                         USE PHALANX_TRANS
                                         DEF LPhalanx6 HingeJoint {
@@ -16437,7 +16059,7 @@ DEF Blue_Defender_1 Robot {
                                           ]
                                           endPoint Solid {
                                             translation 0.014 0 0
-                                            rotation 0 0.9999999999999999 0 0.9599999970576096
+                                            rotation 0 0.9999999999999999 0 0.9599999966235924
                                             children [
                                               USE PHALANX_TRANS
                                             ]
@@ -16445,8 +16067,6 @@ DEF Blue_Defender_1 Robot {
                                             contactMaterial "NAO finger material"
                                             boundingObject USE PHALANX_TRANS
                                             physics USE FINGER_PHYSICS
-                                            linearVelocity 4.588944036189601e-06 5.197618115006402e-07 6.027832573348139e-05
-                                            angularVelocity -4.024477597233936e-06 1.8429710356884713e-05 -5.7335481373565634e-06
                                           }
                                         }
                                       ]
@@ -16454,8 +16074,6 @@ DEF Blue_Defender_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 4.527473263402058e-06 5.683970472869223e-07 6.047787273322087e-05
-                                      angularVelocity -4.024709698192557e-06 1.8429912680685967e-05 -5.7330456648818245e-06
                                     }
                                   }
                                 ]
@@ -16463,8 +16081,6 @@ DEF Blue_Defender_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 4.552905091651387e-06 5.840518759773598e-07 6.0510343703832304e-05
-                                angularVelocity -4.023103626043964e-06 1.8428513233855243e-05 -5.736519833308444e-06
                               }
                             }
                             DEF LPhalanx7 HingeJoint {
@@ -16504,7 +16120,7 @@ DEF Blue_Defender_1 Robot {
                                     ]
                                     endPoint Solid {
                                       translation 0.014 0 0
-                                      rotation 0 -1 0 0.9599999978497353
+                                      rotation 0 -0.9999999999999999 0 0.9599999975229063
                                       children [
                                         USE PHALANX_TRANS
                                       ]
@@ -16512,8 +16128,6 @@ DEF Blue_Defender_1 Robot {
                                       contactMaterial "NAO finger material"
                                       boundingObject USE PHALANX_TRANS
                                       physics USE FINGER_PHYSICS
-                                      linearVelocity 4.82369685850633e-06 6.140942367244455e-07 6.041685243123297e-05
-                                      angularVelocity -4.0248249497603634e-06 1.8430013449067528e-05 -5.732795275427272e-06
                                     }
                                   }
                                 ]
@@ -16521,8 +16135,6 @@ DEF Blue_Defender_1 Robot {
                                 contactMaterial "NAO finger material"
                                 boundingObject USE PHALANX_TRANS
                                 physics USE FINGER_PHYSICS
-                                linearVelocity 4.909619834330096e-06 5.635565987460832e-07 6.019396047142552e-05
-                                angularVelocity -4.0251168710514e-06 1.8430267746761304e-05 -5.7321635405108e-06
                               }
                             }
                             DEF MAIN_HAND_SHAPE Shape {
@@ -16603,8 +16215,6 @@ DEF Blue_Defender_1 Robot {
                               5.71599e-06 -2.24744e-05 3.17771e-06
                             ]
                           }
-                          linearVelocity 5.098666195423026e-06 5.540930912887376e-07 6.003057940332183e-05
-                          angularVelocity -4.0245811176955364e-06 1.8429801108332045e-05 -5.733322877329149e-06
                         }
                       }
                       Shape {
@@ -16966,8 +16576,6 @@ DEF Blue_Defender_1 Robot {
                                           }
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity 1.0176555841914644e-07 5.964668416550776e-08 5.880799113954443e-05
-                                          angularVelocity -2.9750185599292515e-06 1.8088190388043323e-05 -8.826846384544116e-07
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -17089,8 +16697,6 @@ DEF Blue_Defender_1 Robot {
                                           5.87505e-06 0.000139133 -1.88492e-05
                                         ]
                                       }
-                                      linearVelocity 3.169170361098317e-07 1.1564421493518238e-07 5.8540343541464724e-05
-                                      angularVelocity -2.9753696863383243e-06 1.8088833948341075e-05 -9.100249182457646e-07
                                     }
                                   }
                                 ]
@@ -17109,8 +16715,6 @@ DEF Blue_Defender_1 Robot {
                                     6.434e-08 3.87466e-06 -4.58e-09
                                   ]
                                 }
-                                linearVelocity 1.0876573368234444e-06 2.002825876015104e-07 5.788621358961402e-05
-                                angularVelocity 1.990527222541136e-06 1.8148235304253116e-05 -9.410113018835212e-07
                               }
                             }
                           ]
@@ -17135,8 +16739,6 @@ DEF Blue_Defender_1 Robot {
                               -8.965e-07 2.79969e-05 -3.8476e-05
                             ]
                           }
-                          linearVelocity 1.828707882387255e-06 1.752833562610058e-07 5.8341349767868764e-05
-                          angularVelocity 1.9896873833007935e-06 1.81509754816317e-05 -9.692811810880664e-07
                         }
                       }
                     ]
@@ -17161,8 +16763,6 @@ DEF Blue_Defender_1 Robot {
                         -8.3954e-07 8.5883e-05 -3.91763e-05
                       ]
                     }
-                    linearVelocity 3.4519340533156516e-06 2.016753396208273e-08 5.830069105537653e-05
-                    angularVelocity 1.9907344222667603e-06 1.8138639813396814e-05 -9.965669780250902e-07
                   }
                 }
               ]
@@ -17186,8 +16786,6 @@ DEF Blue_Defender_1 Robot {
                   -1.919e-08 -4.10822e-06 2.51e-09
                 ]
               }
-              linearVelocity 4.255257679052047e-06 -8.746724964426036e-08 5.7487805952783726e-05
-              angularVelocity 1.992175095919662e-06 1.820815814334187e-05 -1.0260832932473712e-06
             }
           }
         ]
@@ -17432,8 +17030,6 @@ DEF Blue_Defender_1 Robot {
                                           physics USE FSR_Physics
                                           type "force-3d"
                                           lookupTable []
-                                          linearVelocity 9.830063745806542e-08 -6.281074929615722e-08 5.899459936715269e-05
-                                          angularVelocity 3.633465664032298e-06 2.1805959257783512e-05 1.0562760141743397e-06
                                         }
                                         Shape {
                                           appearance USE STRUCTURE_APP
@@ -17546,8 +17142,6 @@ DEF Blue_Defender_1 Robot {
                                           -5.69572e-06 0.000139379 1.87409e-05
                                         ]
                                       }
-                                      linearVelocity 2.0066944617644425e-07 -1.0913699076404346e-07 5.877521828849557e-05
-                                      angularVelocity 3.6334953828551683e-06 2.1808126505960183e-05 1.0921659719182106e-06
                                     }
                                   }
                                 ]
@@ -17564,8 +17158,6 @@ DEF Blue_Defender_1 Robot {
                                     -2.634e-08 3.86194e-06 1.834e-08
                                   ]
                                 }
-                                linearVelocity 9.71107935977615e-07 -2.0007750818824951e-07 5.805301881793718e-05
-                                angularVelocity -1.3881436474886359e-06 2.174408835442413e-05 1.130710997391701e-06
                               }
                             }
                           ]
@@ -17582,8 +17174,6 @@ DEF Blue_Defender_1 Robot {
                               6.3362e-07 3.6497e-05 3.94952e-05
                             ]
                           }
-                          linearVelocity 1.7034747373061313e-06 -1.9889676698949466e-07 5.863128320540252e-05
-                          angularVelocity -1.3871620170483086e-06 2.175097442777094e-05 1.1663480885899886e-06
                         }
                       }
                     ]
@@ -17600,8 +17190,6 @@ DEF Blue_Defender_1 Robot {
                         9.2451e-07 8.53067e-05 3.83616e-05
                       ]
                     }
-                    linearVelocity 3.4889331665999195e-06 -9.522584358381576e-08 5.8596553472812116e-05
-                    angularVelocity -1.3874561412764469e-06 2.1760012652774114e-05 1.2009651284367028e-06
                   }
                 }
               ]
@@ -17618,8 +17206,6 @@ DEF Blue_Defender_1 Robot {
                   -2.233e-08 -4.08164e-06 -4.19e-09
                 ]
               }
-              linearVelocity 4.2849218167446705e-06 -3.85171320841806e-09 5.762121151555531e-05
-              angularVelocity -1.4053332517089839e-06 2.2998861077963366e-05 1.2156103668045936e-06
             }
           }
         ]
