@@ -5,7 +5,11 @@
 4，计算转向角度
 '''
 import math
-
+import os, sys
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(currentdir)
+sys.path.append(parentdir)
 #计算距离
 def calculateDistance (coordinate1,coordinate2) ->float:
     """

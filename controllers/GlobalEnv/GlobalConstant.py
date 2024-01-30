@@ -2,6 +2,7 @@ from controller import Motion
 import math
 from enum import Enum
 
+
 #全局变量
 TIME_STEP = 32 #enable devices
 Pi = math.pi
@@ -42,7 +43,7 @@ Initial_Rotations={
 #loading motion file
 class LoadMoveFile:
     def __init__(self):
-        self.Backwards = MoveFileBase('Backwards','../../motions/Backwards.motion')
+        self.Backwards = MoveFileBase('Backwards',"../../motions/Backwards.motion")
         self.Forwards = MoveFileBase('Forwards', '../../motions/Forwards.motion')
         self.Forwards50 = MoveFileBase('Forwards50', '../../motions/Forwards50.motion')
         self.ForwardsSprint = MoveFileBase('ForwardsSprint', '../../motions/ForwardsSprint.motion')
@@ -69,7 +70,7 @@ class LoadMoveFile:
         self.TurnRight40 = MoveFileBase('TurnRight40', '../../motions/TurnRight40.motion')
         self.TurnRight60 = MoveFileBase('TurnRight60', '../../motions/TurnRight60.motion')
 
-class MoveFileBase(LoadMoveFile):
+class MoveFileBase(Motion):
     def __init__(self,name,path):
         super().__init__(path)
         self.name = name

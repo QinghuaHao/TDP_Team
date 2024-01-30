@@ -1,8 +1,13 @@
+import os, sys
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(currentdir)
+sys.path.append(parentdir)
+
 from controller import Motion,InertialUnit
 from abc import ABC,abstractmethod
 from GlobalConstant import TIME_STEP,LoadMoveFile
 import struct
-
 class ScoreRobot(ABC):
     #初始化硬件
     def __init__(self,robot):
@@ -12,19 +17,19 @@ class ScoreRobot(ABC):
         self.supervisorDate = None
 
         #GPS
-        self.gps = robot.getGPS("gps")
+        self.gps = robot.getDevice("gps")
         self.gps.enable(TIME_STEP)
 
         #Receiver
-        self.receiver = robot.getReceiver('receiver')
+        self.receiver = robot.getDevice('receiver')
         self.receiver.enable(TIME_STEP)
 
         #Emitter
-        self.emitter = robot.getEmitter('emitter')
+        self.emitter = robot.getDevice('emitter')
 
 
         #inertial unit
-        self.inertialunit = robot.getInertialUnit('inertial unit')
+        self.inertialunit = robot.getDevice('inertial unit')
         self.inertialunit.enable(TIME_STEP)
 
         #sound sensor
@@ -44,7 +49,7 @@ class ScoreRobot(ABC):
             'bumperLL':robot.getDevice('LFoot/Bumper/Left'),
             'bumperLR': robot.getDevice('LFoot/Bumper/Right'),
             'bumperRL': robot.getDevice('RFoot/Bumper/Left'),
-            'bumperRR': robot.getDevice('RFoot/Bumper/Reft')
+            'bumperRR': robot.getDevice('RFoot/Bumper/Right')
         }
         self.bumpers['bumperLL'].enable(TIME_STEP)
         self.bumpers['bumperLR'].enable(TIME_STEP)
@@ -52,17 +57,16 @@ class ScoreRobot(ABC):
         self.bumpers['bumperRR'].enable(TIME_STEP)
 
         #Camera
-        self.cameraTop = robot.getCamera('CameraTop')
-        self.cameraBottom = robot.getCamera('CameraBottom')
+        self.cameraTop = robot.getDevice('CameraTop')
+        self.cameraBottom = robot.getDevice('CameraBottom')
         self.cameraBottom.enable(TIME_STEP)
         self.cameraTop.enable(TIME_STEP)
 
         #Load motions file
         self.motions = LoadMoveFile()
-        self.startMotion()
         self.currentMoving = False
         self.motionsQueue = [self.motions.StandInit]
-
+        self.startMotion()
 
     @abstractmethod
         #运动决定
@@ -165,6 +169,7 @@ class ScoreRobot(ABC):
                 currentMotion.play()
                 self.currentMoving = currentMotion
 
+
     #加载运动到队列
     def loadMotionToList(self,motion):
         return self.motionsQueue.append(motion)
@@ -184,7 +189,7 @@ class ScoreRobot(ABC):
 
 
     #拿到转向角度
-    def getTurnAngle(self,turnangle):
+    def getTurnMotion(self,turnangle):
         if turnangle >50:
             return self.motions.TurnLeft60
         elif turnangle > 20:
