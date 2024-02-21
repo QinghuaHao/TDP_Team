@@ -8,7 +8,7 @@ TIME_STEP = 32 #enable devices
 Pi = math.pi
 #初始位置
 Initial_Positions = {
-  "BALL"      : [ 0.00,  0.00, 0.079875],
+  "Ball"      : [ 0.00,  0.00, 0.0798759],
   "Red_Goalkeeper"    : [-4.00,  0.00, 0.334],
   "Red_Defender_1" : [-1.6,  1.50, 0.334],
   "Red_Defender_2" : [-1.6, -1.50, 0.334],
@@ -19,7 +19,7 @@ Initial_Positions = {
   "Blue_Striker_1"  : [ 1,  0, 0.334]
 }
 
-#禁区
+#禁区内
 ball_Position = {
   "OUT_R"     : [-3.65, 0, 0.0798759],
   "OUT_B"     : [ 3.65, 0, 0.0798759]
@@ -27,12 +27,12 @@ ball_Position = {
 
 #初始转动
 Initial_Rotations={
-    "BALL": [0,1,0,0],
+    "Ball": [0,1,0,0],
     "Red_Goalkeeper": [0,1,0,0],
     "Red_Defender_1": [0,1,0,0],
     "Red_Defender_2": [0,1,0,0],
     "Red_Striker_1": [0,1,0,0],
-    "Blue_Goalkeeper": [0,0,1,-3.14159],
+    "Blue_Goalkeeper": [0,0,1,0],
     "Blue_Defender_1": [0,1,0,-3.14159],
     "Blue_Defender_2": [0,1,0,-3.14159],
     "Blue_Striker_1": [0,1,0,-3.14159]

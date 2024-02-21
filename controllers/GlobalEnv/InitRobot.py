@@ -8,7 +8,8 @@ from controller import Motion,InertialUnit
 from abc import ABC,abstractmethod
 from GlobalConstant import TIME_STEP,LoadMoveFile
 import struct
-class ScoreRobot(ABC):
+
+class SoccerRobot(ABC):
     #初始化硬件
     def __init__(self,robot):
         self.robot = robot
@@ -64,6 +65,7 @@ class ScoreRobot(ABC):
 
         #Load motions file
         self.motions = LoadMoveFile()
+        
         self.currentMoving = False
         self.motionsQueue = [self.motions.StandInit]
         self.startMotion()
@@ -92,7 +94,7 @@ class ScoreRobot(ABC):
 
     #确定球
     def isNewBallDataValuable(self):
-        return self.receiver.getData() >0
+        return self.receiver.getQueueLength() > 0
 
 
     #拿到观察者数据
@@ -109,17 +111,17 @@ class ScoreRobot(ABC):
 
     #拿到左面距离（sonar）
     def getleftsonarDistance(self):
-        return self.soundsensor[0].getValues()
+        return self.soundsensor[0].getValue()
 
 
     #拿到右距离（sonar）
     def getrightsonarDistance(self):
-        return self.soundsensor[1].getValues()
+        return self.soundsensor[1].getValue()
 
     #知道谁拿着球
     def knowBallOwner(self):
         ballowner = ''
-        for i in range(2,11):
+        for i in range(2,12):
             ballowner = ballowner +self.supervisorData[i].decode('utf-8')
         return ballowner.strip('*')
 
@@ -156,7 +158,7 @@ class ScoreRobot(ABC):
 
     #打断向前冲刺
     def breakForwardMotion(self):
-        if self.currentMoving and self.currentMoving.name == 'forwardsSprint' and self.currentMoving.getTime()==1360:
+        if self.currentMoving and self.currentMoving.name == 'ForwardsSprint' and self.currentMoving.getTime()==1360:
             self.currentMoving.stop()
             self.currentMoving =False
 
@@ -189,14 +191,14 @@ class ScoreRobot(ABC):
 
 
     #拿到转向角度
-    def getTurnMotion(self,turnangle):
-        if turnangle >50:
+    def getTurnMotion(self,turning_angle):
+        if turning_angle >50:
             return self.motions.TurnLeft60
-        elif turnangle > 20:
+        elif turning_angle > 20:
             return self.motions.TurnLeft30
-        elif turnangle < -50:
+        elif turning_angle < -50:
             return self.motions.TurnRight60
-        elif turnangle < -30:
+        elif turning_angle < -30:
             return self.motions.TurnRight40
         else:
             return None

@@ -4,16 +4,15 @@
 2.尽量和球保持在同一个Y轴坐标系上
 3.球到门口，就面向禁区外任何一个队友方向踢
 """
-import os, sys
-currentdir = os.path.dirname(os.path.realpath(__file__))
-parentdir = os.path.dirname(currentdir)
-sys.path.append(parentdir)
-
-from GlobalConstant import TIME_STEP
+import sys
+sys.path.append('.')
+sys.path.append('..')
+from GlobalEnv.GlobalConstant import TIME_STEP
 import RedTeamStrategy
-import BasicFunction
-import InitRobot
-class GoalKeeper(InitRobot.ScoreRobot):
+from GlobalEnv import BasicFunction
+from GlobalEnv import InitRobot
+
+class GoalKeeper(InitRobot.SoccerRobot):
     def run(self):
         while self.robot.step(TIME_STEP)!= -1:
             if self.isNewBallDataValuable():

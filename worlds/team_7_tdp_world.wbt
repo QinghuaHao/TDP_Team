@@ -7,8 +7,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.08025644493912848 -0.14885340735995853 -0.9855970607520411 5.282044523750898
-  position -2.57476574405506 -4.218619836161393 1.152045411339147
+  orientation -0.23026103204981294 0.23273691446367942 0.9448880281627453 1.6167738607337667
+  position -0.26563052276197574 -10.912153269766394 5.143565313383316
 }
 TexturedBackground {
 }
@@ -19,8 +19,8 @@ DirectionalLight {
   castShadows TRUE
 }
 DEF Red_Goalkeeper Robot {
-  translation -3.9999149544358055 -5.198224450370755e-10 0.34256023887058845
-  rotation 6.072185617119776e-06 0.9999999999815641 -2.5892658987311557e-10 0.0002563442963838744
+  translation -3.991031222463721 -1.337031413517868e-07 0.32992170451440805
+  rotation 2.7253197832581344e-06 0.9999999999742177 -6.643565601155451e-06 0.09675820271040261
   children [
     DEF BODY_SLOT Group {
     }
@@ -226,12 +226,12 @@ DEF Red_Goalkeeper Robot {
     }
     DEF HeadYaw Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 3.1511005946846696e-15
+        position -1.8288110326775668e-14
         axis 0 0 1
         anchor 0 0 0.1265
       }
       jointParameters2 JointParameters {
-        position -1.973110098156777e-08
+        position 2.1498965921022216e-08
         axis 0 1 0
       }
       device [
@@ -260,7 +260,7 @@ DEF Red_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation 0 1 0 0
+        rotation 9.144055163384525e-15 0.9999999999996382 -8.506506961289e-07 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -474,12 +474,12 @@ DEF Red_Goalkeeper Robot {
     }
     DEF RShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 1.6371493808467764e-06
+        position 1.408950038953723
         axis 0 1 0
         anchor 0 -0.098 0.1
       }
       jointParameters2 JointParameters {
-        position 2.625389261178891e-11
+        position -0.2972478035608952
       }
       device [
         RotationalMotor {
@@ -507,7 +507,7 @@ DEF Red_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation 1.3126946304206565e-11 0.9999999998714179 1.60363451958355e-05 1.6372301214719717e-06
+        rotation -0.1458800900648585 0.9743008023619141 -0.17163025910252286 1.4346961208601259
         children [
           Transform {
             translation 0.005 0 0
@@ -559,7 +559,7 @@ DEF Red_Goalkeeper Robot {
           }
           DEF RElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position 2.854800854927538e-07
+              position 1.38070009084857
               anchor 0.105 -0.015 0
             }
             device [
@@ -576,11 +576,11 @@ DEF Red_Goalkeeper Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation 1 0 0 2.858538343496754e-07
+              rotation 1 0 0 1.3807000908485703
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -3.1357215848066675e-07
+                    position 1.0090399469334945
                     axis 0 0 1
                   }
                   device [
@@ -596,6 +596,24 @@ DEF Red_Goalkeeper Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
+                    hidden position_0_0 0.003994006336711656
+                    hidden rotation_1 1 0 0 0.003994006336720875
+                    hidden position_1_0 2.839995626789557e-10
+                    hidden position_1_1 2.840174431926717e-10
+                    hidden position_1_2 7.565820676035025e-11
+                    hidden rotation_2 0 1 0 0.9599999992899957
+                    hidden position_2_0 1.4989584971445678e-10
+                    hidden rotation_3 0 1 0 0.9599999996252515
+                    hidden position_3_0 2.0787026932241648e-11
+                    hidden rotation_4 0 1 0 0.95999999994804
+                    hidden rotation_5 0 0.9999999999999999 0 0.9599999992899596
+                    hidden position_5_0 1.4993489422466312e-10
+                    hidden rotation_6 0 1 0 0.95999999962515
+                    hidden position_6_0 2.078667964850667e-11
+                    hidden rotation_7 0 1 0 0.9599999999480395
+                    hidden position_8_0 3.696502985733641e-11
+                    hidden rotation_9 0 -1 0 0.959999999907585
+                    name "RHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -648,12 +666,12 @@ DEF Red_Goalkeeper Robot {
     }
     DEF LShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 1.637149367170325e-06
+        position 1.4089500389910141
         axis 0 1 0
         anchor 0 0.098 0.1
       }
       jointParameters2 JointParameters {
-        position -2.624484220784963e-11
+        position 0.29724780357972885
       }
       device [
         RotationalMotor {
@@ -681,7 +699,7 @@ DEF Red_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation -1.3122421102238668e-11 0.9999999998715065 -1.6030817181839355e-05 1.6372301214719717e-06
+        rotation 0.14588009007399003 0.9743008023597968 0.1716302591067812 1.4346961208997144
         children [
           Transform {
             translation 0.005 0 0
@@ -730,7 +748,7 @@ DEF Red_Goalkeeper Robot {
           }
           DEF LElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position -2.8548007814557797e-07
+              position -1.3807000908178892
               anchor 0.105 0.015 0
             }
             device [
@@ -747,11 +765,11 @@ DEF Red_Goalkeeper Robot {
             ]
             endPoint Solid {
               translation 0.105 0.015 0
-              rotation -1 0 0 2.858538343496754e-07
+              rotation -1 0 0 1.380700090817889
               children [
                 DEF LElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position 3.13572157438797e-07
+                    position -1.0090399469078088
                     axis 0 0 1
                   }
                   device [
@@ -767,6 +785,24 @@ DEF Red_Goalkeeper Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
+                    hidden position_0_0 0.003994007193865826
+                    hidden rotation_1 1 0 0 0.003994007193876658
+                    hidden position_1_0 2.839714056371046e-10
+                    hidden position_1_1 2.8398658907877213e-10
+                    hidden position_1_2 7.567067194701598e-11
+                    hidden rotation_2 0 1 0 0.9599999992900726
+                    hidden position_2_0 1.499360756189485e-10
+                    hidden rotation_3 0 0.9999999999999999 0 0.9599999996251573
+                    hidden position_3_0 2.078517771455964e-11
+                    hidden rotation_4 0 0.9999999999999999 0 0.9599999999480303
+                    hidden rotation_5 0 1 0 0.9599999992900293
+                    hidden position_5_0 1.49878367967264e-10
+                    hidden rotation_6 0 1 0 0.9599999996252986
+                    hidden position_6_0 2.077255248147849e-11
+                    hidden rotation_7 0 1 0 0.9599999999480703
+                    hidden position_8_0 3.696953921284242e-11
+                    hidden rotation_9 0 -1 0 0.9599999999075763
+                    name "LHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -813,7 +849,7 @@ DEF Red_Goalkeeper Robot {
     }
     DEF RHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.204434240085006e-07
+        position 1.3829391662781333e-06
         axis 0 0.707107 0.707107
         anchor 0 -0.05 -0.085
       }
@@ -831,7 +867,7 @@ DEF Red_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 -0.05 -0.085
-        rotation 0 0.7071067811865476 0.7071067811865476 6.201461567486791e-07
+        rotation 0 0.7071067811865476 0.7071067811865476 1.3828406045580402e-06
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -859,7 +895,7 @@ DEF Red_Goalkeeper Robot {
           }
           DEF RHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position -8.334430710789735e-07
+              position -0.0011235852064527833
             }
             device [
               RotationalMotor {
@@ -874,7 +910,7 @@ DEF Red_Goalkeeper Robot {
               }
             ]
             endPoint Solid {
-              rotation -0.9999999999999999 0 0 8.333999785250225e-07
+              rotation -1 0 0 0.0011235852064392028
               children [
                 DEF HIP_ROLL_CYL_TRANS Transform {
                   translation -0.019 0 0
@@ -909,7 +945,7 @@ DEF Red_Goalkeeper Robot {
                 }
                 DEF RHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -1.4923271329791987e-06
+                    position -0.4434855120206676
                     axis 0 1 0
                   }
                   device [
@@ -925,7 +961,7 @@ DEF Red_Goalkeeper Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 1.4922008236790104e-06
+                    rotation 0 -1 0 0.4434855120206676
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -953,7 +989,7 @@ DEF Red_Goalkeeper Robot {
                       }
                       DEF RKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -1.5095494445560576e-06
+                          position 0.6911291095713051
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -971,7 +1007,7 @@ DEF Red_Goalkeeper Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 1.5096575190918733e-06
+                          rotation 0 1 0 0.6911291095713052
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -1013,7 +1049,7 @@ DEF Red_Goalkeeper Robot {
                             }
                             DEF RAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -1.5510639785887292e-06
+                                position -0.34506025128514867
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -1031,7 +1067,7 @@ DEF Red_Goalkeeper Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 1.5511529063789165e-06
+                                rotation 0 -1 0 0.3450602512851485
                                 children [
                                   DEF ANKLE_SHAPE Shape {
                                     appearance USE STRUCTURE_APP
@@ -1049,7 +1085,7 @@ DEF Red_Goalkeeper Robot {
                                   }
                                   DEF RAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position 8.457967787245246e-07
+                                      position 0.008528456630698468
                                     }
                                     device [
                                       RotationalMotor {
@@ -1064,14 +1100,14 @@ DEF Red_Goalkeeper Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation 0.9999999999999999 0 0 8.455670451588161e-07
+                                      rotation 1 0 0 0.00852845663070001
                                       children [
                                         DEF RIGHT_FOOT_SLOT Transform {
                                           translation 0.0254 -0.00332 -0.03241
                                         }
                                         DEF RFsr TouchSensor {
-                                          translation 0.01999996917661173 -0.006999938475726934 -0.04087989884949687
-                                          rotation -8.025827681491687e-08 -2.711414356690392e-10 0.9999999999999969 -3.1415853121087505
+                                          translation 0.01999994287440643 -0.0070089811971990115 -0.040597982167278515
+                                          rotation -1.859408142017241e-07 1.7742150277561557e-06 0.9999999999984089 -3.1415853320827605
                                           name "RFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject DEF FOOT_Box Box {
@@ -1316,7 +1352,7 @@ DEF Red_Goalkeeper Robot {
     }
     DEF LHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.204437261968727e-07
+        position -3.220400966931883e-07
         axis 0 0.707107 -0.707107
         anchor 0 0.05 -0.085
       }
@@ -1334,7 +1370,7 @@ DEF Red_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 0.05 -0.085
-        rotation 0 0.7071067811865476 -0.7071067811865476 6.201461567486791e-07
+        rotation 0 -0.7071067811865476 0.7071067811865476 3.2236140449023185e-07
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -1362,7 +1398,7 @@ DEF Red_Goalkeeper Robot {
           }
           DEF LHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position 8.334431592695056e-07
+              position 0.0011235841061729085
             }
             device [
               RotationalMotor {
@@ -1377,13 +1413,13 @@ DEF Red_Goalkeeper Robot {
               }
             ]
             endPoint Solid {
-              rotation 0.9999999999999999 0 0 8.333999785250225e-07
+              rotation 0.9999999999999999 0 0 0.0011235841060820394
               children [
                 USE HIP_ROLL_CYL_TRANS
                 USE UPPER_THIGH_SHAPE
                 DEF LHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -1.4923268958355607e-06
+                    position -0.4434870644336068
                     axis 0 1 0
                   }
                   device [
@@ -1399,7 +1435,7 @@ DEF Red_Goalkeeper Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -0.9999999999999999 0 1.4922008236790104e-06
+                    rotation 0 -1 0 0.4434870644336071
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -1427,7 +1463,7 @@ DEF Red_Goalkeeper Robot {
                       }
                       DEF LKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -1.5095492313932368e-06
+                          position 0.6911291111785017
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -1445,7 +1481,7 @@ DEF Red_Goalkeeper Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 1.5096575190918733e-06
+                          rotation 0 1 0 0.6911291111785016
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -1483,7 +1519,7 @@ DEF Red_Goalkeeper Robot {
                             }
                             DEF LAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -1.551063760096838e-06
+                                position -0.3450602511210512
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -1501,12 +1537,12 @@ DEF Red_Goalkeeper Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 1.5511529063789165e-06
+                                rotation 0 -1 0 0.34506025112105126
                                 children [
                                   USE ANKLE_SHAPE
                                   DEF LAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -8.457963872002307e-07
+                                      position -0.008529137905742824
                                     }
                                     device [
                                       RotationalMotor {
@@ -1521,14 +1557,14 @@ DEF Red_Goalkeeper Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation -1 0 0 8.455670451588161e-07
+                                      rotation -1 0 0 0.008529137905757761
                                       children [
                                         DEF LEFT_FOOT_SLOT Transform {
                                           translation 0.0254 0.00332 -0.03241
                                         }
                                         DEF LFsr TouchSensor {
-                                          translation 0.01999996917627067 0.006999938476191042 -0.040879898865685126
-                                          rotation -8.025827069242978e-08 2.7134854912271277e-10 0.9999999999999969 -3.1415853022504803
+                                          translation 0.019999914146424658 0.007008981329200137 -0.04059798828981727
+                                          rotation -1.8542138543084773e-07 -1.7741932586394218e-06 0.9999999999984089 -3.1415852839134635
                                           name "LFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject USE FOOT_Box
@@ -1777,8 +1813,8 @@ DEF Red_Goalkeeper Robot {
   supervisor TRUE
 }
 DEF Red_Striker_1 Robot {
-  translation -0.9999249544358076 -1.6870125761884513e-09 0.34256023887058745
-  rotation 6.072159035509107e-06 0.9999999999815646 -2.542565027062955e-10 0.0002563442963856004
+  translation -0.9910404025238212 -5.965674564215489e-08 0.3299217081418969
+  rotation 1.124370974760369e-06 0.9999999999943404 -3.1709932973971017e-06 0.09675766477858505
   children [
     DEF BODY_SLOT Group {
     }
@@ -1984,12 +2020,12 @@ DEF Red_Striker_1 Robot {
     }
     DEF HeadYaw Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 3.2773139335305837e-15
+        position 1.1347063134421963e-15
         axis 0 0 1
         anchor 0 0 0.1265
       }
       jointParameters2 JointParameters {
-        position -1.9731100229781985e-08
+        position 2.1499623099435454e-08
         axis 0 1 0
       }
       device [
@@ -2018,7 +2054,7 @@ DEF Red_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation 0 1 0 0
+        rotation -5.673531567210973e-16 0.9999999999999987 5.277642323357094e-08 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -2232,12 +2268,12 @@ DEF Red_Striker_1 Robot {
     }
     DEF RShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 1.637149382870982e-06
+        position 1.4089500389534342
         axis 0 1 0
         anchor 0 -0.098 0.1
       }
       jointParameters2 JointParameters {
-        position 2.6253904199318615e-11
+        position -0.2972478035605936
       }
       device [
         RotationalMotor {
@@ -2265,7 +2301,7 @@ DEF Red_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation 1.3126952097971413e-11 0.9999999998714176 1.6036352253877336e-05 1.6372301214719717e-06
+        rotation -0.1458800900647133 0.9743008023619572 -0.17163025910240226 1.4346961208597924
         children [
           Transform {
             translation 0.005 0 0
@@ -2317,7 +2353,7 @@ DEF Red_Striker_1 Robot {
           }
           DEF RElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position 2.854800952678758e-07
+              position 1.380700000339667
               anchor 0.105 -0.015 0
             }
             device [
@@ -2334,11 +2370,11 @@ DEF Red_Striker_1 Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation 1 0 0 2.858538343496754e-07
+              rotation 0.9999999999999999 0 0 1.380700000339667
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -3.1357214836802044e-07
+                    position 1.0090398997105168
                     axis 0 0 1
                   }
                   device [
@@ -2354,6 +2390,26 @@ DEF Red_Striker_1 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
+                    hidden translation_0 3.977234079000029e-06 -3.6035117502990365e-08 -1.2476019942697643e-06
+                    hidden rotation_0 0 0 -0.9999999999999999 5.960464477539063e-08
+                    hidden position_0_0 0.003994006336762161
+                    hidden rotation_1 1 0 0 0.003994006336720875
+                    hidden position_1_0 2.8397788603072693e-10
+                    hidden position_1_1 2.840006562231295e-10
+                    hidden position_1_2 7.566440998336531e-11
+                    hidden rotation_2 0 1 0 0.9599999992900601
+                    hidden position_2_0 1.4992493999391833e-10
+                    hidden rotation_3 0 0.9999999999999999 0 0.9599999996251876
+                    hidden position_3_0 2.0783760211751268e-11
+                    hidden rotation_4 0 1 0 0.9599999999480371
+                    hidden rotation_5 0 1 0 0.9599999992900033
+                    hidden position_5_0 1.4988991783649325e-10
+                    hidden rotation_6 0 1 0 0.9599999996252674
+                    hidden position_6_0 2.079213350420947e-11
+                    hidden rotation_7 0 1 0 0.9599999999480217
+                    hidden position_8_0 3.6974358698140803e-11
+                    hidden rotation_9 0 -1 0 0.9599999999075638
+                    name "RHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -2406,12 +2462,12 @@ DEF Red_Striker_1 Robot {
     }
     DEF LShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 1.6371493719654801e-06
+        position 1.4089500389908505
         axis 0 1 0
         anchor 0 0.098 0.1
       }
       jointParameters2 JointParameters {
-        position -2.6245051549056372e-11
+        position 0.29724780357973135
       }
       device [
         RotationalMotor {
@@ -2439,7 +2495,7 @@ DEF Red_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation -1.3122525772841998e-11 0.9999999998715043 -1.6030945004223793e-05 1.6372301214719717e-06
+        rotation 0.14588009007409036 0.9743008023597558 0.17163025910692772 1.4346961208995916
         children [
           Transform {
             translation 0.005 0 0
@@ -2488,7 +2544,7 @@ DEF Red_Striker_1 Robot {
           }
           DEF LElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position -2.854800812352731e-07
+              position -1.3807000003274739
               anchor 0.105 0.015 0
             }
             device [
@@ -2505,11 +2561,11 @@ DEF Red_Striker_1 Robot {
             ]
             endPoint Solid {
               translation 0.105 0.015 0
-              rotation -1 0 0 2.858538343496754e-07
+              rotation -1 0 0 1.3807000003274739
               children [
                 DEF LElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position 3.13572154380664e-07
+                    position -1.0090398996919197
                     axis 0 0 1
                   }
                   device [
@@ -2525,6 +2581,26 @@ DEF Red_Striker_1 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
+                    hidden translation_0 3.977230899544198e-06 3.6033655648072276e-08 -1.2476008220407844e-06
+                    hidden rotation_0 0 0 1 5.16191365590357e-08
+                    hidden position_0_0 0.003994007193871389
+                    hidden rotation_1 1 0 0 0.003994007193876658
+                    hidden position_1_0 2.8400936594878257e-10
+                    hidden position_1_1 2.83975779014933e-10
+                    hidden position_1_2 7.567513918826779e-11
+                    hidden rotation_2 0 1 0 0.9599999992899635
+                    hidden position_2_0 1.499172451266312e-10
+                    hidden rotation_3 0 1 0 0.9599999996251923
+                    hidden position_3_0 2.079081804984584e-11
+                    hidden rotation_4 0 1 0 0.9599999999480188
+                    hidden rotation_5 0 0.9999999999999999 0 0.9599999992900577
+                    hidden position_5_0 1.4993826600719895e-10
+                    hidden rotation_6 0 1 0 0.9599999996251332
+                    hidden position_6_0 2.077908099250342e-11
+                    hidden rotation_7 0 1 0 0.9599999999480501
+                    hidden position_8_0 3.6972748500114865e-11
+                    hidden rotation_9 0 -1 0 0.95999999990757
+                    name "RHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -2571,7 +2647,7 @@ DEF Red_Striker_1 Robot {
     }
     DEF RHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.204434148310802e-07
+        position -2.15281670092282e-07
         axis 0 0.707107 0.707107
         anchor 0 -0.05 -0.085
       }
@@ -2589,7 +2665,7 @@ DEF Red_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.05 -0.085
-        rotation 0 0.7071067811865475 0.7071067811865475 6.201461567486791e-07
+        rotation 0 -0.7071067811865475 -0.7071067811865475 2.1490760299348777e-07
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -2617,7 +2693,7 @@ DEF Red_Striker_1 Robot {
           }
           DEF RHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position -8.334430187430096e-07
+              position -0.0011235870148004756
             }
             device [
               RotationalMotor {
@@ -2632,7 +2708,7 @@ DEF Red_Striker_1 Robot {
               }
             ]
             endPoint Solid {
-              rotation -0.9999999999999999 0 0 8.333999785250225e-07
+              rotation -1 0 0 0.0011235870146746579
               children [
                 DEF HIP_ROLL_CYL_TRANS Transform {
                   translation -0.019 0 0
@@ -2667,7 +2743,7 @@ DEF Red_Striker_1 Robot {
                 }
                 DEF RHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -1.4923271010047756e-06
+                    position -0.4434864249400691
                     axis 0 1 0
                   }
                   device [
@@ -2683,7 +2759,7 @@ DEF Red_Striker_1 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 1.4922008236790104e-06
+                    rotation 0 -1 0 0.443486424940069
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -2711,7 +2787,7 @@ DEF Red_Striker_1 Robot {
                       }
                       DEF RKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -1.5095494436678791e-06
+                          position 0.6911282086015983
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -2729,7 +2805,7 @@ DEF Red_Striker_1 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -0.9999999999999999 0 1.5096575190918733e-06
+                          rotation 0 1 0 0.6911282086015985
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -2771,7 +2847,7 @@ DEF Red_Striker_1 Robot {
                             }
                             DEF RAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -1.551063952831555e-06
+                                position -0.3450597494067947
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -2789,7 +2865,7 @@ DEF Red_Striker_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 1.5511529063789165e-06
+                                rotation 0 -1 0 0.3450597494067944
                                 children [
                                   DEF ANKLE_SHAPE Shape {
                                     appearance USE STRUCTURE_APP
@@ -2807,7 +2883,7 @@ DEF Red_Striker_1 Robot {
                                   }
                                   DEF RAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position 8.457967479576995e-07
+                                      position 0.008529708295908845
                                     }
                                     device [
                                       RotationalMotor {
@@ -2822,14 +2898,14 @@ DEF Red_Striker_1 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation 1 0 0 8.455670451588161e-07
+                                      rotation 1 0 0 0.00852970829592664
                                       children [
                                         DEF RIGHT_FOOT_SLOT Transform {
                                           translation 0.0254 -0.00332 -0.03241
                                         }
                                         DEF RFsr TouchSensor {
-                                          translation 0.01999996917661384 -0.006999938475727191 -0.04087989884949676
-                                          rotation -8.025827518777506e-08 -2.711452162078463e-10 0.9999999999999969 -3.1415853121087505
+                                          translation 0.01999995168976021 -0.007011496236646389 -0.040597983254289954
+                                          rotation -1.2882825206482924e-07 1.2012131352984876e-06 0.9999999999992703 -3.1415853080829867
                                           name "RFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject DEF FOOT_Box Box {
@@ -3074,7 +3150,7 @@ DEF Red_Striker_1 Robot {
     }
     DEF LHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.204437226653975e-07
+        position -2.1528516531858513e-07
         axis 0 0.707107 -0.707107
         anchor 0 0.05 -0.085
       }
@@ -3092,7 +3168,7 @@ DEF Red_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.05 -0.085
-        rotation 0 0.7071067811865476 -0.7071067811865476 6.201461567486791e-07
+        rotation 0 -0.7071067811865476 0.7071067811865476 2.1490760299348777e-07
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -3120,7 +3196,7 @@ DEF Red_Striker_1 Robot {
           }
           DEF LHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position 8.334431294339691e-07
+              position 0.001123587005326343
             }
             device [
               RotationalMotor {
@@ -3135,13 +3211,13 @@ DEF Red_Striker_1 Robot {
               }
             ]
             endPoint Solid {
-              rotation 1 0 0 8.333999785250225e-07
+              rotation 1 0 0 0.0011235870051888401
               children [
                 USE HIP_ROLL_CYL_TRANS
                 USE UPPER_THIGH_SHAPE
                 DEF LHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -1.4923268780719923e-06
+                    position -0.44348642493691787
                     axis 0 1 0
                   }
                   device [
@@ -3157,7 +3233,7 @@ DEF Red_Striker_1 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 1.4922008236790104e-06
+                    rotation 0 -1 0 0.44348642493691803
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -3185,7 +3261,7 @@ DEF Red_Striker_1 Robot {
                       }
                       DEF LKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -1.5095492305050584e-06
+                          position 0.691128208592728
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -3203,7 +3279,7 @@ DEF Red_Striker_1 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 1.5096575190918733e-06
+                          rotation 0 1 0 0.6911282085927279
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -3241,7 +3317,7 @@ DEF Red_Striker_1 Robot {
                             }
                             DEF LAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -1.5510637947357964e-06
+                                position -0.34505974941014067
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -3259,12 +3335,12 @@ DEF Red_Striker_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 1.5511529063789165e-06
+                                rotation 0 -1 0 0.3450597494101404
                                 children [
                                   USE ANKLE_SHAPE
                                   DEF LAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -8.4579638139964e-07
+                                      position -0.008529708316421981
                                     }
                                     device [
                                       RotationalMotor {
@@ -3279,14 +3355,14 @@ DEF Red_Striker_1 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation -0.9999999999999999 0 0 8.455670451588161e-07
+                                      rotation -1 0 0 0.008529708316439847
                                       children [
                                         DEF LEFT_FOOT_SLOT Transform {
                                           translation 0.0254 0.00332 -0.03241
                                         }
                                         DEF LFsr TouchSensor {
-                                          translation 0.01999996917627156 0.006999938476191389 -0.04087989886568477
-                                          rotation -8.025827173250619e-08 2.7135079233393715e-10 0.9999999999999969 -3.141585302250481
+                                          translation 0.019999949135144246 0.007011496280884051 -0.04059798478820252
+                                          rotation -1.2886035570763935e-07 -1.2011775432587588e-06 0.9999999999992704 -3.1415853064298083
                                           name "LFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject USE FOOT_Box
@@ -3507,7 +3583,7 @@ DEF Red_Striker_1 Robot {
       ]
     }
   ]
-  name "NAO(1)"
+  name "Red_Striker_1"
   model "NAO_H25_VV5 (red)"
   contactMaterial "NAO material"
   boundingObject Transform {
@@ -3531,11 +3607,11 @@ DEF Red_Striker_1 Robot {
       1.43116e-05 0.000155191 -2.70793e-05
     ]
   }
-  controller "<none>"
+  controller "RedController"
 }
 DEF Red_Defender_2 Robot {
-  translation -1.5999149544358062 -1.5000000005198209 0.34256023887058773
-  rotation 6.072168543688607e-06 0.9999999999815644 -2.449239283952798e-10 0.00025634429638616673
+  translation -1.5910301357745955 -1.5000000611943463 0.32992157767926733
+  rotation 1.2230886991190596e-06 0.9999999999939365 -3.260528315522318e-06 0.09675881773911735
   children [
     DEF BODY_SLOT Group {
     }
@@ -3741,12 +3817,12 @@ DEF Red_Defender_2 Robot {
     }
     DEF HeadYaw Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 1.5258685545054575e-15
+        position -5.887348424891969e-16
         axis 0 0 1
         anchor 0 0 0.1265
       }
       jointParameters2 JointParameters {
-        position -1.9731100271984554e-08
+        position 2.1497900408516545e-08
         axis 0 1 0
       }
       device [
@@ -3775,7 +3851,7 @@ DEF Red_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation 0 1 0 0
+        rotation 2.943674212445983e-16 0.9999999999999994 -2.7385690290758113e-08 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -3989,12 +4065,12 @@ DEF Red_Defender_2 Robot {
     }
     DEF RShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 1.6371493870346977e-06
+        position 1.4089500389532064
         axis 0 1 0
         anchor 0 -0.098 0.1
       }
       jointParameters2 JointParameters {
-        position 2.6252341662280646e-11
+        position -0.29724780356081615
       }
       device [
         RotationalMotor {
@@ -4022,7 +4098,7 @@ DEF Red_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation 1.3126170829452729e-11 0.999999999871433 1.6035397787644412e-05 1.6372301214719717e-06
+        rotation -0.14588009006486688 0.9743008023618953 -0.17163025910262256 1.4346961208596263
         children [
           Transform {
             translation 0.005 0 0
@@ -4074,7 +4150,7 @@ DEF Red_Defender_2 Robot {
           }
           DEF RElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position 2.8548008433594123e-07
+              position 1.3807000908485658
               anchor 0.105 -0.015 0
             }
             device [
@@ -4091,11 +4167,11 @@ DEF Red_Defender_2 Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation 1 0 0 2.858538343496754e-07
+              rotation 1 0 0 1.380700090848566
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -3.1357215269770707e-07
+                    position 1.0090398997036139
                     axis 0 0 1
                   }
                   device [
@@ -4111,6 +4187,26 @@ DEF Red_Defender_2 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
+                    hidden translation_0 3.9772352829252875e-06 -3.603856682692532e-08 -1.2476016846840743e-06
+                    hidden rotation_0 0 0 1 4.2146848510894035e-08
+                    hidden position_0_0 0.003994006336699957
+                    hidden rotation_1 1 0 0 0.003994006336720875
+                    hidden position_1_0 2.8399200764404204e-10
+                    hidden position_1_1 2.8402489241677244e-10
+                    hidden position_1_2 7.56586637807793e-11
+                    hidden rotation_2 0 1 0 0.9599999992900015
+                    hidden position_2_0 1.4991743016226953e-10
+                    hidden rotation_3 0 1 0 0.9599999996252092
+                    hidden position_3_0 2.0788430391424543e-11
+                    hidden rotation_4 0 1 0 0.9599999999480208
+                    hidden rotation_5 0 1 0 0.9599999992899505
+                    hidden position_5_0 1.4990757067847286e-10
+                    hidden rotation_6 0 1 0 0.9599999996251972
+                    hidden position_6_0 2.078766847988395e-11
+                    hidden rotation_7 0 1 0 0.9599999999480323
+                    hidden position_8_0 3.696993516791663e-11
+                    hidden rotation_9 0 -1 0 0.9599999999075768
+                    name "RHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -4163,12 +4259,12 @@ DEF Red_Defender_2 Robot {
     }
     DEF LShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 1.6371493732884236e-06
+        position 1.4089500389906264
         axis 0 1 0
         anchor 0 0.098 0.1
       }
       jointParameters2 JointParameters {
-        position -2.6246418529855275e-11
+        position 0.29724780357993674
       }
       device [
         RotationalMotor {
@@ -4196,7 +4292,7 @@ DEF Red_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation -1.3123209263241189e-11 0.9999999998714911 -1.6031779967491438e-05 1.6372301214719717e-06
+        rotation 0.14588009007387853 0.9743008023598246 0.17163025910671745 1.434696120899297
         children [
           Transform {
             translation 0.005 0 0
@@ -4245,7 +4341,7 @@ DEF Red_Defender_2 Robot {
           }
           DEF LElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position -2.8548008497769395e-07
+              position -1.380700090817783
               anchor 0.105 0.015 0
             }
             device [
@@ -4262,11 +4358,11 @@ DEF Red_Defender_2 Robot {
             ]
             endPoint Solid {
               translation 0.105 0.015 0
-              rotation -1 0 0 2.858538343496754e-07
+              rotation -1 0 0 1.380700090817783
               children [
                 DEF LElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position 3.135721473885247e-07
+                    position -1.0090398996849759
                     axis 0 0 1
                   }
                   device [
@@ -4282,6 +4378,26 @@ DEF Red_Defender_2 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
+                    hidden translation_0 3.977231177101093e-06 3.6019577049300416e-08 -1.2475994811689262e-06
+                    hidden rotation_0 0 0 -0.9999999999999999 4.2146848510894035e-08
+                    hidden position_0_0 0.003994007193802421
+                    hidden rotation_1 1 0 0 0.003994007193765469
+                    hidden position_1_0 2.839929280230046e-10
+                    hidden position_1_1 2.839728359121757e-10
+                    hidden position_1_2 7.567800503892843e-11
+                    hidden rotation_2 0 1 0 0.9599999992900188
+                    hidden position_2_0 1.4991571135353317e-10
+                    hidden rotation_3 0 1 0 0.959999999625213
+                    hidden position_3_0 2.0772348763998866e-11
+                    hidden rotation_4 0 0.9999999999999999 0 0.9599999999480741
+                    hidden rotation_5 0 0.9999999999999999 0 0.9599999992900669
+                    hidden position_5_0 1.4996193071486125e-10
+                    hidden rotation_6 0 1 0 0.9599999996250885
+                    hidden position_6_0 2.0775768375408972e-11
+                    hidden rotation_7 0 1 0 0.9599999999480625
+                    hidden position_8_0 3.697064390525265e-11
+                    hidden rotation_9 0 -1 0 0.9599999999075725
+                    name "LHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -4328,7 +4444,7 @@ DEF Red_Defender_2 Robot {
     }
     DEF RHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.204434261818965e-07
+        position -1.091928313509846e-06
         axis 0 0.707107 0.707107
         anchor 0 -0.05 -0.085
       }
@@ -4346,7 +4462,7 @@ DEF Red_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 -0.05 -0.085
-        rotation 0 0.7071067811865475 0.7071067811865475 6.201461567486791e-07
+        rotation 0 -0.7071067811865476 -0.7071067811865476 1.0917579581746119e-06
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -4374,7 +4490,7 @@ DEF Red_Defender_2 Robot {
           }
           DEF RHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position -8.334430353800055e-07
+              position -0.0011240055042580702
             }
             device [
               RotationalMotor {
@@ -4389,7 +4505,7 @@ DEF Red_Defender_2 Robot {
               }
             ]
             endPoint Solid {
-              rotation -1 0 0 8.333999785250225e-07
+              rotation -1 0 0 0.0011240055043744868
               children [
                 DEF HIP_ROLL_CYL_TRANS Transform {
                   translation -0.019 0 0
@@ -4424,7 +4540,7 @@ DEF Red_Defender_2 Robot {
                 }
                 DEF RHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -1.4923271338673771e-06
+                    position -0.4434870657191608
                     axis 0 1 0
                   }
                   device [
@@ -4440,7 +4556,7 @@ DEF Red_Defender_2 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 1.4922008236790104e-06
+                    rotation 0 -1 0 0.44348706571916124
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -4468,7 +4584,7 @@ DEF Red_Defender_2 Robot {
                       }
                       DEF RKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -1.509549445444236e-06
+                          position 0.6911291108141416
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -4486,7 +4602,7 @@ DEF Red_Defender_2 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 1.5096575190918733e-06
+                          rotation 0 1 0 0.6911291108141419
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -4528,7 +4644,7 @@ DEF Red_Defender_2 Robot {
                             }
                             DEF RAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -1.5510639679305882e-06
+                                position -0.34506025150098807
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -4546,7 +4662,7 @@ DEF Red_Defender_2 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 1.5511529063789165e-06
+                                rotation 0 -1 0 0.34506025150098807
                                 children [
                                   DEF ANKLE_SHAPE Shape {
                                     appearance USE STRUCTURE_APP
@@ -4564,7 +4680,7 @@ DEF Red_Defender_2 Robot {
                                   }
                                   DEF RAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position 8.457967702116159e-07
+                                      position 0.008529787294483794
                                     }
                                     device [
                                       RotationalMotor {
@@ -4579,14 +4695,14 @@ DEF Red_Defender_2 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation 1 0 0 8.455670451588161e-07
+                                      rotation 1 0 0 0.00852978729447535
                                       children [
                                         DEF RIGHT_FOOT_SLOT Transform {
                                           translation 0.0254 -0.00332 -0.03241
                                         }
                                         DEF RFsr TouchSensor {
-                                          translation 0.019999969176614618 -0.0069999384757262195 -0.04087989884949693
-                                          rotation -8.025828379170285e-08 -2.7114112081492834e-10 0.9999999999999969 -3.141585312108751
+                                          translation 0.019999898663199955 -0.007012722290882234 -0.040597839889322494
+                                          rotation -1.624398627493103e-07 1.5150846281167038e-06 0.999999999998839 -3.14158555087436
                                           name "RFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject DEF FOOT_Box Box {
@@ -4831,7 +4947,7 @@ DEF Red_Defender_2 Robot {
     }
     DEF LHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.204437201767192e-07
+        position -1.0919167943039042e-06
         axis 0 0.707107 -0.707107
         anchor 0 0.05 -0.085
       }
@@ -4849,7 +4965,7 @@ DEF Red_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 0.05 -0.085
-        rotation 0 0.7071067811865476 -0.7071067811865476 6.201461567486791e-07
+        rotation 0 -0.7071067811865476 0.7071067811865476 1.0917579581746119e-06
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -4877,7 +4993,7 @@ DEF Red_Defender_2 Robot {
           }
           DEF LHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position 8.334431312399905e-07
+              position 0.0011240055022652504
             }
             device [
               RotationalMotor {
@@ -4892,13 +5008,13 @@ DEF Red_Defender_2 Robot {
               }
             ]
             endPoint Solid {
-              rotation 1 0 0 8.333999785250225e-07
+              rotation 1 0 0 0.0011240055023990104
               children [
                 USE HIP_ROLL_CYL_TRANS
                 USE UPPER_THIGH_SHAPE
                 DEF LHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -1.492326892282847e-06
+                    position -0.44348706570713226
                     axis 0 1 0
                   }
                   device [
@@ -4914,7 +5030,7 @@ DEF Red_Defender_2 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 1.4922008236790104e-06
+                    rotation 0 -1 0 0.44348706570713275
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -4942,7 +5058,7 @@ DEF Red_Defender_2 Robot {
                       }
                       DEF LKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -1.5095492322814152e-06
+                          position 0.6911291107910648
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -4960,7 +5076,7 @@ DEF Red_Defender_2 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 1.5096575190918733e-06
+                          rotation 0 1 0 0.6911291107910648
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -4998,7 +5114,7 @@ DEF Red_Defender_2 Robot {
                             }
                             DEF LAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -1.551063793847618e-06
+                                position -0.3450602514875398
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -5016,12 +5132,12 @@ DEF Red_Defender_2 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 1.5511529063789165e-06
+                                rotation 0 -1 0 0.3450602514875393
                                 children [
                                   USE ANKLE_SHAPE
                                   DEF LAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -8.457963614946615e-07
+                                      position -0.0085297873157972
                                     }
                                     device [
                                       RotationalMotor {
@@ -5036,14 +5152,14 @@ DEF Red_Defender_2 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation -0.9999999999999999 0 0 8.455670451588161e-07
+                                      rotation -1 0 0 0.008529787315821385
                                       children [
                                         DEF LEFT_FOOT_SLOT Transform {
                                           translation 0.0254 0.00332 -0.03241
                                         }
                                         DEF LFsr TouchSensor {
-                                          translation 0.019999969176269783 0.006999938476191403 -0.04087989886568538
-                                          rotation -8.025827496061099e-08 2.713629352449561e-10 0.9999999999999969 -3.1415853022504803
+                                          translation 0.019999895660847367 0.007012722409280414 -0.04059784313460975
+                                          rotation -1.624845245573793e-07 -1.515007799412768e-06 0.9999999999988393 -3.1415850640393974
                                           name "LFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject USE FOOT_Box
@@ -5264,7 +5380,7 @@ DEF Red_Defender_2 Robot {
       ]
     }
   ]
-  name "NAO(2)"
+  name "Red_Defender_2"
   model "NAO_H25_VV5 (red)"
   contactMaterial "NAO material"
   boundingObject Transform {
@@ -5288,11 +5404,11 @@ DEF Red_Defender_2 Robot {
       1.43116e-05 0.000155191 -2.70793e-05
     ]
   }
-  controller "<none>"
+  controller "RedController"
 }
 DEF Red_Defender_1 Robot {
-  translation -1.599914954435806 1.4999999994801778 0.34256023887058806
-  rotation 6.07216382680999e-06 0.9999999999815643 -2.5539693830108055e-10 0.00025634429638469357
+  translation -1.5910301355526912 1.4999999388060339 0.32992159208821037
+  rotation 1.223082267609104e-06 0.9999999999939365 -3.2605321860845077e-06 0.09675881801313628
   children [
     DEF BODY_SLOT Group {
     }
@@ -5498,12 +5614,12 @@ DEF Red_Defender_1 Robot {
     }
     DEF HeadYaw Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 2.1624832444970765e-15
+        position 4.674713630791752e-18
         axis 0 0 1
         anchor 0 0 0.1265
       }
       jointParameters2 JointParameters {
-        position -1.9731100835769684e-08
+        position 2.149790062579066e-08
         axis 0 1 0
       }
       device [
@@ -5532,7 +5648,7 @@ DEF Red_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation 0 1 0 0
+        rotation -2.337356815395876e-18 1 2.174270297173478e-10 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -5746,12 +5862,12 @@ DEF Red_Defender_1 Robot {
     }
     DEF RShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 1.6371493776807977e-06
+        position 1.4089500389532061
         axis 0 1 0
         anchor 0 -0.098 0.1
       }
       jointParameters2 JointParameters {
-        position 2.625366441648113e-11
+        position -0.2972478035608164
       }
       device [
         RotationalMotor {
@@ -5779,7 +5895,7 @@ DEF Red_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation 1.3126832206552719e-11 0.9999999998714201 1.6036205841088722e-05 1.6372301214719717e-06
+        rotation -0.14588009006479463 0.9743008023619211 -0.1716302591025376 1.4346961208595999
         children [
           Transform {
             translation 0.005 0 0
@@ -5831,7 +5947,7 @@ DEF Red_Defender_1 Robot {
           }
           DEF RElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position 2.8548007934490537e-07
+              position 1.3807000908485558
               anchor 0.105 -0.015 0
             }
             device [
@@ -5848,11 +5964,11 @@ DEF Red_Defender_1 Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation 1 0 0 2.858538343496754e-07
+              rotation 1 0 0 1.3807000908485558
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -3.1357215461017135e-07
+                    position 1.0090398997036065
                     axis 0 0 1
                   }
                   device [
@@ -5868,6 +5984,26 @@ DEF Red_Defender_1 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
+                    hidden translation_0 3.977232251961264e-06 -3.603507206674314e-08 -1.247601150694555e-06
+                    hidden rotation_0 0 0 1 4.2146848510894035e-08
+                    hidden position_0_0 0.003994006336701179
+                    hidden rotation_1 1 0 0 0.003994006336720875
+                    hidden position_1_0 2.8400880818221943e-10
+                    hidden position_1_1 2.8401279168302247e-10
+                    hidden position_1_2 7.566867998085626e-11
+                    hidden rotation_2 0 0.9999999999999999 0 0.9599999992899938
+                    hidden position_2_0 1.4989901903160782e-10
+                    hidden rotation_3 0 1 0 0.9599999996252251
+                    hidden position_3_0 2.079118750545897e-11
+                    hidden rotation_4 0 0.9999999999999999 0 0.959999999948028
+                    hidden rotation_5 0 0.9999999999999999 0 0.9599999992899755
+                    hidden position_5_0 1.498826112815621e-10
+                    hidden rotation_6 0 1 0 0.9599999996252837
+                    hidden position_6_0 2.0774976133923016e-11
+                    hidden rotation_7 0 1 0 0.9599999999480631
+                    hidden position_8_0 3.696857508051795e-11
+                    hidden rotation_9 0 -1 0 0.9599999999075768
+                    name "RHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -5920,12 +6056,12 @@ DEF Red_Defender_1 Robot {
     }
     DEF LShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 1.6371493713203798e-06
+        position 1.408950038990628
         axis 0 1 0
         anchor 0 0.098 0.1
       }
       jointParameters2 JointParameters {
-        position -2.6245800309070748e-11
+        position 0.29724780357993724
       }
       device [
         RotationalMotor {
@@ -5953,7 +6089,7 @@ DEF Red_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation -1.3122900152849044e-11 0.9999999998714971 -1.603140236649554e-05 1.6372301214719717e-06
+        rotation 0.14588009007404915 0.9743008023597637 0.17163025910691793 1.4346961208993603
         children [
           Transform {
             translation 0.005 0 0
@@ -6002,7 +6138,7 @@ DEF Red_Defender_1 Robot {
           }
           DEF LElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position -2.8548007718065487e-07
+              position -1.380700090817775
               anchor 0.105 0.015 0
             }
             device [
@@ -6019,11 +6155,11 @@ DEF Red_Defender_1 Robot {
             ]
             endPoint Solid {
               translation 0.105 0.015 0
-              rotation -0.9999999999999999 0 0 2.858538343496754e-07
+              rotation -1 0 0 1.3807000908177751
               children [
                 DEF LElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position 3.135721523274399e-07
+                    position -1.0090398996849692
                     axis 0 0 1
                   }
                   device [
@@ -6039,6 +6175,26 @@ DEF Red_Defender_1 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
+                    hidden translation_0 3.977231820085299e-06 3.60342959419675e-08 -1.2476014506768163e-06
+                    hidden rotation_0 0 0 -1 5.16191365590357e-08
+                    hidden position_0_0 0.003994007193802705
+                    hidden rotation_1 1 0 0 0.003994007193765469
+                    hidden position_1_0 2.839706981083616e-10
+                    hidden position_1_1 2.8398514574149737e-10
+                    hidden position_1_2 7.567413520152614e-11
+                    hidden rotation_2 0 1 0 0.9599999992900669
+                    hidden position_2_0 1.499178765075734e-10
+                    hidden rotation_3 0 1 0 0.9599999996252024
+                    hidden position_3_0 2.077399862495347e-11
+                    hidden rotation_4 0 1 0 0.9599999999480616
+                    hidden rotation_5 0 1 0 0.9599999992900433
+                    hidden position_5_0 1.4995130991025375e-10
+                    hidden rotation_6 0 1 0 0.9599999996251073
+                    hidden position_6_0 2.0782398883998246e-11
+                    hidden rotation_7 0 1 0 0.9599999999480453
+                    hidden position_8_0 3.69733309486388e-11
+                    hidden rotation_9 0 -1 0 0.9599999999075667
+                    name "LHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.88 0.01 0.14
@@ -6085,7 +6241,7 @@ DEF Red_Defender_1 Robot {
     }
     DEF RHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.204434341425464e-07
+        position -1.09192570715345e-06
         axis 0 0.707107 0.707107
         anchor 0 -0.05 -0.085
       }
@@ -6103,7 +6259,7 @@ DEF Red_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.05 -0.085
-        rotation 0 0.7071067811865475 0.7071067811865475 6.201461567486791e-07
+        rotation 0 -0.7071067811865476 -0.7071067811865476 1.0917579581746119e-06
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -6131,7 +6287,7 @@ DEF Red_Defender_1 Robot {
           }
           DEF RHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position -8.334429957973038e-07
+              position -0.0011240054993551384
             }
             device [
               RotationalMotor {
@@ -6146,7 +6302,7 @@ DEF Red_Defender_1 Robot {
               }
             ]
             endPoint Solid {
-              rotation -0.9999999999999999 0 0 8.333999785250225e-07
+              rotation -1 0 0 0.0011240054992382486
               children [
                 DEF HIP_ROLL_CYL_TRANS Transform {
                   translation -0.019 0 0
@@ -6181,7 +6337,7 @@ DEF Red_Defender_1 Robot {
                 }
                 DEF RHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -1.4923271223210577e-06
+                    position -0.443487065717439
                     axis 0 1 0
                   }
                   device [
@@ -6197,7 +6353,7 @@ DEF Red_Defender_1 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 1.4922008236790104e-06
+                    rotation 0 -1 0 0.44348706571743884
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -6225,7 +6381,7 @@ DEF Red_Defender_1 Robot {
                       }
                       DEF RKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -1.509549445444236e-06
+                          position 0.6911291107636596
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -6243,7 +6399,7 @@ DEF Red_Defender_1 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 1.5096575190918733e-06
+                          rotation 0 1 0 0.6911291107636592
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -6285,7 +6441,7 @@ DEF Red_Defender_1 Robot {
                             }
                             DEF RAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -1.5510639768123724e-06
+                                position -0.34506025150017583
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -6303,7 +6459,7 @@ DEF Red_Defender_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 1.5511529063789165e-06
+                                rotation 0 -1 0 0.34506025150017583
                                 children [
                                   DEF ANKLE_SHAPE Shape {
                                     appearance USE STRUCTURE_APP
@@ -6321,7 +6477,7 @@ DEF Red_Defender_1 Robot {
                                   }
                                   DEF RAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position 8.457967973331905e-07
+                                      position 0.00852978729666724
                                     }
                                     device [
                                       RotationalMotor {
@@ -6336,14 +6492,14 @@ DEF Red_Defender_1 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation 0.9999999999999999 0 0 8.455670451588161e-07
+                                      rotation 1 0 0 0.008529787296662018
                                       children [
                                         DEF RIGHT_FOOT_SLOT Transform {
                                           translation 0.0254 -0.00332 -0.03241
                                         }
                                         DEF RFsr TouchSensor {
-                                          translation 0.019999969176614396 -0.006999938475727108 -0.04087989884949696
-                                          rotation -8.02582820961224e-08 -2.711432733883334e-10 0.9999999999999969 -3.1415853121087505
+                                          translation 0.01999989866993146 -0.007012724433676398 -0.040597854277889055
+                                          rotation -1.6241921534939485e-07 1.5149894069558864e-06 0.9999999999988393 -3.1415855505951544
                                           name "RFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject DEF FOOT_Box Box {
@@ -6588,7 +6744,7 @@ DEF Red_Defender_1 Robot {
     }
     DEF LHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.204437125188436e-07
+        position -1.0919141714055972e-06
         axis 0 0.707107 -0.707107
         anchor 0 0.05 -0.085
       }
@@ -6606,7 +6762,7 @@ DEF Red_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.05 -0.085
-        rotation 0 0.7071067811865476 -0.7071067811865476 6.201461567486791e-07
+        rotation 0 -0.7071067811865476 0.7071067811865476 1.0917579581746119e-06
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -6634,7 +6790,7 @@ DEF Red_Defender_1 Robot {
           }
           DEF LHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position 8.334431597241488e-07
+              position 0.0011240054974111418
             }
             device [
               RotationalMotor {
@@ -6649,13 +6805,13 @@ DEF Red_Defender_1 Robot {
               }
             ]
             endPoint Solid {
-              rotation 0.9999999999999999 0 0 8.333999785250225e-07
+              rotation 1 0 0 0.0011240054972627722
               children [
                 USE HIP_ROLL_CYL_TRANS
                 USE UPPER_THIGH_SHAPE
                 DEF LHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -1.4923268718547433e-06
+                    position -0.44348706570536084
                     axis 0 1 0
                   }
                   device [
@@ -6671,7 +6827,7 @@ DEF Red_Defender_1 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 1.4922008236790104e-06
+                    rotation 0 -1 0 0.44348706570536084
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -6699,7 +6855,7 @@ DEF Red_Defender_1 Robot {
                       }
                       DEF LKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -1.5095492322814152e-06
+                          position 0.6911291107405246
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -6717,7 +6873,7 @@ DEF Red_Defender_1 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 1.5096575190918733e-06
+                          rotation 0 1 0 0.6911291107405244
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -6755,7 +6911,7 @@ DEF Red_Defender_1 Robot {
                             }
                             DEF LAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -1.5510638000648669e-06
+                                position -0.34506025148674857
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -6773,12 +6929,12 @@ DEF Red_Defender_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 1.5511529063789165e-06
+                                rotation 0 -0.9999999999999999 0 0.34506025148674907
                                 children [
                                   USE ANKLE_SHAPE
                                   DEF LAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -8.457963667863814e-07
+                                      position -0.008529787317936207
                                     }
                                     device [
                                       RotationalMotor {
@@ -6793,14 +6949,14 @@ DEF Red_Defender_1 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation -1 0 0 8.455670451588161e-07
+                                      rotation -1 0 0 0.008529787317955988
                                       children [
                                         DEF LEFT_FOOT_SLOT Transform {
                                           translation 0.0254 0.00332 -0.03241
                                         }
                                         DEF LFsr TouchSensor {
-                                          translation 0.01999996917626956 0.006999938476192957 -0.04087989886568544
-                                          rotation -8.025827435345718e-08 2.713665642975852e-10 0.9999999999999969 -3.14158530225048
+                                          translation 0.019999895667587086 0.0070127245520696935 -0.04059785752303491
+                                          rotation -1.6246386812164792e-07 -1.5149125518902236e-06 0.9999999999988394 -3.1415850643185976
                                           name "LFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject USE FOOT_Box
@@ -7021,7 +7177,7 @@ DEF Red_Defender_1 Robot {
       ]
     }
   ]
-  name "NAO(3)"
+  name "Red_Defender_1"
   model "NAO_H25_VV5 (red)"
   contactMaterial "NAO material"
   boundingObject Transform {
@@ -7045,7 +7201,7 @@ DEF Red_Defender_1 Robot {
       1.43116e-05 0.000155191 -2.70793e-05
     ]
   }
-  controller "<none>"
+  controller "RedController"
 }
 DEF Ground Solid {
   children [
@@ -7572,8 +7728,8 @@ DEF Ground Solid {
   }
 }
 DEF Ball Solid {
-  translation -0.0032284710382265895 0 0.079875852634424
-  rotation 0 -1 0 0.04612106819573026
+  translation -0.00515139753540982 0 0.0798758527617174
+  rotation 0 -1 0 1.4257608398370836
   scale 0.7280000000000001 0.7280000000000001 0.7280000000000001
   children [
     Shape {
@@ -7632,19 +7788,19 @@ DEF Ball Solid {
     }
   }
 }
-DEF SUPERVISOR Robot {
+DEF Supervisor Robot {
   translation 0.1 0 0.1
   children [
     DEF EMITTER Emitter {
     }
   ]
-  name "supervisor"
-  controller "<none>"
+  name "Supervisor"
+  controller "SuperVisor"
   supervisor TRUE
 }
 DEF Blue_Striker_1 Robot {
-  translation 0.9999160302833795 4.958141676471243e-10 0.3426399169679858
-  rotation -0.00012653090094588137 7.454950191116288e-10 0.9999999919949655 -3.1415926000000725
+  translation 0.9906537865497929 6.559695219566092e-08 0.3300142126255119
+  rotation -0.0489477703491481 6.400927679598726e-08 0.9988013394954189 3.1415924175339716
   children [
     DEF BODY_SLOT Group {
     }
@@ -7850,12 +8006,12 @@ DEF Blue_Striker_1 Robot {
     }
     DEF HeadYaw Hinge2Joint {
       jointParameters HingeJointParameters {
-        position -6.460021964872557e-16
+        position -1.0749821124545567e-14
         axis 0 0 1
         anchor 0 0 0.1265
       }
       jointParameters2 JointParameters {
-        position -6.584434635221494e-09
+        position 2.1840453690914225e-08
         axis 0 1 0
       }
       device [
@@ -7884,7 +8040,7 @@ DEF Blue_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation 0 1 0 0
+        rotation 5.374910562272133e-15 0.9999999999998789 -4.921977023314429e-07 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -8098,12 +8254,12 @@ DEF Blue_Striker_1 Robot {
     }
     DEF RShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 5.461971889057259e-07
+        position 1.408950188825772
         axis 0 1 0
         anchor 0 -0.098 0.1
       }
       jointParameters2 JointParameters {
-        position 8.681203206742344e-12
+        position -0.29724785748513727
       }
       device [
         RotationalMotor {
@@ -8131,7 +8287,7 @@ DEF Blue_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation 4.340601602822919e-12 0.999999999873692 1.589389945971327e-05 5.46285592908365e-07
+        rotation -0.14588011621269922 0.974300797618882 -0.17163026380268673 1.4346962761355715
         children [
           Transform {
             translation 0.005 0 0
@@ -8183,7 +8339,7 @@ DEF Blue_Striker_1 Robot {
           }
           DEF RElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position 2.7476178525270674e-07
+              position 1.3807002023158534
               anchor 0.105 -0.015 0
             }
             device [
@@ -8200,18 +8356,18 @@ DEF Blue_Striker_1 Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation 1 0 0 2.7476383618393225e-07
+              rotation 1 0 0 1.3807002023158534
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -3.025553170843317e-07
+                    position 1.0090399439498499
                     axis 0 0 1
                   }
                   device [
                     RotationalMotor {
                       name "RElbowRoll"
                       maxVelocity 7.19407
-                      minPosition -3.025553170843317e-07
+                      minPosition -5.981878869171019e-07
                       maxPosition 1.54462
                       maxTorque 5
                     }
@@ -8220,6 +8376,25 @@ DEF Blue_Striker_1 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
+                    hidden translation_0 3.977534215969444e-06 -3.1207403874026487e-08 -1.2467686667377853e-06
+                    hidden rotation_0 0 0 1 1.009040637774542
+                    hidden position_0_0 0.0039938810297941866
+                    hidden rotation_1 1 0 0 0.003993881029774204
+                    hidden position_1_0 9.463953118206164e-12
+                    hidden position_1_1 1.0314482397161469e-11
+                    hidden position_1_2 3.0644451967103746e-11
+                    hidden rotation_2 0 0.9999999999999999 0 0.9599999997664725
+                    hidden position_2_0 2.1162464445042797e-10
+                    hidden rotation_3 0 1 0 0.9599999994740919
+                    hidden position_3_0 5.220675430255432e-11
+                    hidden rotation_4 0 1 0 0.959999999869224
+                    hidden rotation_5 0 1 0 0.9599999997639155
+                    hidden position_5_0 2.1437845921430974e-10
+                    hidden rotation_6 0 1 0 0.9599999994658462
+                    hidden position_6_0 5.247684279655269e-11
+                    hidden rotation_7 0 1 0 0.9599999998684187
+                    hidden position_8_0 5.294658971948826e-11
+                    hidden rotation_9 0 -1 0 0.9599999998684094
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -8272,12 +8447,12 @@ DEF Blue_Striker_1 Robot {
     }
     DEF LShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 5.461971875845713e-07
+        position 1.4089501888424671
         axis 0 1 0
         anchor 0 0.098 0.1
       }
       jointParameters2 JointParameters {
-        position -8.683339368473022e-12
+        position 0.29724785751056504
       }
       device [
         RotationalMotor {
@@ -8305,7 +8480,7 @@ DEF Blue_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation -4.3416696836878536e-12 0.9999999998736299 -1.5897810469833285e-05 5.46285592908365e-07
+        rotation 0.14588011622516386 0.9743007976149439 0.17163026381444826 1.4346962761563358
         children [
           Transform {
             translation 0.005 0 0
@@ -8354,7 +8529,7 @@ DEF Blue_Striker_1 Robot {
           }
           DEF LElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position -2.747617954041345e-07
+              position -1.3807002023343018
               anchor 0.105 0.015 0
             }
             device [
@@ -8371,11 +8546,11 @@ DEF Blue_Striker_1 Robot {
             ]
             endPoint Solid {
               translation 0.105 0.015 0
-              rotation -1 0 0 2.7476383618393225e-07
+              rotation -1 0 0 1.3807002023343011
               children [
                 DEF LElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position 3.025553157122659e-07
+                    position -1.0090399439165214
                     axis 0 0 1
                   }
                   device [
@@ -8383,7 +8558,7 @@ DEF Blue_Striker_1 Robot {
                       name "LElbowRoll"
                       maxVelocity 7.19407
                       minPosition -1.54462
-                      maxPosition 3.025553157122659e-07
+                      maxPosition 5.981878750924471e-07
                       maxTorque 5
                     }
                     PositionSensor {
@@ -8391,6 +8566,23 @@ DEF Blue_Striker_1 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
+                    hidden translation_0 3.977533586306572e-06 3.121296470098459e-08 -1.246767068058263e-06
+                    hidden rotation_0 0 0 -1 1.0090406377412138
+                    hidden position_0_0 0.003994059018443297
+                    hidden rotation_1 1 0 0 0.00399405901849218
+                    hidden position_1_0 1.0431325932373836e-11
+                    hidden position_1_1 9.587903642525466e-12
+                    hidden position_1_2 2.01481463813086e-10
+                    hidden rotation_2 0 1 0 0.9599999997642016
+                    hidden position_2_0 2.1840113037307987e-10
+                    hidden rotation_3 0 0.9999999999999999 0 0.9599999994542089
+                    hidden position_3_0 8.239848078546122e-12
+                    hidden rotation_5 0 1 0 0.9599999997667207
+                    hidden position_5_0 2.1226813518248842e-10
+                    hidden rotation_6 0 1 0 0.9599999994725902
+                    hidden position_6_0 8.230271965153274e-12
+                    hidden position_8_0 5.310100030553941e-11
+                    hidden rotation_9 0 -1 0 0.9599999998680536
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -8437,7 +8629,7 @@ DEF Blue_Striker_1 Robot {
     }
     DEF RHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.475289012100598e-07
+        position -3.3251596146920414e-07
         axis 0 0.707107 0.707107
         anchor 0 -0.05 -0.085
       }
@@ -8455,7 +8647,7 @@ DEF Blue_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.05 -0.085
-        rotation 0 0.7071067811865475 0.7071067811865475 6.47472172451035e-07
+        rotation 0 -0.7071067811865475 -0.7071067811865475 3.31864617039563e-07
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -8483,7 +8675,7 @@ DEF Blue_Striker_1 Robot {
           }
           DEF RHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position -8.278380718707012e-07
+              position -0.0011235832412790955
             }
             device [
               RotationalMotor {
@@ -8498,7 +8690,7 @@ DEF Blue_Striker_1 Robot {
               }
             ]
             endPoint Solid {
-              rotation -1 0 0 8.280541890531721e-07
+              rotation -1 0 0 0.001123583241289087
               children [
                 DEF HIP_ROLL_CYL_TRANS Transform {
                   translation -0.019 0 0
@@ -8533,7 +8725,7 @@ DEF Blue_Striker_1 Robot {
                 }
                 DEF RHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -4.962224480209443e-07
+                    position -0.4434855531513749
                     axis 0 1 0
                   }
                   device [
@@ -8549,7 +8741,7 @@ DEF Blue_Striker_1 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 4.960094981519366e-07
+                    rotation 0 -1 0 0.4434855531513744
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -8577,7 +8769,7 @@ DEF Blue_Striker_1 Robot {
                       }
                       DEF RKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -5.017603799117865e-07
+                          position 0.6911290659560568
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -8595,7 +8787,7 @@ DEF Blue_Striker_1 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 5.013526630777349e-07
+                          rotation 0 1 0 0.6911290659560567
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -8637,7 +8829,7 @@ DEF Blue_Striker_1 Robot {
                             }
                             DEF RAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -5.154858806477591e-07
+                                position -0.3450604107336499
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -8655,7 +8847,7 @@ DEF Blue_Striker_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 5.15330328517873e-07
+                                rotation 0 -1 0 0.3450604107336504
                                 children [
                                   DEF ANKLE_SHAPE Shape {
                                     appearance USE STRUCTURE_APP
@@ -8673,7 +8865,7 @@ DEF Blue_Striker_1 Robot {
                                   }
                                   DEF RAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position 8.388904130492943e-07
+                                      position 0.008527952764077418
                                     }
                                     device [
                                       RotationalMotor {
@@ -8688,14 +8880,14 @@ DEF Blue_Striker_1 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation 1 0 0 8.387116956395144e-07
+                                      rotation 1 0 0 0.008527952764100127
                                       children [
                                         DEF RIGHT_FOOT_SLOT Transform {
                                           translation 0.0254 -0.00332 -0.03241
                                         }
                                         DEF RFsr TouchSensor {
-                                          translation 0.01999998987229057 -0.0069999814242339906 -0.04095960094336943
-                                          rotation 2.695276252894142e-08 8.366079871344555e-11 -0.9999999999999997 3.141585310502165
+                                          translation 0.019999902017031168 -0.007010308877306602 -0.04067772506649661
+                                          rotation 2.7225496783247757e-07 -6.11597702527651e-07 -0.999999999999776 3.1415853223072268
                                           name "RFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject DEF FOOT_Box Box {
@@ -8940,7 +9132,7 @@ DEF Blue_Striker_1 Robot {
     }
     DEF LHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.475289831909351e-07
+        position -3.308825729226861e-07
         axis 0 0.707107 -0.707107
         anchor 0 0.05 -0.085
       }
@@ -8958,7 +9150,7 @@ DEF Blue_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.05 -0.085
-        rotation 0 0.7071067811865475 -0.7071067811865475 6.47472172451035e-07
+        rotation 0 -0.7071067811865476 0.7071067811865476 3.305237444165179e-07
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -8986,7 +9178,7 @@ DEF Blue_Striker_1 Robot {
           }
           DEF LHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position 8.2783803244651e-07
+              position 0.0011235842916403865
             }
             device [
               RotationalMotor {
@@ -9001,13 +9193,13 @@ DEF Blue_Striker_1 Robot {
               }
             ]
             endPoint Solid {
-              rotation 1 0 0 8.280541890531721e-07
+              rotation 0.9999999999999999 0 0 0.0011235842914511917
               children [
                 USE HIP_ROLL_CYL_TRANS
                 USE UPPER_THIGH_SHAPE
                 DEF LHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -4.962223654203513e-07
+                    position -0.44348722703542
                     axis 0 1 0
                   }
                   device [
@@ -9023,7 +9215,7 @@ DEF Blue_Striker_1 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 4.960094981519366e-07
+                    rotation 0 -0.9999999999999999 0 0.4434872270354202
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -9051,7 +9243,7 @@ DEF Blue_Striker_1 Robot {
                       }
                       DEF LKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -5.017603150747618e-07
+                          position 0.6911290661296922
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -9069,7 +9261,7 @@ DEF Blue_Striker_1 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 5.013526630777349e-07
+                          rotation 0 1 0 0.6911290661296922
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -9107,7 +9299,7 @@ DEF Blue_Striker_1 Robot {
                             }
                             DEF LAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -5.154858255806971e-07
+                                position -0.3450604106431623
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -9125,12 +9317,12 @@ DEF Blue_Striker_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 5.15330328517873e-07
+                                rotation 0 -1 0 0.34506041064316173
                                 children [
                                   USE ANKLE_SHAPE
                                   DEF LAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -8.388901554929938e-07
+                                      position -0.008527953215348917
                                     }
                                     device [
                                       RotationalMotor {
@@ -9145,14 +9337,14 @@ DEF Blue_Striker_1 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation -1 0 0 8.387116956395144e-07
+                                      rotation -1 0 0 0.008527953215327363
                                       children [
                                         DEF LEFT_FOOT_SLOT Transform {
                                           translation 0.0254 0.00332 -0.03241
                                         }
                                         DEF LFsr TouchSensor {
-                                          translation 0.019999989872316215 0.006999981424354838 -0.04095960094870542
-                                          rotation 2.6952756402874223e-08 -8.3721213608797e-11 -0.9999999999999997 3.1415853038570094
+                                          translation 0.019999891580537166 0.007010308916390581 -0.040677726099160205
+                                          rotation 2.7221909527349994e-07 6.115785083728867e-07 -0.9999999999997761 3.14158529264557
                                           name "LFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject USE FOOT_Box
@@ -9373,7 +9565,7 @@ DEF Blue_Striker_1 Robot {
       ]
     }
   ]
-  name "NAO(4)"
+  name "Blue_Striker_1"
   model "NAO_H25_VV5 (blue)"
   contactMaterial "NAO material"
   boundingObject Transform {
@@ -9397,10 +9589,11 @@ DEF Blue_Striker_1 Robot {
       1.43116e-05 0.000155191 -2.70793e-05
     ]
   }
+  controller "BlueController"
 }
 DEF Blue_Defender_1 Robot {
-  translation 1.5999160302833781 1.5000000004958174 0.3426399169679853
-  rotation -0.0001265309009526086 7.455005060231534e-10 0.9999999919949655 -3.141592600000069
+  translation 1.591030708771939 1.5000000607079556 0.33000127807980373
+  rotation -0.04836047648083737 5.7829793799751045e-08 0.9988299476460161 3.141592391718357
   children [
     DEF BODY_SLOT Group {
     }
@@ -9606,12 +9799,12 @@ DEF Blue_Defender_1 Robot {
     }
     DEF HeadYaw Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 1.6348137729747354e-16
+        position -1.6099663549702937e-16
         axis 0 0 1
         anchor 0 0 0.1265
       }
       jointParameters2 JointParameters {
-        position -6.584434819481654e-09
+        position 2.149786397753467e-08
         axis 0 1 0
       }
       device [
@@ -9640,7 +9833,7 @@ DEF Blue_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation 0 1 0 0
+        rotation 8.049831774851467e-17 1 -7.487719324045537e-09 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -9854,12 +10047,12 @@ DEF Blue_Defender_1 Robot {
     }
     DEF RShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 5.461971787503836e-07
+        position 1.4089500389532703
         axis 0 1 0
         anchor 0 -0.098 0.1
       }
       jointParameters2 JointParameters {
-        position 8.68236820190865e-12
+        position -0.29724780356081854
       }
       device [
         RotationalMotor {
@@ -9887,7 +10080,7 @@ DEF Blue_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation 4.3411841004058515e-12 0.9999999998736582 1.589603267573705e-05 5.46285592908365e-07
+        rotation -0.14588009006486022 0.9743008023618998 -0.17163025910260363 1.434696120859686
         children [
           Transform {
             translation 0.005 0 0
@@ -9939,7 +10132,7 @@ DEF Blue_Defender_1 Robot {
           }
           DEF RElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position 2.747618013371684e-07
+              position 1.3807000908485731
               anchor 0.105 -0.015 0
             }
             device [
@@ -9956,11 +10149,11 @@ DEF Blue_Defender_1 Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation 1 0 0 2.7476383618393225e-07
+              rotation 1 0 0 1.3807000908485734
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -3.0255531345692146e-07
+                    position 1.0090398997035837
                     axis 0 0 1
                   }
                   device [
@@ -9976,6 +10169,25 @@ DEF Blue_Defender_1 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
+                    hidden translation_0 3.980543938981233e-06 -3.603897305594693e-08 -1.2479093067785383e-06
+                    hidden rotation_0 0 0 1 4.2146848510894035e-08
+                    hidden position_0_0 0.0039940063367027165
+                    hidden rotation_1 1 0 0 0.003994006336720875
+                    hidden position_1_0 2.839853415326828e-10
+                    hidden position_1_1 2.840016601021053e-10
+                    hidden position_1_2 7.567215787094994e-11
+                    hidden rotation_2 0 1 0 0.9599999992900456
+                    hidden position_2_0 1.4993104843268466e-10
+                    hidden rotation_3 0 1 0 0.9599999996251674
+                    hidden position_3_0 2.0779793621734832e-11
+                    hidden rotation_4 0 1 0 0.9599999999480515
+                    hidden rotation_5 0 1 0 0.9599999992899899
+                    hidden position_5_0 1.4994863758249696e-10
+                    hidden rotation_6 0 1 0 0.9599999996251232
+                    hidden position_6_0 2.0776429850185496e-11
+                    hidden rotation_7 0 0.9999999999999999 0 0.9599999999480635
+                    hidden position_8_0 3.697547455967969e-11
+                    hidden rotation_9 0 -1 0 0.9599999999075599
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -10028,12 +10240,12 @@ DEF Blue_Defender_1 Robot {
     }
     DEF LShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 5.461971915407709e-07
+        position 1.4089500389906902
         axis 0 1 0
         anchor 0 0.098 0.1
       }
       jointParameters2 JointParameters {
-        position -8.682570852094204e-12
+        position 0.2972478035799381
       }
       device [
         RotationalMotor {
@@ -10061,7 +10273,7 @@ DEF Blue_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation -4.34128542549859e-12 0.9999999998736522 -1.589640332368654e-05 5.46285592908365e-07
+        rotation 0.14588009007406286 0.9743008023597608 0.1716302591069232 1.434696120899426
         children [
           Transform {
             translation 0.005 0 0
@@ -10110,7 +10322,7 @@ DEF Blue_Defender_1 Robot {
           }
           DEF LElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position -2.747617903778956e-07
+              position -1.3807000908177909
               anchor 0.105 0.015 0
             }
             device [
@@ -10127,11 +10339,11 @@ DEF Blue_Defender_1 Robot {
             ]
             endPoint Solid {
               translation 0.105 0.015 0
-              rotation -1 0 0 2.7476383618393225e-07
+              rotation -1 0 0 1.3807000908177907
               children [
                 DEF LElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position 3.025553160871564e-07
+                    position -1.0090398996849466
                     axis 0 0 1
                   }
                   device [
@@ -10147,6 +10359,25 @@ DEF Blue_Defender_1 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
+                    hidden translation_0 3.980465551555912e-06 3.6334064238193374e-08 -1.2479787156044473e-06
+                    hidden rotation_0 0 0 -0.9999999999999999 4.2146848510894035e-08
+                    hidden position_0_0 0.003994007193805304
+                    hidden rotation_1 1 0 0 0.003994007193765469
+                    hidden position_1_0 2.8398463485140605e-10
+                    hidden position_1_1 2.8403012628500605e-10
+                    hidden position_1_2 7.566843513157867e-11
+                    hidden rotation_2 0 1 0 0.9599999992900303
+                    hidden position_2_0 1.4991463098674887e-10
+                    hidden rotation_3 0 1 0 0.9599999996252208
+                    hidden position_3_0 2.078044830602797e-11
+                    hidden rotation_4 0 1 0 0.9599999999480496
+                    hidden rotation_5 0 1 0 0.9599999992899197
+                    hidden position_5_0 1.4989766118472032e-10
+                    hidden rotation_6 0 1 0 0.9599999996252592
+                    hidden position_6_0 2.079284313581316e-11
+                    hidden rotation_7 0 0.9999999999999999 0 0.9599999999480164
+                    hidden position_8_0 3.697332043102257e-11
+                    hidden rotation_9 0 -0.9999999999999999 0 0.9599999999075681
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -10193,7 +10424,7 @@ DEF Blue_Defender_1 Robot {
     }
     DEF RHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.475289056055473e-07
+        position -1.091890167426796e-06
         axis 0 0.707107 0.707107
         anchor 0 -0.05 -0.085
       }
@@ -10211,7 +10442,7 @@ DEF Blue_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.05 -0.085
-        rotation 0 0.7071067811865477 0.7071067811865477 6.47472172451035e-07
+        rotation 0 -0.7071067811865475 -0.7071067811865475 1.0917579581746119e-06
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -10239,7 +10470,7 @@ DEF Blue_Defender_1 Robot {
           }
           DEF RHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position -8.278381047333028e-07
+              position -0.0011240054714308986
             }
             device [
               RotationalMotor {
@@ -10254,7 +10485,7 @@ DEF Blue_Defender_1 Robot {
               }
             ]
             endPoint Solid {
-              rotation -1 0 0 8.280541890531721e-07
+              rotation -1 0 0 0.0011240054715815806
               children [
                 DEF HIP_ROLL_CYL_TRANS Transform {
                   translation -0.019 0 0
@@ -10289,7 +10520,7 @@ DEF Blue_Defender_1 Robot {
                 }
                 DEF RHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -4.962224338100896e-07
+                    position -0.4434870656830119
                     axis 0 1 0
                   }
                   device [
@@ -10305,7 +10536,7 @@ DEF Blue_Defender_1 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 4.960094981519366e-07
+                    rotation 0 -1 0 0.4434870656830121
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -10333,7 +10564,7 @@ DEF Blue_Defender_1 Robot {
                       }
                       DEF RKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -5.017603807999649e-07
+                          position 0.6911291103619246
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -10351,7 +10582,7 @@ DEF Blue_Defender_1 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 5.013526630777349e-07
+                          rotation 0 1 0 0.6911291103619247
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -10393,7 +10624,7 @@ DEF Blue_Defender_1 Robot {
                             }
                             DEF RAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -5.154858815359376e-07
+                                position -0.34506025147350927
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -10411,7 +10642,7 @@ DEF Blue_Defender_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 5.15330328517873e-07
+                                rotation 0 -1 0 0.3450602514735098
                                 children [
                                   DEF ANKLE_SHAPE Shape {
                                     appearance USE STRUCTURE_APP
@@ -10429,7 +10660,7 @@ DEF Blue_Defender_1 Robot {
                                   }
                                   DEF RAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position 8.388904072760332e-07
+                                      position 0.008529787315759397
                                     }
                                     device [
                                       RotationalMotor {
@@ -10444,14 +10675,14 @@ DEF Blue_Defender_1 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation 1 0 0 8.387116956395144e-07
+                                      rotation 1 0 0 0.008529787315769321
                                       children [
                                         DEF RIGHT_FOOT_SLOT Transform {
                                           translation 0.0254 -0.00332 -0.03241
                                         }
                                         DEF RFsr TouchSensor {
-                                          translation 0.019999989872290014 -0.006999981424233415 -0.040959600943369395
-                                          rotation 2.6952761533264362e-08 8.365630406707965e-11 -0.9999999999999998 3.141585310502164
+                                          translation 0.0199999194600049 -0.007012838033186863 -0.04067754299530561
+                                          rotation 1.0909503859024417e-07 -1.515458768434412e-06 -0.9999999999988459 3.1415855478775634
                                           name "RFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject DEF FOOT_Box Box {
@@ -10696,7 +10927,7 @@ DEF Blue_Defender_1 Robot {
     }
     DEF LHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.475289801035568e-07
+        position -1.091878608190232e-06
         axis 0 0.707107 -0.707107
         anchor 0 0.05 -0.085
       }
@@ -10714,7 +10945,7 @@ DEF Blue_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.05 -0.085
-        rotation 0 0.7071067811865475 -0.7071067811865475 6.47472172451035e-07
+        rotation 0 -0.7071067811865476 0.7071067811865476 1.0917579581746119e-06
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -10742,7 +10973,7 @@ DEF Blue_Defender_1 Robot {
           }
           DEF LHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position 8.278380246962537e-07
+              position 0.0011240054694814394
             }
             device [
               RotationalMotor {
@@ -10757,13 +10988,13 @@ DEF Blue_Defender_1 Robot {
               }
             ]
             endPoint Solid {
-              rotation 1 0 0 8.280541890531721e-07
+              rotation 1 0 0 0.0011240054696061044
               children [
                 USE HIP_ROLL_CYL_TRANS
                 USE UPPER_THIGH_SHAPE
                 DEF LHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -4.962223751903139e-07
+                    position -0.4434870656708703
                     axis 0 1 0
                   }
                   device [
@@ -10779,7 +11010,7 @@ DEF Blue_Defender_1 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 4.960094981519366e-07
+                    rotation 0 -1 0 0.44348706567087054
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -10807,7 +11038,7 @@ DEF Blue_Defender_1 Robot {
                       }
                       DEF LKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -5.017603159629402e-07
+                          position 0.6911291103386541
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -10825,7 +11056,7 @@ DEF Blue_Defender_1 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 5.013526630777349e-07
+                          rotation 0 0.9999999999999999 0 0.6911291103386542
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -10863,7 +11094,7 @@ DEF Blue_Defender_1 Robot {
                             }
                             DEF LAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -5.154858291334108e-07
+                                position -0.3450602514600771
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -10881,12 +11112,12 @@ DEF Blue_Defender_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 5.15330328517873e-07
+                                rotation 0 -1 0 0.34506025146007663
                                 children [
                                   USE ANKLE_SHAPE
                                   DEF LAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -8.388901282887732e-07
+                                      position -0.00852978733709426
                                     }
                                     device [
                                       RotationalMotor {
@@ -10901,14 +11132,14 @@ DEF Blue_Defender_1 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation -0.9999999999999999 0 0 8.387116956395144e-07
+                                      rotation -1 0 0 0.008529787337115355
                                       children [
                                         DEF LEFT_FOOT_SLOT Transform {
                                           translation 0.0254 0.00332 -0.03241
                                         }
                                         DEF LFsr TouchSensor {
-                                          translation 0.01999998987231688 0.006999981424354651 -0.04095960094870544
-                                          rotation 2.6952763430943755e-08 -8.37275499120629e-11 -0.9999999999999998 3.141585303857009
+                                          translation 0.019999916456859168 0.007012838151320144 -0.040677546230943475
+                                          rotation 1.0913969515215511e-07 1.515382143601243e-06 -0.999999999998846 3.1415850670361976
                                           name "LFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject USE FOOT_Box
@@ -11129,7 +11360,7 @@ DEF Blue_Defender_1 Robot {
       ]
     }
   ]
-  name "NAO(5)"
+  name "Blue_Defender_1"
   model "NAO_H25_VV5 (blue)"
   contactMaterial "NAO material"
   boundingObject Transform {
@@ -11153,10 +11384,11 @@ DEF Blue_Defender_1 Robot {
       1.43116e-05 0.000155191 -2.70793e-05
     ]
   }
+  controller "BlueController"
 }
 DEF Blue_Defender_2 Robot {
-  translation 1.5999160302833781 -1.4999999995041826 0.3426399169679853
-  rotation -0.0001265309009526086 7.455005060231534e-10 0.9999999919949655 -3.141592600000069
+  translation 1.591030708771546 -1.4999999392919463 0.3300012780798208
+  rotation -0.04836047648142437 5.7829888502850724e-08 0.9988299476459876 3.1415923917184068
   children [
     DEF BODY_SLOT Group {
     }
@@ -11362,12 +11594,12 @@ DEF Blue_Defender_2 Robot {
     }
     DEF HeadYaw Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 1.6348137729747354e-16
+        position -2.300350199165521e-16
         axis 0 0 1
         anchor 0 0 0.1265
       }
       jointParameters2 JointParameters {
-        position -6.584434819481654e-09
+        position 2.1497863968535785e-08
         axis 0 1 0
       }
       device [
@@ -11396,7 +11628,7 @@ DEF Blue_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation 0 1 0 0
+        rotation 1.1501750995827604e-16 0.9999999999999999 -1.0699477609937601e-08 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -11610,12 +11842,12 @@ DEF Blue_Defender_2 Robot {
     }
     DEF RShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 5.461971787503836e-07
+        position 1.4089500389532699
         axis 0 1 0
         anchor 0 -0.098 0.1
       }
       jointParameters2 JointParameters {
-        position 8.68236820190865e-12
+        position -0.2972478035608172
       }
       device [
         RotationalMotor {
@@ -11643,7 +11875,7 @@ DEF Blue_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation 4.3411841004058515e-12 0.9999999998736582 1.589603267573705e-05 5.46285592908365e-07
+        rotation -0.1458800900648263 0.9743008023619116 -0.17163025910256377 1.4346961208596736
         children [
           Transform {
             translation 0.005 0 0
@@ -11695,7 +11927,7 @@ DEF Blue_Defender_2 Robot {
           }
           DEF RElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position 2.747618013371684e-07
+              position 1.3807000908485727
               anchor 0.105 -0.015 0
             }
             device [
@@ -11712,11 +11944,11 @@ DEF Blue_Defender_2 Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation 1 0 0 2.7476383618393225e-07
+              rotation 1 0 0 1.3807000908485727
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -3.0255531345692146e-07
+                    position 1.0090398997035832
                     axis 0 0 1
                   }
                   device [
@@ -11732,6 +11964,25 @@ DEF Blue_Defender_2 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
+                    hidden translation_0 3.977232084096089e-06 -3.602956380632575e-08 -1.2475998723004975e-06
+                    hidden rotation_0 0 0 1 5.16191365590357e-08
+                    hidden position_0_0 0.003994006336703344
+                    hidden rotation_1 1 0 0 0.003994006336720875
+                    hidden position_1_0 2.8396560729876405e-10
+                    hidden position_1_1 2.8399056360373355e-10
+                    hidden position_1_2 7.566984224916538e-11
+                    hidden rotation_2 0 1 0 0.9599999992900875
+                    hidden position_2_0 1.499485011922978e-10
+                    hidden rotation_3 0 1 0 0.9599999996251222
+                    hidden position_3_0 2.0773832326182772e-11
+                    hidden rotation_4 0 1 0 0.9599999999480602
+                    hidden rotation_5 0 1 0 0.9599999992900178
+                    hidden position_5_0 1.4993687780605804e-10
+                    hidden rotation_6 0 1 0 0.959999999625151
+                    hidden position_6_0 2.0778451887534963e-11
+                    hidden rotation_7 0 1 0 0.959999999948054
+                    hidden position_8_0 3.697469614077227e-11
+                    hidden rotation_9 0 -1 0 0.959999999907559
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -11784,12 +12035,12 @@ DEF Blue_Defender_2 Robot {
     }
     DEF LShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 5.461971915407709e-07
+        position 1.4089500389906904
         axis 0 1 0
         anchor 0 0.098 0.1
       }
       jointParameters2 JointParameters {
-        position -8.682570852094204e-12
+        position 0.2972478035799396
       }
       device [
         RotationalMotor {
@@ -11817,7 +12068,7 @@ DEF Blue_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation -4.34128542549859e-12 0.9999999998736522 -1.589640332368654e-05 5.46285592908365e-07
+        rotation 0.14588009007403152 0.9743008023597719 0.17163025910688634 1.4346961208994147
         children [
           Transform {
             translation 0.005 0 0
@@ -11866,7 +12117,7 @@ DEF Blue_Defender_2 Robot {
           }
           DEF LElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position -2.747617903778956e-07
+              position -1.3807000908177909
               anchor 0.105 0.015 0
             }
             device [
@@ -11883,11 +12134,11 @@ DEF Blue_Defender_2 Robot {
             ]
             endPoint Solid {
               translation 0.105 0.015 0
-              rotation -1 0 0 2.7476383618393225e-07
+              rotation -1 0 0 1.3807000908177907
               children [
                 DEF LElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position 3.025553160871564e-07
+                    position -1.009039899684948
                     axis 0 0 1
                   }
                   device [
@@ -11903,6 +12154,25 @@ DEF Blue_Defender_2 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
+                    hidden translation_0 3.977231829134099e-06 3.602940874055954e-08 -1.2476006885364657e-06
+                    hidden rotation_0 0 0 -0.9999999999999999 5.16191365590357e-08
+                    hidden position_0_0 0.003994007193804366
+                    hidden rotation_1 1 0 0 0.003994007193765469
+                    hidden position_1_0 2.8400104052776096e-10
+                    hidden position_1_1 2.8399611341996546e-10
+                    hidden position_1_2 7.567175305700524e-11
+                    hidden rotation_2 0 1 0 0.95999999929
+                    hidden position_2_0 1.4991608863705685e-10
+                    hidden rotation_3 0 1 0 0.9599999996251991
+                    hidden position_3_0 2.078131847060421e-11
+                    hidden rotation_4 0 1 0 0.9599999999480496
+                    hidden rotation_5 0 1 0 0.959999999290013
+                    hidden position_5_0 1.4993403790301166e-10
+                    hidden rotation_6 0 1 0 0.9599999996251568
+                    hidden position_6_0 2.078539297914225e-11
+                    hidden rotation_7 0 1 0 0.9599999999480332
+                    hidden position_8_0 3.697776024677784e-11
+                    hidden rotation_9 0 -1 0 0.959999999907557
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -11949,7 +12219,7 @@ DEF Blue_Defender_2 Robot {
     }
     DEF RHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.475289056055473e-07
+        position -1.0918901478872188e-06
         axis 0 0.707107 0.707107
         anchor 0 -0.05 -0.085
       }
@@ -11967,7 +12237,7 @@ DEF Blue_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 -0.05 -0.085
-        rotation 0 0.7071067811865477 0.7071067811865477 6.47472172451035e-07
+        rotation 0 -0.7071067811865475 -0.7071067811865475 1.0917579581746119e-06
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -11995,7 +12265,7 @@ DEF Blue_Defender_2 Robot {
           }
           DEF RHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position -8.278381047333028e-07
+              position -0.001124005471476877
             }
             device [
               RotationalMotor {
@@ -12010,7 +12280,7 @@ DEF Blue_Defender_2 Robot {
               }
             ]
             endPoint Solid {
-              rotation -1 0 0 8.280541890531721e-07
+              rotation -1 0 0 0.0011240054715815806
               children [
                 DEF HIP_ROLL_CYL_TRANS Transform {
                   translation -0.019 0 0
@@ -12045,7 +12315,7 @@ DEF Blue_Defender_2 Robot {
                 }
                 DEF RHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -4.962224338100896e-07
+                    position -0.4434870656829541
                     axis 0 1 0
                   }
                   device [
@@ -12061,7 +12331,7 @@ DEF Blue_Defender_2 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 4.960094981519366e-07
+                    rotation 0 -1 0 0.44348706568295454
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -12089,7 +12359,7 @@ DEF Blue_Defender_2 Robot {
                       }
                       DEF RKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -5.017603807999649e-07
+                          position 0.6911291103619236
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -12107,7 +12377,7 @@ DEF Blue_Defender_2 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 5.013526630777349e-07
+                          rotation 0 1 0 0.6911291103619234
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -12149,7 +12419,7 @@ DEF Blue_Defender_2 Robot {
                             }
                             DEF RAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -5.154858815359376e-07
+                                position -0.3450602514735044
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -12167,7 +12437,7 @@ DEF Blue_Defender_2 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 5.15330328517873e-07
+                                rotation 0 -0.9999999999999999 0 0.34506025147350466
                                 children [
                                   DEF ANKLE_SHAPE Shape {
                                     appearance USE STRUCTURE_APP
@@ -12185,7 +12455,7 @@ DEF Blue_Defender_2 Robot {
                                   }
                                   DEF RAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position 8.388904072760332e-07
+                                      position 0.008529787315771682
                                     }
                                     device [
                                       RotationalMotor {
@@ -12200,14 +12470,14 @@ DEF Blue_Defender_2 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation 1 0 0 8.387116956395144e-07
+                                      rotation 1 0 0 0.008529787315769321
                                       children [
                                         DEF RIGHT_FOOT_SLOT Transform {
                                           translation 0.0254 -0.00332 -0.03241
                                         }
                                         DEF RFsr TouchSensor {
-                                          translation 0.019999989872290236 -0.006999981424233637 -0.040959600943369395
-                                          rotation 2.6952761533264362e-08 8.365630406707965e-11 -0.9999999999999998 3.141585310502164
+                                          translation 0.019999919460010895 -0.007012838033200408 -0.0406775429953059
+                                          rotation 1.0909503211278673e-07 -1.5154587977634722e-06 -0.9999999999988459 3.141585547877565
                                           name "RFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject DEF FOOT_Box Box {
@@ -12452,7 +12722,7 @@ DEF Blue_Defender_2 Robot {
     }
     DEF LHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.475289801035568e-07
+        position -1.0918786270040898e-06
         axis 0 0.707107 -0.707107
         anchor 0 0.05 -0.085
       }
@@ -12470,7 +12740,7 @@ DEF Blue_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 0.05 -0.085
-        rotation 0 0.7071067811865475 -0.7071067811865475 6.47472172451035e-07
+        rotation 0 -0.7071067811865476 0.7071067811865476 1.0917579581746119e-06
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -12498,7 +12768,7 @@ DEF Blue_Defender_2 Robot {
           }
           DEF LHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position 8.278380246962537e-07
+              position 0.001124005469494646
             }
             device [
               RotationalMotor {
@@ -12513,13 +12783,13 @@ DEF Blue_Defender_2 Robot {
               }
             ]
             endPoint Solid {
-              rotation 1 0 0 8.280541890531721e-07
+              rotation 1 0 0 0.0011240054696061044
               children [
                 USE HIP_ROLL_CYL_TRANS
                 USE UPPER_THIGH_SHAPE
                 DEF LHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -4.962223751903139e-07
+                    position -0.4434870656708526
                     axis 0 1 0
                   }
                   device [
@@ -12535,7 +12805,7 @@ DEF Blue_Defender_2 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 4.960094981519366e-07
+                    rotation 0 -1 0 0.44348706567085233
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -12563,7 +12833,7 @@ DEF Blue_Defender_2 Robot {
                       }
                       DEF LKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -5.017603159629402e-07
+                          position 0.6911291103386531
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -12581,7 +12851,7 @@ DEF Blue_Defender_2 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 5.013526630777349e-07
+                          rotation 0 1 0 0.6911291103386529
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -12619,7 +12889,7 @@ DEF Blue_Defender_2 Robot {
                             }
                             DEF LAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -5.154858291334108e-07
+                                position -0.34506025146008873
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -12637,12 +12907,12 @@ DEF Blue_Defender_2 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 5.15330328517873e-07
+                                rotation 0 -1 0 0.3450602514600883
                                 children [
                                   USE ANKLE_SHAPE
                                   DEF LAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -8.388901282887732e-07
+                                      position -0.008529787337057889
                                     }
                                     device [
                                       RotationalMotor {
@@ -12657,14 +12927,14 @@ DEF Blue_Defender_2 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation -0.9999999999999999 0 0 8.387116956395144e-07
+                                      rotation -1 0 0 0.008529787337063293
                                       children [
                                         DEF LEFT_FOOT_SLOT Transform {
                                           translation 0.0254 0.00332 -0.03241
                                         }
                                         DEF LFsr TouchSensor {
-                                          translation 0.01999998987231688 0.006999981424354429 -0.04095960094870545
-                                          rotation 2.6952763430943755e-08 -8.37275499120629e-11 -0.9999999999999998 3.141585303857009
+                                          translation 0.01999991645685384 0.007012838151331913 -0.04067754623094293
+                                          rotation 1.0913970142643311e-07 1.515382137599301e-06 -0.999999999998846 3.141585067036201
                                           name "LFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject USE FOOT_Box
@@ -12885,7 +13155,7 @@ DEF Blue_Defender_2 Robot {
       ]
     }
   ]
-  name "NAO(6)"
+  name "Blue_Defender_2"
   model "NAO_H25_VV5 (blue)"
   contactMaterial "NAO material"
   boundingObject Transform {
@@ -12909,10 +13179,11 @@ DEF Blue_Defender_2 Robot {
       1.43116e-05 0.000155191 -2.70793e-05
     ]
   }
+  controller "BlueController"
 }
 DEF Blue_Goalkeeper Robot {
-  translation 3.999916030283378 4.958137629660802e-10 0.34263991696798524
-  rotation -0.0001265309009495588 7.45491068699269e-10 0.9999999919949655 -3.1415926000000707
+  translation 3.991030982766787 6.070565705761056e-08 0.3300012900807451
+  rotation -0.0483603881361583 5.7825209583609e-08 0.9988299519234076 3.141592391716601
   children [
     DEF BODY_SLOT Group {
     }
@@ -13118,12 +13389,12 @@ DEF Blue_Goalkeeper Robot {
     }
     DEF HeadYaw Hinge2Joint {
       jointParameters HingeJointParameters {
-        position -9.322974118485885e-16
+        position -5.27479729264764e-16
         axis 0 0 1
         anchor 0 0 0.1265
       }
       jointParameters2 JointParameters {
-        position -6.5844343173876275e-09
+        position 2.1496858287699867e-08
         axis 0 1 0
       }
       device [
@@ -13152,7 +13423,7 @@ DEF Blue_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation 0 1 0 0
+        rotation 2.6373986463238194e-16 0.9999999999999998 -2.4535485811569508e-08 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -13366,12 +13637,12 @@ DEF Blue_Goalkeeper Robot {
     }
     DEF RShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 5.461971824950553e-07
+        position 1.4089500389537666
         axis 0 1 0
         anchor 0 -0.098 0.1
       }
       jointParameters2 JointParameters {
-        position 8.681864952077125e-12
+        position -0.2972478035608033
       }
       device [
         RotationalMotor {
@@ -13399,7 +13670,7 @@ DEF Blue_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation 4.340932475490184e-12 0.9999999998736726 1.5895111196511433e-05 5.46285592908365e-07
+        rotation -0.14588009006482427 0.9743008023619277 -0.171630259102475 1.4346961208601556
         children [
           Transform {
             translation 0.005 0 0
@@ -13451,7 +13722,7 @@ DEF Blue_Goalkeeper Robot {
           }
           DEF RElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position 2.747617988742637e-07
+              position 1.3807000908485993
               anchor 0.105 -0.015 0
             }
             device [
@@ -13468,11 +13739,11 @@ DEF Blue_Goalkeeper Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation 1 0 0 2.7476383618393225e-07
+              rotation 1 0 0 1.3807000908485993
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -3.0255531349386073e-07
+                    position 1.00903989970349
                     axis 0 0 1
                   }
                   device [
@@ -13488,6 +13759,25 @@ DEF Blue_Goalkeeper Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
+                    hidden translation_0 3.977232273056016e-06 -3.602981449548092e-08 -1.2475999790484416e-06
+                    hidden rotation_0 0 0 1 4.2146848510894035e-08
+                    hidden position_0_0 0.00399400633672016
+                    hidden rotation_1 1 0 0 0.003994006336720875
+                    hidden position_1_0 2.839862258990054e-10
+                    hidden position_1_1 2.8401525676037784e-10
+                    hidden position_1_2 7.566506230182315e-11
+                    hidden rotation_2 0 1 0 0.959999999290037
+                    hidden position_2_0 1.4989912437468483e-10
+                    hidden rotation_3 0 1 0 0.9599999996252482
+                    hidden position_3_0 2.0788544892940043e-11
+                    hidden rotation_4 0 1 0 0.9599999999480274
+                    hidden rotation_5 0 1 0 0.9599999992899592
+                    hidden position_5_0 1.4987565172029048e-10
+                    hidden rotation_6 0 0.9999999999999999 0 0.9599999996253006
+                    hidden position_6_0 2.0787245399051996e-11
+                    hidden rotation_7 0 1 0 0.9599999999480318
+                    hidden position_8_0 3.6969580837621525e-11
+                    hidden rotation_9 0 -1 0 0.9599999999075758
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -13540,12 +13830,12 @@ DEF Blue_Goalkeeper Robot {
     }
     DEF LShoulderPitch Hinge2Joint {
       jointParameters HingeJointParameters {
-        position 5.461971892886661e-07
+        position 1.40895003899119
         axis 0 1 0
         anchor 0 0.098 0.1
       }
       jointParameters2 JointParameters {
-        position -8.683612436391896e-12
+        position 0.2972478035799199
       }
       device [
         RotationalMotor {
@@ -13573,7 +13863,7 @@ DEF Blue_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation -4.341806217647239e-12 0.9999999998736219 -1.589831036407065e-05 5.46285592908365e-07
+        rotation 0.14588009007402783 0.9743008023597887 0.17163025910679508 1.4346961208998994
         children [
           Transform {
             translation 0.005 0 0
@@ -13622,7 +13912,7 @@ DEF Blue_Goalkeeper Robot {
           }
           DEF LElbowYaw HingeJoint {
             jointParameters HingeJointParameters {
-              position -2.747617961331601e-07
+              position -1.380700090817816
               anchor 0.105 0.015 0
             }
             device [
@@ -13639,11 +13929,11 @@ DEF Blue_Goalkeeper Robot {
             ]
             endPoint Solid {
               translation 0.105 0.015 0
-              rotation -1 0 0 2.7476383618393225e-07
+              rotation -1 0 0 1.3807000908178158
               children [
                 DEF LElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
-                    position 3.025553149202666e-07
+                    position -1.0090398996848526
                     axis 0 0 1
                   }
                   device [
@@ -13659,6 +13949,25 @@ DEF Blue_Goalkeeper Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
+                    hidden translation_0 3.977232017372381e-06 3.602965942972233e-08 -1.2476007957840098e-06
+                    hidden rotation_0 0 0 -1 4.2146848510894035e-08
+                    hidden position_0_0 0.003994007193809601
+                    hidden rotation_1 1 0 0 0.003994007193765469
+                    hidden position_1_0 2.8398671380728643e-10
+                    hidden position_1_1 2.8399856805827e-10
+                    hidden position_1_2 7.567142119314919e-11
+                    hidden rotation_2 0 1 0 0.9599999992900246
+                    hidden position_2_0 1.4989534943838318e-10
+                    hidden rotation_3 0 1 0 0.9599999996252467
+                    hidden position_3_0 2.0778796305455636e-11
+                    hidden rotation_4 0 1 0 0.9599999999480568
+                    hidden rotation_5 0 0.9999999999999999 0 0.9599999992899942
+                    hidden position_5_0 1.4992472770515362e-10
+                    hidden rotation_6 0 1 0 0.9599999996251799
+                    hidden position_6_0 2.0775222090271654e-11
+                    hidden rotation_7 0 1 0 0.9599999999480596
+                    hidden position_8_0 3.6971207473152844e-11
+                    hidden rotation_9 0 -1 0 0.9599999999075729
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -13705,7 +14014,7 @@ DEF Blue_Goalkeeper Robot {
     }
     DEF RHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.475288947268338e-07
+        position -1.092285339835904e-06
         axis 0 0.707107 0.707107
         anchor 0 -0.05 -0.085
       }
@@ -13723,7 +14032,7 @@ DEF Blue_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 -0.05 -0.085
-        rotation 0 0.7071067811865475 0.7071067811865475 6.47472172451035e-07
+        rotation 0 -0.7071067811865476 -0.7071067811865476 1.0921646476870133e-06
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -13751,7 +14060,7 @@ DEF Blue_Goalkeeper Robot {
           }
           DEF RHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position -8.278380763115933e-07
+              position -0.0011231519435396518
             }
             device [
               RotationalMotor {
@@ -13766,7 +14075,7 @@ DEF Blue_Goalkeeper Robot {
               }
             ]
             endPoint Solid {
-              rotation -1 0 0 8.280541890531721e-07
+              rotation -1 0 0 0.0011231519436465673
               children [
                 DEF HIP_ROLL_CYL_TRANS Transform {
                   translation -0.019 0 0
@@ -13801,7 +14110,7 @@ DEF Blue_Goalkeeper Robot {
                 }
                 DEF RHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -4.962224338100896e-07
+                    position -0.4434870660054
                     axis 0 1 0
                   }
                   device [
@@ -13817,7 +14126,7 @@ DEF Blue_Goalkeeper Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 4.960094981519366e-07
+                    rotation 0 -1 0 0.44348706600540017
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -13845,7 +14154,7 @@ DEF Blue_Goalkeeper Robot {
                       }
                       DEF RKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -5.017603807999649e-07
+                          position 0.6911283695846312
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -13863,7 +14172,7 @@ DEF Blue_Goalkeeper Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 5.013526630777349e-07
+                          rotation 0 1 0 0.6911283695846311
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -13905,7 +14214,7 @@ DEF Blue_Goalkeeper Robot {
                             }
                             DEF RAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -5.154858735423318e-07
+                                position -0.3450602515396139
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -13923,7 +14232,7 @@ DEF Blue_Goalkeeper Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 5.15330328517873e-07
+                                rotation 0 -1 0 0.3450602515396141
                                 children [
                                   DEF ANKLE_SHAPE Shape {
                                     appearance USE STRUCTURE_APP
@@ -13941,7 +14250,7 @@ DEF Blue_Goalkeeper Robot {
                                   }
                                   DEF RAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position 8.388904314355363e-07
+                                      position 0.008529787148778327
                                     }
                                     device [
                                       RotationalMotor {
@@ -13956,14 +14265,14 @@ DEF Blue_Goalkeeper Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation 1 0 0 8.387116956395144e-07
+                                      rotation 1 0 0 0.008529787148801685
                                       children [
                                         DEF RIGHT_FOOT_SLOT Transform {
                                           translation 0.0254 -0.00332 -0.03241
                                         }
                                         DEF RFsr TouchSensor {
-                                          translation 0.01999998987229068 -0.006999981424234102 -0.040959600943369256
-                                          rotation 2.6952762449794662e-08 8.366047069899643e-11 -0.9999999999999997 3.141585310502165
+                                          translation 0.019999919491707985 -0.0070128573381287515 -0.040677557253786675
+                                          rotation 1.0907075829979212e-07 -1.5153818708103187e-06 -0.999999999998846 3.1415855483758315
                                           name "RFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject DEF FOOT_Box Box {
@@ -14208,7 +14517,7 @@ DEF Blue_Goalkeeper Robot {
     }
     DEF LHipYawPitch HingeJoint {
       jointParameters HingeJointParameters {
-        position 6.475289902848327e-07
+        position -1.0922738422408368e-06
         axis 0 0.707107 -0.707107
         anchor 0 0.05 -0.085
       }
@@ -14226,7 +14535,7 @@ DEF Blue_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 0.05 -0.085
-        rotation 0 0.7071067811865475 -0.7071067811865475 6.47472172451035e-07
+        rotation 0 -0.7071067811865476 0.7071067811865476 1.0921646476870133e-06
         children [
           Shape {
             appearance USE MAIN_SKIN_APP
@@ -14254,7 +14563,7 @@ DEF Blue_Goalkeeper Robot {
           }
           DEF LHipRoll HingeJoint {
             jointParameters HingeJointParameters {
-              position 8.278380361891974e-07
+              position 0.0011231519232729067
             }
             device [
               RotationalMotor {
@@ -14269,13 +14578,13 @@ DEF Blue_Goalkeeper Robot {
               }
             ]
             endPoint Solid {
-              rotation 1 0 0 8.280541890531721e-07
+              rotation 1 0 0 0.0011231519230860008
               children [
                 USE HIP_ROLL_CYL_TRANS
                 USE UPPER_THIGH_SHAPE
                 DEF LHipPitch HingeJoint {
                   jointParameters HingeJointParameters {
-                    position -4.962223760784923e-07
+                    position -0.443487065993189
                     axis 0 1 0
                   }
                   device [
@@ -14291,7 +14600,7 @@ DEF Blue_Goalkeeper Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 4.960094981519366e-07
+                    rotation 0 -0.9999999999999999 0 0.4434870659931889
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -14319,7 +14628,7 @@ DEF Blue_Goalkeeper Robot {
                       }
                       DEF LKneePitch HingeJoint {
                         jointParameters HingeJointParameters {
-                          position -5.017603168511187e-07
+                          position 0.6911283695728703
                           axis 0 1 0
                           anchor 0 0 -0.1
                         }
@@ -14337,7 +14646,7 @@ DEF Blue_Goalkeeper Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 -1 0 5.013526630777349e-07
+                          rotation 0 1 0 0.6911283695728703
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -14375,7 +14684,7 @@ DEF Blue_Goalkeeper Robot {
                             }
                             DEF LAnklePitch HingeJoint {
                               jointParameters HingeJointParameters {
-                                position -5.154858238043403e-07
+                                position -0.3450602515262171
                                 axis 0 1 0
                                 anchor 0 0 -0.1029
                               }
@@ -14393,12 +14702,12 @@ DEF Blue_Goalkeeper Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 5.15330328517873e-07
+                                rotation 0 -1 0 0.3450602515262171
                                 children [
                                   USE ANKLE_SHAPE
                                   DEF LAnkleRoll HingeJoint {
                                     jointParameters HingeJointParameters {
-                                      position -8.38890147850116e-07
+                                      position -0.008529787170070805
                                     }
                                     device [
                                       RotationalMotor {
@@ -14413,14 +14722,14 @@ DEF Blue_Goalkeeper Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation -1 0 0 8.387116956395144e-07
+                                      rotation -1 0 0 0.008529787170095655
                                       children [
                                         DEF LEFT_FOOT_SLOT Transform {
                                           translation 0.0254 0.00332 -0.03241
                                         }
                                         DEF LFsr TouchSensor {
-                                          translation 0.019999989872315105 0.006999981424354977 -0.040959600948705044
-                                          rotation 2.695275944617551e-08 -8.372254144842964e-11 -0.9999999999999997 3.14158530385701
+                                          translation 0.019999916488642633 0.0070128574562645304 -0.0406775604892233
+                                          rotation 1.0911540582628757e-07 1.515305256330239e-06 -0.999999999998846 3.141585066537932
                                           name "LFsr"
                                           contactMaterial "NAO foot material"
                                           boundingObject USE FOOT_Box
@@ -14641,7 +14950,7 @@ DEF Blue_Goalkeeper Robot {
       ]
     }
   ]
-  name "NAO(7)"
+  name "Blue_Goalkeeper"
   model "NAO_H25_VV5 (blue)"
   contactMaterial "NAO material"
   boundingObject Transform {
@@ -14665,4 +14974,5 @@ DEF Blue_Goalkeeper Robot {
       1.43116e-05 0.000155191 -2.70793e-05
     ]
   }
+  controller "BlueController"
 }

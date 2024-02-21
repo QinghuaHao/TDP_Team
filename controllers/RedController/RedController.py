@@ -1,13 +1,23 @@
-from controller import Robot, DistanceSensor
+
 """得到球员，全部加载到control中"""
-import os, sys
-currentdir = os.path.dirname(os.path.realpath(__file__))
-parentdir = os.path.dirname(currentdir)
-sys.path.append(parentdir)
+import sys
+sys.path.append(".")
+sys.path.append("..")
 
 from controller import Robot
-import RedGoalkeeper
+from RedGoalKeeper import GoalKeeper
+from RedDefender1 import DefenderLeft
+from RedDefender2 import DefenderRight
+from RedStriker1 import Forward
 robot = Robot()
 robotName = robot.getName()
 if robotName == ('Red_Goalkeeper'):
-    robotController = RedGoalkeeper.GoalKeeper(robot)
+    robotController = GoalKeeper(robot)
+elif robotName==('Red_Defender_1'):
+    robotController = DefenderLeft(robot)
+elif robotName==('Red_Defender_2'):
+    robotController = DefenderRight(robot)
+elif robotName==('Red_Striker_1'):
+    robotController = Forward(robot)
+   
+robotController.run()
