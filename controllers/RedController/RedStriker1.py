@@ -7,9 +7,9 @@
 import sys
 sys.path.append(".")
 sys.path.append("..")
-from GlobalEnv.InitRobot import SoccerRobot
-from GlobalEnv.GlobalConstant import TIME_STEP,LoadMoveFile
-from GlobalEnv import BasicFunction
+from InitRobot import SoccerRobot
+from GlobalConstant import TIME_STEP,LoadMoveFile
+import BasicFunction
 import RedTeamStrategy
 
 
@@ -19,8 +19,6 @@ class Forward(SoccerRobot):
         while self.robot.step(TIME_STEP) != -1:
 
             if self.isNewBallDataValuable():
-
-
                 # Do not remove this!
                 # ----------------------
                 self.getsupervisorData()
@@ -61,8 +59,8 @@ class Forward(SoccerRobot):
                 self.startMotion()
             else:
                 # It seems there is a problem.
-                # print("NO BALL DATA!!!")
-                pass
+                print("NO BALL DATA_Red_Striker!!!")
+
 
     # Override decideMotion
     def decidedMotion(self, ballCoordinate, selfCoordinate):

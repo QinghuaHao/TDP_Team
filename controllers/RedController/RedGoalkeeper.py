@@ -30,7 +30,7 @@ class GoalKeeper(InitRobot.SoccerRobot):
                     self.loadMotionToList(decidedMotion)
             self.startMotion()
         else:
-            pass
+            print("No_ball_data__Red_GoalKeeper")
     def decidedMotion(self,ballCoordinate,selfCoordinate):
         if self.checkGetScore() ==1:
             return self.motions.HandWave

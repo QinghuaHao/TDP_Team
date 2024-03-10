@@ -8,6 +8,8 @@ from GlobalConstant import TIME_STEP,ball_Position
 
 class Scoreboard:
     def __init__(self):
+        self.timeRemainMinutes = None
+        self.timeRemain_s = None
         self.initialTimeMinutes = 10
         self.initialTimeSeconds = 0
         self.timeStepNormalizer = 0
@@ -29,7 +31,7 @@ class Scoreboard:
         self.timeRemain_s = self.initialTimeSeconds
 
         self.timeStepNormalizer += 1
-        if self.timeStepNormalizer == 600 / TIME_STEP:
+        if self.timeStepNormalizer == 480 / TIME_STEP:
             if self.timeRemain_s == 0:
                 self.timeRemainMinutes -= 1
                 self.initialTimeMinutes = self.timeRemainMinutes

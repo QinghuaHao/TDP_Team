@@ -12,6 +12,7 @@ import struct
 class SoccerRobot(ABC):
     #初始化硬件
     def __init__(self,robot):
+        self.supervisorData = None
         self.robot = robot
         self.name = robot.getName()
 
@@ -102,7 +103,12 @@ class SoccerRobot(ABC):
         message=self.receiver.getData()
         self.supervisorData = struct.unpack('dd9cc24d',message)
         self.receiver.nextPacket()
-
+        # print("this is receiver.next.packget",self.receiver.nextPacket())
+        print("this is supervisorData",self.supervisorData)
+        print(len(self.supervisorData ))
+        print(type(self.supervisorData))
+        print(self.supervisorData[2])
+        print(self.supervisorData[3])
 
     #拿到球的数据
     def getBallData(self):

@@ -2,9 +2,9 @@
 Blue Team Defender robot behaviours.
 """
 
-from GlobalEnv.InitRobot import SoccerRobot
-from GlobalEnv import BasicFunction
-from GlobalEnv.GlobalConstant import (TIME_STEP, LoadMoveFile)
+from SoccerRobotBase import SoccerRobot
+import Functions
+from Consts import (TIME_STEP,LoxadMoveFile)
 from controller import Supervisor
 
 class Defender(SoccerRobot):

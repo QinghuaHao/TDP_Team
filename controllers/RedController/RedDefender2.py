@@ -68,8 +68,7 @@ class DefenderRight(SoccerRobot):
             else:
 
                 # It seems there is a problem.
-                # print("NO BALL DATA!!!")
-                pass
+                print("NO BALL DATA_Red_Defender_2!!!")
 
     # Override decideMotion
     def decidedMotion(self, ballCoordinate, selfCoordinate):

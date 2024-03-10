@@ -507,7 +507,7 @@ DEF Red_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation -0.1458800900648585 0.9743008023619141 -0.17163025910252286 1.4346961208601259
+        rotation -0.1458800900648234 0.9743008023619266 -0.17163025910248153 1.4346961208601132
         children [
           Transform {
             translation 0.005 0 0
@@ -576,7 +576,7 @@ DEF Red_Goalkeeper Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation 1 0 0 1.3807000908485703
+              rotation 1 0 0 1.38070009084857
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
@@ -601,18 +601,18 @@ DEF Red_Goalkeeper Robot {
                     hidden position_1_0 2.839995626789557e-10
                     hidden position_1_1 2.840174431926717e-10
                     hidden position_1_2 7.565820676035025e-11
-                    hidden rotation_2 0 1 0 0.9599999992899957
+                    hidden rotation_2 0 1 0 0.9599999990059961
                     hidden position_2_0 1.4989584971445678e-10
-                    hidden rotation_3 0 1 0 0.9599999996252515
+                    hidden rotation_3 0 1 0 0.9599999994753555
                     hidden position_3_0 2.0787026932241648e-11
-                    hidden rotation_4 0 1 0 0.95999999994804
-                    hidden rotation_5 0 0.9999999999999999 0 0.9599999992899596
+                    hidden rotation_4 0 1 0 0.959999999927253
+                    hidden rotation_5 0 1 0 0.9599999990059422
                     hidden position_5_0 1.4993489422466312e-10
-                    hidden rotation_6 0 1 0 0.95999999962515
+                    hidden rotation_6 0 1 0 0.9599999994752151
                     hidden position_6_0 2.078667964850667e-11
-                    hidden rotation_7 0 1 0 0.9599999999480395
+                    hidden rotation_7 0 1 0 0.959999999927253
                     hidden position_8_0 3.696502985733641e-11
-                    hidden rotation_9 0 -1 0 0.959999999907585
+                    hidden rotation_9 0 -1 0 0.9599999998706199
                     name "RHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
@@ -699,7 +699,7 @@ DEF Red_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation 0.14588009007399003 0.9743008023597968 0.1716302591067812 1.4346961208997144
+        rotation 0.14588009007400946 0.9743008023597898 0.17163025910680407 1.4346961208997218
         children [
           Transform {
             translation 0.005 0 0
@@ -790,18 +790,18 @@ DEF Red_Goalkeeper Robot {
                     hidden position_1_0 2.839714056371046e-10
                     hidden position_1_1 2.8398658907877213e-10
                     hidden position_1_2 7.567067194701598e-11
-                    hidden rotation_2 0 1 0 0.9599999992900726
+                    hidden rotation_2 0 0.9999999999999999 0 0.9599999990061014
                     hidden position_2_0 1.499360756189485e-10
-                    hidden rotation_3 0 0.9999999999999999 0 0.9599999996251573
+                    hidden rotation_3 0 1 0 0.9599999994752213
                     hidden position_3_0 2.078517771455964e-11
-                    hidden rotation_4 0 0.9999999999999999 0 0.9599999999480303
-                    hidden rotation_5 0 1 0 0.9599999992900293
+                    hidden rotation_4 0 1 0 0.9599999999272453
+                    hidden rotation_5 0 1 0 0.9599999990060427
                     hidden position_5_0 1.49878367967264e-10
-                    hidden rotation_6 0 1 0 0.9599999996252986
+                    hidden rotation_6 0 0.9999999999999999 0 0.9599999994754204
                     hidden position_6_0 2.077255248147849e-11
-                    hidden rotation_7 0 1 0 0.9599999999480703
+                    hidden rotation_7 0 0.9999999999999999 0 0.9599999999272977
                     hidden position_8_0 3.696953921284242e-11
-                    hidden rotation_9 0 -1 0 0.9599999999075763
+                    hidden rotation_9 0 -1 0 0.9599999998706069
                     name "LHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
@@ -1481,7 +1481,7 @@ DEF Red_Goalkeeper Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 1 0 0.6911291111785016
+                          rotation 0 1 0 0.6911291111785017
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -2054,7 +2054,7 @@ DEF Red_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation -5.673531567210973e-16 0.9999999999999987 5.277642323357094e-08 2.9802322387695313e-08
+        rotation -5.673531567210973e-16 0.9999999999999986 5.2777963045872653e-08 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -2301,7 +2301,7 @@ DEF Red_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation -0.1458800900647133 0.9743008023619572 -0.17163025910240226 1.4346961208597924
+        rotation -0.14588009006475458 0.9743008023619424 -0.1716302591024508 1.4346961208598072
         children [
           Transform {
             translation 0.005 0 0
@@ -2370,7 +2370,7 @@ DEF Red_Striker_1 Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation 0.9999999999999999 0 0 1.380700000339667
+              rotation 1 0 0 1.380700000339667
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
@@ -2390,25 +2390,25 @@ DEF Red_Striker_1 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
-                    hidden translation_0 3.977234079000029e-06 -3.6035117502990365e-08 -1.2476019942697643e-06
-                    hidden rotation_0 0 0 -0.9999999999999999 5.960464477539063e-08
+                    hidden translation_0 3.977234074327763e-06 -3.6035633182262364e-08 -1.2476019942697643e-06
+                    hidden rotation_0 0 0 -1 1.9082797281243954e-07
                     hidden position_0_0 0.003994006336762161
                     hidden rotation_1 1 0 0 0.003994006336720875
                     hidden position_1_0 2.8397788603072693e-10
                     hidden position_1_1 2.840006562231295e-10
                     hidden position_1_2 7.566440998336531e-11
-                    hidden rotation_2 0 1 0 0.9599999992900601
+                    hidden rotation_2 0 1 0 0.9599999990060821
                     hidden position_2_0 1.4992493999391833e-10
-                    hidden rotation_3 0 0.9999999999999999 0 0.9599999996251876
+                    hidden rotation_3 0 1 0 0.9599999994752627
                     hidden position_3_0 2.0783760211751268e-11
-                    hidden rotation_4 0 1 0 0.9599999999480371
-                    hidden rotation_5 0 1 0 0.9599999992900033
+                    hidden rotation_4 0 0.9999999999999999 0 0.9599999999272535
+                    hidden rotation_5 0 0.9999999999999999 0 0.9599999990060029
                     hidden position_5_0 1.4988991783649325e-10
-                    hidden rotation_6 0 1 0 0.9599999996252674
+                    hidden rotation_6 0 1 0 0.9599999994753776
                     hidden position_6_0 2.079213350420947e-11
-                    hidden rotation_7 0 1 0 0.9599999999480217
+                    hidden rotation_7 0 1 0 0.9599999999272294
                     hidden position_8_0 3.6974358698140803e-11
-                    hidden rotation_9 0 -1 0 0.9599999999075638
+                    hidden rotation_9 0 -1 0 0.9599999998705896
                     name "RHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
@@ -2495,7 +2495,7 @@ DEF Red_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation 0.14588009007409036 0.9743008023597558 0.17163025910692772 1.4346961208995916
+        rotation 0.14588009007396582 0.9743008023598004 0.1716302591067812 1.4346961208995468
         children [
           Transform {
             translation 0.005 0 0
@@ -2581,25 +2581,25 @@ DEF Red_Striker_1 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
-                    hidden translation_0 3.977230899544198e-06 3.6033655648072276e-08 -1.2476008220407844e-06
-                    hidden rotation_0 0 0 1 5.16191365590357e-08
+                    hidden translation_0 3.977230896677563e-06 3.603397205279402e-08 -1.2476008220407844e-06
+                    hidden rotation_0 0 0 0.9999999999999999 1.3328003749250115e-07
                     hidden position_0_0 0.003994007193871389
                     hidden rotation_1 1 0 0 0.003994007193876658
                     hidden position_1_0 2.8400936594878257e-10
                     hidden position_1_1 2.83975779014933e-10
                     hidden position_1_2 7.567513918826779e-11
-                    hidden rotation_2 0 1 0 0.9599999992899635
+                    hidden rotation_2 0 1 0 0.9599999990059542
                     hidden position_2_0 1.499172451266312e-10
-                    hidden rotation_3 0 1 0 0.9599999996251923
+                    hidden rotation_3 0 0.9999999999999999 0 0.9599999994752751
                     hidden position_3_0 2.079081804984584e-11
-                    hidden rotation_4 0 1 0 0.9599999999480188
-                    hidden rotation_5 0 0.9999999999999999 0 0.9599999992900577
+                    hidden rotation_4 0 0.9999999999999999 0 0.959999999927228
+                    hidden rotation_5 0 1 0 0.9599999990060821
                     hidden position_5_0 1.4993826600719895e-10
-                    hidden rotation_6 0 1 0 0.9599999996251332
+                    hidden rotation_6 0 1 0 0.9599999994751949
                     hidden position_6_0 2.077908099250342e-11
-                    hidden rotation_7 0 1 0 0.9599999999480501
+                    hidden rotation_7 0 1 0 0.9599999999272708
                     hidden position_8_0 3.6972748500114865e-11
-                    hidden rotation_9 0 -1 0 0.95999999990757
+                    hidden rotation_9 0 -1 0 0.9599999998705974
                     name "RHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
@@ -4098,7 +4098,7 @@ DEF Red_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation -0.14588009006486688 0.9743008023618953 -0.17163025910262256 1.4346961208596263
+        rotation -0.1458800900648588 0.9743008023618982 -0.17163025910261304 1.4346961208596232
         children [
           Transform {
             translation 0.005 0 0
@@ -4187,25 +4187,25 @@ DEF Red_Defender_2 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
-                    hidden translation_0 3.9772352829252875e-06 -3.603856682692532e-08 -1.2476016846840743e-06
-                    hidden rotation_0 0 0 1 4.2146848510894035e-08
+                    hidden translation_0 3.977235277836544e-06 -3.60391284190793e-08 -1.2476016846840747e-06
+                    hidden rotation_0 0 0 -1 9.884312124119402e-08
                     hidden position_0_0 0.003994006336699957
                     hidden rotation_1 1 0 0 0.003994006336720875
                     hidden position_1_0 2.8399200764404204e-10
                     hidden position_1_1 2.8402489241677244e-10
                     hidden position_1_2 7.56586637807793e-11
-                    hidden rotation_2 0 1 0 0.9599999992900015
+                    hidden rotation_2 0 1 0 0.9599999990060095
                     hidden position_2_0 1.4991743016226953e-10
-                    hidden rotation_3 0 1 0 0.9599999996252092
+                    hidden rotation_3 0 1 0 0.9599999994752916
                     hidden position_3_0 2.0788430391424543e-11
-                    hidden rotation_4 0 1 0 0.9599999999480208
-                    hidden rotation_5 0 1 0 0.9599999992899505
+                    hidden rotation_4 0 1 0 0.9599999999272323
+                    hidden rotation_5 0 1 0 0.9599999990059254
                     hidden position_5_0 1.4990757067847286e-10
-                    hidden rotation_6 0 1 0 0.9599999996251972
+                    hidden rotation_6 0 0.9999999999999999 0 0.9599999994752896
                     hidden position_6_0 2.078766847988395e-11
-                    hidden rotation_7 0 1 0 0.9599999999480323
+                    hidden rotation_7 0 1 0 0.9599999999272448
                     hidden position_8_0 3.696993516791663e-11
-                    hidden rotation_9 0 -1 0 0.9599999999075768
+                    hidden rotation_9 0 -1 0 0.9599999998706069
                     name "RHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
@@ -4292,7 +4292,7 @@ DEF Red_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation 0.14588009007387853 0.9743008023598246 0.17163025910671745 1.434696120899297
+        rotation 0.14588009007406194 0.9743008023597592 0.17163025910693325 1.4346961208993636
         children [
           Transform {
             translation 0.005 0 0
@@ -4378,25 +4378,25 @@ DEF Red_Defender_2 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
-                    hidden translation_0 3.977231177101093e-06 3.6019577049300416e-08 -1.2475994811689262e-06
-                    hidden rotation_0 0 0 -0.9999999999999999 4.2146848510894035e-08
+                    hidden translation_0 3.977231179822128e-06 3.601927659519226e-08 -1.2475994811689262e-06
+                    hidden rotation_0 0 0 -1 1.1920928955078128e-07
                     hidden position_0_0 0.003994007193802421
                     hidden rotation_1 1 0 0 0.003994007193765469
                     hidden position_1_0 2.839929280230046e-10
                     hidden position_1_1 2.839728359121757e-10
                     hidden position_1_2 7.567800503892843e-11
-                    hidden rotation_2 0 1 0 0.9599999992900188
+                    hidden rotation_2 0 0.9999999999999999 0 0.959999999006026
                     hidden position_2_0 1.4991571135353317e-10
-                    hidden rotation_3 0 1 0 0.959999999625213
+                    hidden rotation_3 0 1 0 0.9599999994752973
                     hidden position_3_0 2.0772348763998866e-11
-                    hidden rotation_4 0 0.9999999999999999 0 0.9599999999480741
-                    hidden rotation_5 0 0.9999999999999999 0 0.9599999992900669
+                    hidden rotation_4 0 1 0 0.9599999999273016
+                    hidden rotation_5 0 1 0 0.9599999990060932
                     hidden position_5_0 1.4996193071486125e-10
-                    hidden rotation_6 0 1 0 0.9599999996250885
+                    hidden rotation_6 0 1 0 0.9599999994751266
                     hidden position_6_0 2.0775768375408972e-11
-                    hidden rotation_7 0 1 0 0.9599999999480625
+                    hidden rotation_7 0 1 0 0.9599999999272867
                     hidden position_8_0 3.697064390525265e-11
-                    hidden rotation_9 0 -1 0 0.9599999999075725
+                    hidden rotation_9 0 -1 0 0.9599999998706017
                     name "LHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
@@ -5030,7 +5030,7 @@ DEF Red_Defender_2 Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -1 0 0.44348706570713275
+                    rotation 0 -1 0 0.4434870657071327
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
@@ -5648,7 +5648,7 @@ DEF Red_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation -2.337356815395876e-18 1 2.174270297173478e-10 2.9802322387695313e-08
+        rotation -2.337356815395876e-18 1 2.174497739180903e-10 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -5895,7 +5895,7 @@ DEF Red_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation -0.14588009006479463 0.9743008023619211 -0.1716302591025376 1.4346961208595999
+        rotation -0.14588009006485894 0.9743008023618982 -0.17163025910261326 1.434696120859623
         children [
           Transform {
             translation 0.005 0 0
@@ -5984,25 +5984,25 @@ DEF Red_Defender_1 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
-                    hidden translation_0 3.977232251961264e-06 -3.603507206674314e-08 -1.247601150694555e-06
-                    hidden rotation_0 0 0 1 4.2146848510894035e-08
+                    hidden translation_0 3.97723224831715e-06 -3.6035474269571296e-08 -1.247601150694555e-06
+                    hidden rotation_0 0 0 -0.9999999999999999 5.960464477539063e-08
                     hidden position_0_0 0.003994006336701179
                     hidden rotation_1 1 0 0 0.003994006336720875
                     hidden position_1_0 2.8400880818221943e-10
                     hidden position_1_1 2.8401279168302247e-10
                     hidden position_1_2 7.566867998085626e-11
-                    hidden rotation_2 0 0.9999999999999999 0 0.9599999992899938
+                    hidden rotation_2 0 1 0 0.959999999005985
                     hidden position_2_0 1.4989901903160782e-10
-                    hidden rotation_3 0 1 0 0.9599999996252251
+                    hidden rotation_3 0 0.9999999999999999 0 0.9599999994753262
                     hidden position_3_0 2.079118750545897e-11
-                    hidden rotation_4 0 0.9999999999999999 0 0.959999999948028
-                    hidden rotation_5 0 0.9999999999999999 0 0.9599999992899755
+                    hidden rotation_4 0 0.9999999999999999 0 0.9599999999272366
+                    hidden rotation_5 0 1 0 0.9599999990059629
                     hidden position_5_0 1.498826112815621e-10
-                    hidden rotation_6 0 1 0 0.9599999996252837
+                    hidden rotation_6 0 1 0 0.9599999994754012
                     hidden position_6_0 2.0774976133923016e-11
-                    hidden rotation_7 0 1 0 0.9599999999480631
+                    hidden rotation_7 0 1 0 0.9599999999272881
                     hidden position_8_0 3.696857508051795e-11
-                    hidden rotation_9 0 -1 0 0.9599999999075768
+                    hidden rotation_9 0 -1 0 0.9599999998706084
                     name "RHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
@@ -6089,7 +6089,7 @@ DEF Red_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation 0.14588009007404915 0.9743008023597637 0.17163025910691793 1.4346961208993603
+        rotation 0.1458800900740622 0.9743008023597592 0.17163025910693328 1.434696120899365
         children [
           Transform {
             translation 0.005 0 0
@@ -6175,25 +6175,25 @@ DEF Red_Defender_1 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
-                    hidden translation_0 3.977231820085299e-06 3.60342959419675e-08 -1.2476014506768163e-06
-                    hidden rotation_0 0 0 -1 5.16191365590357e-08
+                    hidden translation_0 3.977231816333555e-06 3.603471003279063e-08 -1.2476014506768163e-06
+                    hidden rotation_0 0 0 1 4.2146848510894035e-08
                     hidden position_0_0 0.003994007193802705
                     hidden rotation_1 1 0 0 0.003994007193765469
                     hidden position_1_0 2.839706981083616e-10
                     hidden position_1_1 2.8398514574149737e-10
                     hidden position_1_2 7.567413520152614e-11
-                    hidden rotation_2 0 1 0 0.9599999992900669
+                    hidden rotation_2 0 1 0 0.9599999990060961
                     hidden position_2_0 1.499178765075734e-10
-                    hidden rotation_3 0 1 0 0.9599999996252024
+                    hidden rotation_3 0 1 0 0.9599999994752848
                     hidden position_3_0 2.077399862495347e-11
-                    hidden rotation_4 0 1 0 0.9599999999480616
-                    hidden rotation_5 0 1 0 0.9599999992900433
+                    hidden rotation_4 0 0.9999999999999999 0 0.9599999999272876
+                    hidden rotation_5 0 1 0 0.9599999990060581
                     hidden position_5_0 1.4995130991025375e-10
-                    hidden rotation_6 0 1 0 0.9599999996251073
+                    hidden rotation_6 0 1 0 0.9599999994751559
                     hidden position_6_0 2.0782398883998246e-11
-                    hidden rotation_7 0 1 0 0.9599999999480453
+                    hidden rotation_7 0 1 0 0.9599999999272626
                     hidden position_8_0 3.69733309486388e-11
-                    hidden rotation_9 0 -1 0 0.9599999999075667
+                    hidden rotation_9 0 -0.9999999999999999 0 0.9599999998705935
                     name "LHand"
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
@@ -6302,7 +6302,7 @@ DEF Red_Defender_1 Robot {
               }
             ]
             endPoint Solid {
-              rotation -1 0 0 0.0011240054992382486
+              rotation -1 0 0 0.0011240054992382484
               children [
                 DEF HIP_ROLL_CYL_TRANS Transform {
                   translation -0.019 0 0
@@ -6873,7 +6873,7 @@ DEF Red_Defender_1 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 1 0 0.6911291107405244
+                          rotation 0 1 0 0.6911291107405245
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -8287,7 +8287,7 @@ DEF Blue_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation -0.14588011621269922 0.974300797618882 -0.17163026380268673 1.4346962761355715
+        rotation -0.14588011621270972 0.9743007976188783 -0.17163026380269905 1.4346962761355753
         children [
           Transform {
             translation 0.005 0 0
@@ -8376,25 +8376,25 @@ DEF Blue_Striker_1 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
-                    hidden translation_0 3.977534215969444e-06 -3.1207403874026487e-08 -1.2467686667377853e-06
-                    hidden rotation_0 0 0 1 1.009040637774542
+                    hidden translation_0 3.97753421895035e-06 -3.120702394088036e-08 -1.246768666737785e-06
+                    hidden rotation_0 0 0 0.9999999999999999 1.0090407335708036
                     hidden position_0_0 0.0039938810297941866
                     hidden rotation_1 1 0 0 0.003993881029774204
                     hidden position_1_0 9.463953118206164e-12
                     hidden position_1_1 1.0314482397161469e-11
                     hidden position_1_2 3.0644451967103746e-11
-                    hidden rotation_2 0 0.9999999999999999 0 0.9599999997664725
+                    hidden rotation_2 0 1 0 0.9599999997570086
                     hidden position_2_0 2.1162464445042797e-10
-                    hidden rotation_3 0 1 0 0.9599999994740919
+                    hidden rotation_3 0 1 0 0.9599999992624673
                     hidden position_3_0 5.220675430255432e-11
-                    hidden rotation_4 0 1 0 0.959999999869224
-                    hidden rotation_5 0 1 0 0.9599999997639155
+                    hidden rotation_4 0 1 0 0.9599999998170171
+                    hidden rotation_5 0 1 0 0.9599999997536008
                     hidden position_5_0 2.1437845921430974e-10
-                    hidden rotation_6 0 1 0 0.9599999994658462
+                    hidden rotation_6 0 0.9999999999999999 0 0.9599999992514678
                     hidden position_6_0 5.247684279655269e-11
-                    hidden rotation_7 0 1 0 0.9599999998684187
+                    hidden rotation_7 0 1 0 0.959999999815942
                     hidden position_8_0 5.294658971948826e-11
-                    hidden rotation_9 0 -1 0 0.9599999998684094
+                    hidden rotation_9 0 -1 0 0.959999999815463
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -8480,7 +8480,7 @@ DEF Blue_Striker_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation 0.14588011622516386 0.9743007976149439 0.17163026381444826 1.4346962761563358
+        rotation 0.14588011622516509 0.9743007976149434 0.17163026381444968 1.434696276156336
         children [
           Transform {
             translation 0.005 0 0
@@ -8566,23 +8566,25 @@ DEF Blue_Striker_1 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
-                    hidden translation_0 3.977533586306572e-06 3.121296470098459e-08 -1.246767068058263e-06
-                    hidden rotation_0 0 0 -1 1.0090406377412138
+                    hidden translation_0 3.977533589287592e-06 3.121258482094722e-08 -1.2467670680582628e-06
+                    hidden rotation_0 0 0 -1 1.0090407329748667
                     hidden position_0_0 0.003994059018443297
                     hidden rotation_1 1 0 0 0.00399405901849218
                     hidden position_1_0 1.0431325932373836e-11
                     hidden position_1_1 9.587903642525466e-12
                     hidden position_1_2 2.01481463813086e-10
-                    hidden rotation_2 0 1 0 0.9599999997642016
+                    hidden rotation_2 0 1 0 0.95999999975377
                     hidden position_2_0 2.1840113037307987e-10
-                    hidden rotation_3 0 0.9999999999999999 0 0.9599999994542089
+                    hidden rotation_3 0 1 0 0.9599999992358077
                     hidden position_3_0 8.239848078546122e-12
-                    hidden rotation_5 0 1 0 0.9599999997667207
+                    hidden rotation_4 0 1 0 0.9599999999588013
+                    hidden rotation_5 0 1 0 0.9599999997571326
                     hidden position_5_0 2.1226813518248842e-10
-                    hidden rotation_6 0 1 0 0.9599999994725902
+                    hidden rotation_6 0 1 0 0.9599999992603222
                     hidden position_6_0 8.230271965153274e-12
+                    hidden rotation_7 0 1 0 0.9599999999588484
                     hidden position_8_0 5.310100030553941e-11
-                    hidden rotation_9 0 -1 0 0.9599999998680536
+                    hidden rotation_9 0 -1 0 0.9599999998149529
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -8847,7 +8849,7 @@ DEF Blue_Striker_1 Robot {
                               ]
                               endPoint Solid {
                                 translation 0 0 -0.1029
-                                rotation 0 -1 0 0.3450604107336504
+                                rotation 0 -1 0 0.34506041073365035
                                 children [
                                   DEF ANKLE_SHAPE Shape {
                                     appearance USE STRUCTURE_APP
@@ -9261,7 +9263,7 @@ DEF Blue_Striker_1 Robot {
                         ]
                         endPoint Solid {
                           translation 0 0 -0.1
-                          rotation 0 1 0 0.6911290661296922
+                          rotation 0 1 0 0.6911290661296923
                           children [
                             Shape {
                               appearance USE MAIN_SKIN_APP
@@ -9833,7 +9835,7 @@ DEF Blue_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation 8.049831774851467e-17 1 -7.487719324045537e-09 2.9802322387695313e-08
+        rotation 8.049831774851469e-17 1 -7.488380007610622e-09 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -10080,7 +10082,7 @@ DEF Blue_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation -0.14588009006486022 0.9743008023618998 -0.17163025910260363 1.434696120859686
+        rotation -0.14588009006482322 0.974300802361913 -0.17163025910256008 1.434696120859673
         children [
           Transform {
             translation 0.005 0 0
@@ -10149,7 +10151,7 @@ DEF Blue_Defender_1 Robot {
             ]
             endPoint Solid {
               translation 0.105 -0.015 0
-              rotation 1 0 0 1.3807000908485734
+              rotation 1 0 0 1.380700090848573
               children [
                 DEF RElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
@@ -10169,25 +10171,25 @@ DEF Blue_Defender_1 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
-                    hidden translation_0 3.980543938981233e-06 -3.603897305594693e-08 -1.2479093067785383e-06
-                    hidden rotation_0 0 0 1 4.2146848510894035e-08
+                    hidden translation_0 3.980543935397426e-06 -3.603936888905873e-08 -1.247909306778538e-06
+                    hidden rotation_0 0 0 -1 5.960464477539063e-08
                     hidden position_0_0 0.0039940063367027165
                     hidden rotation_1 1 0 0 0.003994006336720875
                     hidden position_1_0 2.839853415326828e-10
                     hidden position_1_1 2.840016601021053e-10
                     hidden position_1_2 7.567215787094994e-11
-                    hidden rotation_2 0 1 0 0.9599999992900456
+                    hidden rotation_2 0 1 0 0.9599999990060605
                     hidden position_2_0 1.4993104843268466e-10
-                    hidden rotation_3 0 1 0 0.9599999996251674
+                    hidden rotation_3 0 1 0 0.9599999994752363
                     hidden position_3_0 2.0779793621734832e-11
-                    hidden rotation_4 0 1 0 0.9599999999480515
-                    hidden rotation_5 0 1 0 0.9599999992899899
+                    hidden rotation_4 0 0.9999999999999999 0 0.9599999999272717
+                    hidden rotation_5 0 1 0 0.9599999990059884
                     hidden position_5_0 1.4994863758249696e-10
-                    hidden rotation_6 0 1 0 0.9599999996251232
+                    hidden rotation_6 0 1 0 0.9599999994751747
                     hidden position_6_0 2.0776429850185496e-11
-                    hidden rotation_7 0 0.9999999999999999 0 0.9599999999480635
+                    hidden rotation_7 0 1 0 0.9599999999272871
                     hidden position_8_0 3.697547455967969e-11
-                    hidden rotation_9 0 -1 0 0.9599999999075599
+                    hidden rotation_9 0 -1 0 0.9599999998705844
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -10273,7 +10275,7 @@ DEF Blue_Defender_1 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation 0.14588009007406286 0.9743008023597608 0.1716302591069232 1.434696120899426
+        rotation 0.14588009007402764 0.9743008023597735 0.1716302591068818 1.4346961208994133
         children [
           Transform {
             translation 0.005 0 0
@@ -10339,7 +10341,7 @@ DEF Blue_Defender_1 Robot {
             ]
             endPoint Solid {
               translation 0.105 0.015 0
-              rotation -1 0 0 1.3807000908177907
+              rotation -1 0 0 1.380700090817791
               children [
                 DEF LElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
@@ -10359,25 +10361,25 @@ DEF Blue_Defender_1 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
-                    hidden translation_0 3.980465551555912e-06 3.6334064238193374e-08 -1.2479787156044473e-06
-                    hidden rotation_0 0 0 -0.9999999999999999 4.2146848510894035e-08
+                    hidden translation_0 3.980465547943482e-06 3.6334459984686955e-08 -1.2479787156044473e-06
+                    hidden rotation_0 0 0 1 5.960464477539063e-08
                     hidden position_0_0 0.003994007193805304
                     hidden rotation_1 1 0 0 0.003994007193765469
                     hidden position_1_0 2.8398463485140605e-10
                     hidden position_1_1 2.8403012628500605e-10
                     hidden position_1_2 7.566843513157867e-11
-                    hidden rotation_2 0 1 0 0.9599999992900303
+                    hidden rotation_2 0 1 0 0.9599999990060456
                     hidden position_2_0 1.4991463098674887e-10
-                    hidden rotation_3 0 1 0 0.9599999996252208
+                    hidden rotation_3 0 1 0 0.959999999475306
                     hidden position_3_0 2.078044830602797e-11
-                    hidden rotation_4 0 1 0 0.9599999999480496
-                    hidden rotation_5 0 1 0 0.9599999992899197
+                    hidden rotation_4 0 1 0 0.9599999999272694
+                    hidden rotation_5 0 1 0 0.9599999990058893
                     hidden position_5_0 1.4989766118472032e-10
-                    hidden rotation_6 0 1 0 0.9599999996252592
+                    hidden rotation_6 0 0.9999999999999999 0 0.9599999994753617
                     hidden position_6_0 2.079284313581316e-11
-                    hidden rotation_7 0 0.9999999999999999 0 0.9599999999480164
+                    hidden rotation_7 0 1 0 0.9599999999272236
                     hidden position_8_0 3.697332043102257e-11
-                    hidden rotation_9 0 -0.9999999999999999 0 0.9599999999075681
+                    hidden rotation_9 0 -1 0 0.9599999998705949
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -11628,7 +11630,7 @@ DEF Blue_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation 1.1501750995827604e-16 0.9999999999999999 -1.0699477609937601e-08 2.9802322387695313e-08
+        rotation 1.1501750995827606e-16 1 -1.0699538538504189e-08 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -11875,7 +11877,7 @@ DEF Blue_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation -0.1458800900648263 0.9743008023619116 -0.17163025910256377 1.4346961208596736
+        rotation -0.1458800900648243 0.9743008023619123 -0.17163025910256147 1.4346961208596725
         children [
           Transform {
             translation 0.005 0 0
@@ -11964,25 +11966,25 @@ DEF Blue_Defender_2 Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
-                    hidden translation_0 3.977232084096089e-06 -3.602956380632575e-08 -1.2475998723004975e-06
-                    hidden rotation_0 0 0 1 5.16191365590357e-08
+                    hidden translation_0 3.977232080513218e-06 -3.602995931009378e-08 -1.2475998723004973e-06
+                    hidden rotation_0 0 0 -0.9999999999999999 5.16191365590357e-08
                     hidden position_0_0 0.003994006336703344
                     hidden rotation_1 1 0 0 0.003994006336720875
                     hidden position_1_0 2.8396560729876405e-10
                     hidden position_1_1 2.8399056360373355e-10
                     hidden position_1_2 7.566984224916538e-11
-                    hidden rotation_2 0 1 0 0.9599999992900875
+                    hidden rotation_2 0 1 0 0.9599999990061221
                     hidden position_2_0 1.499485011922978e-10
-                    hidden rotation_3 0 1 0 0.9599999996251222
+                    hidden rotation_3 0 1 0 0.9599999994751738
                     hidden position_3_0 2.0773832326182772e-11
-                    hidden rotation_4 0 1 0 0.9599999999480602
-                    hidden rotation_5 0 1 0 0.9599999992900178
+                    hidden rotation_4 0 1 0 0.9599999999272861
+                    hidden rotation_5 0 1 0 0.9599999990060273
                     hidden position_5_0 1.4993687780605804e-10
-                    hidden rotation_6 0 1 0 0.959999999625151
+                    hidden rotation_6 0 1 0 0.9599999994752141
                     hidden position_6_0 2.0778451887534963e-11
-                    hidden rotation_7 0 1 0 0.959999999948054
+                    hidden rotation_7 0 1 0 0.9599999999272756
                     hidden position_8_0 3.697469614077227e-11
-                    hidden rotation_9 0 -1 0 0.959999999907559
+                    hidden rotation_9 0 -1 0 0.9599999998705844
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -12068,7 +12070,7 @@ DEF Blue_Defender_2 Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation 0.14588009007403152 0.9743008023597719 0.17163025910688634 1.4346961208994147
+        rotation 0.14588009007402805 0.9743008023597732 0.17163025910688223 1.4346961208994133
         children [
           Transform {
             translation 0.005 0 0
@@ -12134,7 +12136,7 @@ DEF Blue_Defender_2 Robot {
             ]
             endPoint Solid {
               translation 0.105 0.015 0
-              rotation -1 0 0 1.3807000908177907
+              rotation -1 0 0 1.380700090817791
               children [
                 DEF LElbowRoll HingeJoint {
                   jointParameters HingeJointParameters {
@@ -12154,25 +12156,25 @@ DEF Blue_Defender_2 Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
-                    hidden translation_0 3.977231829134099e-06 3.602940874055954e-08 -1.2476006885364657e-06
-                    hidden rotation_0 0 0 -0.9999999999999999 5.16191365590357e-08
+                    hidden translation_0 3.977231825551957e-06 3.6029804165525553e-08 -1.2476006885364654e-06
+                    hidden rotation_0 0 0 1 5.16191365590357e-08
                     hidden position_0_0 0.003994007193804366
                     hidden rotation_1 1 0 0 0.003994007193765469
                     hidden position_1_0 2.8400104052776096e-10
                     hidden position_1_1 2.8399611341996546e-10
                     hidden position_1_2 7.567175305700524e-11
-                    hidden rotation_2 0 1 0 0.95999999929
+                    hidden rotation_2 0 0.9999999999999999 0 0.959999999005999
                     hidden position_2_0 1.4991608863705685e-10
-                    hidden rotation_3 0 1 0 0.9599999996251991
+                    hidden rotation_3 0 1 0 0.9599999994752829
                     hidden position_3_0 2.078131847060421e-11
-                    hidden rotation_4 0 1 0 0.9599999999480496
-                    hidden rotation_5 0 1 0 0.959999999290013
+                    hidden rotation_4 0 1 0 0.9599999999272684
+                    hidden rotation_5 0 1 0 0.9599999990060167
                     hidden position_5_0 1.4993403790301166e-10
-                    hidden rotation_6 0 1 0 0.9599999996251568
+                    hidden rotation_6 0 1 0 0.9599999994752227
                     hidden position_6_0 2.078539297914225e-11
-                    hidden rotation_7 0 1 0 0.9599999999480332
+                    hidden rotation_7 0 1 0 0.9599999999272477
                     hidden position_8_0 3.697776024677784e-11
-                    hidden rotation_9 0 -1 0 0.959999999907557
+                    hidden rotation_9 0 -0.9999999999999999 0 0.9599999998705786
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -12927,7 +12929,7 @@ DEF Blue_Defender_2 Robot {
                                       }
                                     ]
                                     endPoint Solid {
-                                      rotation -1 0 0 0.008529787337063293
+                                      rotation -1 0 0 0.008529787337063291
                                       children [
                                         DEF LEFT_FOOT_SLOT Transform {
                                           translation 0.0254 0.00332 -0.03241
@@ -13423,7 +13425,7 @@ DEF Blue_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 0 0.1265
-        rotation 2.6373986463238194e-16 0.9999999999999998 -2.4535485811569508e-08 2.9802322387695313e-08
+        rotation 2.6373986463238194e-16 0.9999999999999998 -2.4537526470394912e-08 2.9802322387695313e-08
         children [
           DEF HEAD_SLOT Transform {
             translation 0 0 0.05353
@@ -13670,7 +13672,7 @@ DEF Blue_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 -0.098 0.1
-        rotation -0.14588009006482427 0.9743008023619277 -0.171630259102475 1.4346961208601556
+        rotation -0.14588009006482694 0.9743008023619268 -0.17163025910247817 1.4346961208601565
         children [
           Transform {
             translation 0.005 0 0
@@ -13759,25 +13761,25 @@ DEF Blue_Goalkeeper Robot {
                     }
                   ]
                   endPoint NaoRightWristH25Realistic {
-                    hidden translation_0 3.977232273056016e-06 -3.602981449548092e-08 -1.2475999790484416e-06
-                    hidden rotation_0 0 0 1 4.2146848510894035e-08
+                    hidden translation_0 3.977232269473115e-06 -3.603020999991239e-08 -1.2475999790484413e-06
+                    hidden rotation_0 0 0 -1 5.960464477539063e-08
                     hidden position_0_0 0.00399400633672016
                     hidden rotation_1 1 0 0 0.003994006336720875
                     hidden position_1_0 2.839862258990054e-10
                     hidden position_1_1 2.8401525676037784e-10
                     hidden position_1_2 7.566506230182315e-11
-                    hidden rotation_2 0 1 0 0.959999999290037
+                    hidden rotation_2 0 1 0 0.9599999990060509
                     hidden position_2_0 1.4989912437468483e-10
-                    hidden rotation_3 0 1 0 0.9599999996252482
+                    hidden rotation_3 0 1 0 0.9599999994753492
                     hidden position_3_0 2.0788544892940043e-11
-                    hidden rotation_4 0 1 0 0.9599999999480274
-                    hidden rotation_5 0 1 0 0.9599999992899592
+                    hidden rotation_4 0 0.9999999999999999 0 0.9599999999272391
+                    hidden rotation_5 0 1 0 0.9599999990059437
                     hidden position_5_0 1.4987565172029048e-10
-                    hidden rotation_6 0 0.9999999999999999 0 0.9599999996253006
+                    hidden rotation_6 0 0.9999999999999999 0 0.9599999994754247
                     hidden position_6_0 2.0787245399051996e-11
-                    hidden rotation_7 0 1 0 0.9599999999480318
+                    hidden rotation_7 0 1 0 0.9599999999272444
                     hidden position_8_0 3.6969580837621525e-11
-                    hidden rotation_9 0 -1 0 0.9599999999075758
+                    hidden rotation_9 0 -1 0 0.9599999998706065
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -13863,7 +13865,7 @@ DEF Blue_Goalkeeper Robot {
       ]
       endPoint Solid {
         translation 0 0.098 0.1
-        rotation 0.14588009007402783 0.9743008023597887 0.17163025910679508 1.4346961208998994
+        rotation 0.14588009007403224 0.974300802359787 0.17163025910680024 1.434696120899901
         children [
           Transform {
             translation 0.005 0 0
@@ -13949,25 +13951,25 @@ DEF Blue_Goalkeeper Robot {
                     }
                   ]
                   endPoint NaoLeftWristH25Realistic {
-                    hidden translation_0 3.977232017372381e-06 3.602965942972233e-08 -1.2476007957840098e-06
-                    hidden rotation_0 0 0 -1 4.2146848510894035e-08
+                    hidden translation_0 3.9772320137902095e-06 3.6030054855371904e-08 -1.2476007957840098e-06
+                    hidden rotation_0 0 0 1 5.16191365590357e-08
                     hidden position_0_0 0.003994007193809601
                     hidden rotation_1 1 0 0 0.003994007193765469
                     hidden position_1_0 2.8398671380728643e-10
                     hidden position_1_1 2.8399856805827e-10
                     hidden position_1_2 7.567142119314919e-11
-                    hidden rotation_2 0 1 0 0.9599999992900246
+                    hidden rotation_2 0 1 0 0.9599999990060379
                     hidden position_2_0 1.4989534943838318e-10
-                    hidden rotation_3 0 1 0 0.9599999996252467
+                    hidden rotation_3 0 1 0 0.9599999994753512
                     hidden position_3_0 2.0778796305455636e-11
-                    hidden rotation_4 0 1 0 0.9599999999480568
-                    hidden rotation_5 0 0.9999999999999999 0 0.9599999992899942
+                    hidden rotation_4 0 1 0 0.959999999927278
+                    hidden rotation_5 0 1 0 0.9599999990059956
                     hidden position_5_0 1.4992472770515362e-10
-                    hidden rotation_6 0 1 0 0.9599999996251799
+                    hidden rotation_6 0 1 0 0.9599999994752549
                     hidden position_6_0 2.0775222090271654e-11
-                    hidden rotation_7 0 1 0 0.9599999999480596
+                    hidden rotation_7 0 1 0 0.9599999999272842
                     hidden position_8_0 3.6971207473152844e-11
-                    hidden rotation_9 0 -1 0 0.9599999999075729
+                    hidden rotation_9 0 -1 0 0.9599999998706017
                     contactMaterial "NAO material"
                     fingerContactMaterial "NAO finger material"
                     color 0.114 0.282 0.655
@@ -14600,7 +14602,7 @@ DEF Blue_Goalkeeper Robot {
                     }
                   ]
                   endPoint Solid {
-                    rotation 0 -0.9999999999999999 0 0.4434870659931889
+                    rotation 0 -0.9999999999999999 0 0.44348706599318893
                     children [
                       Shape {
                         appearance USE MAIN_SKIN_APP
