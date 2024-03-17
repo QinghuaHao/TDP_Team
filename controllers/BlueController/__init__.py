@@ -1,1 +1,0 @@
-"""This is the initial step for Blue Team Controllers."""
