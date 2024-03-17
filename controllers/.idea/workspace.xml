@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a49aa179-60d9-4960-ad75-d7a71ba9fc31" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/SuperVisor/Supervisor.py" beforeDir="false" afterPath="$PROJECT_DIR$/SuperVisor/Supervisor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../worlds/.team_7_tdp_world.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../worlds/.team_7_tdp_world.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../worlds/.team_7_tdp_world.wbproj" beforeDir="false" afterPath="$PROJECT_DIR$/../worlds/.team_7_tdp_world.wbproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../worlds/team_7_tdp_world.wbt" beforeDir="false" afterPath="$PROJECT_DIR$/../worlds/team_7_tdp_world.wbt" afterDir="false" />
+    <list default="true" id="14825c21-d260-4d63-a79f-bfb74cfad1cc" name="Changes" comment="now, it can show time on screen">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/SoccerRobotBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Base/SoccerRobotBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlueController/BlueDefender.py" beforeDir="false" afterPath="$PROJECT_DIR$/BlueController/BlueDefender.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlueController/BlueForwardLeft.py" beforeDir="false" afterPath="$PROJECT_DIR$/BlueController/BlueForwardLeft.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlueController/BlueForwardRight.py" beforeDir="false" afterPath="$PROJECT_DIR$/BlueController/BlueForwardRight.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RedController/RedDefenderLeft.py" beforeDir="false" afterPath="$PROJECT_DIR$/RedController/RedDefenderLeft.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,62 +18,113 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2bhIU7PT0QGYTFC3dcLKGYa2dJt" />
+  <component name="ProjectId" id="2cubttLJpW12FaOHpqYEjHwGnHP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/haoqinghua/Desktop/team_7_tdp_project/controllers&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/haoqinghua/Desktop/RoboCupSoccer-main-change/controllers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="RedDefenderLeft" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="controllers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RedController" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RedController/RedDefenderLeft.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.RedDefenderLeft" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a49aa179-60d9-4960-ad75-d7a71ba9fc31" name="Changes" comment="" />
-      <created>1706660896512</created>
+      <changelist id="14825c21-d260-4d63-a79f-bfb74cfad1cc" name="Changes" comment="" />
+      <created>1708964628481</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1706660896512</updated>
-      <workItem from="1706660897718" duration="3140000" />
-      <workItem from="1706664056367" duration="3660000" />
-      <workItem from="1706669539105" duration="2689000" />
-      <workItem from="1708539206119" duration="1476000" />
-      <workItem from="1708636296760" duration="51000" />
+      <updated>1708964628481</updated>
+      <workItem from="1708964629547" duration="892000" />
+      <workItem from="1708965530620" duration="8135000" />
+      <workItem from="1709048202334" duration="3483000" />
+      <workItem from="1709231024718" duration="11927000" />
+      <workItem from="1709295568414" duration="608000" />
+      <workItem from="1709296622361" duration="627000" />
+      <workItem from="1710037660042" duration="5000" />
+      <workItem from="1710462995111" duration="347000" />
+      <workItem from="1710472348247" duration="76000" />
+      <workItem from="1710472682758" duration="29577000" />
+      <workItem from="1710625323878" duration="3222000" />
+      <workItem from="1710633065623" duration="8107000" />
+      <workItem from="1710710335221" duration="5190000" />
     </task>
+    <task id="LOCAL-00001" summary="now, it can show time on screen">
+      <option name="closed" value="true" />
+      <created>1710480918184</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710480918184</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/RedController/RedStriker1.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="now, it can show time on screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="now, it can show time on screen" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/controllers$RedStriker1.coverage" NAME="RedStriker1 Coverage Results" MODIFIED="1706670218401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RedController" />
+    <SUITE FILE_PATH="coverage/controllers$RedDefenderLeft.coverage" NAME="RedDefenderLeft Coverage Results" MODIFIED="1709234818507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RedController" />
   </component>
 </project>

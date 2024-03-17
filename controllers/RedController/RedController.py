@@ -1,23 +1,29 @@
-
-"""得到球员，全部加载到control中"""
-import sys
-sys.path.append(".")
-sys.path.append("..")
+"""
+Red Team Main Controller.
+This controller should be selected as controller for Red team robots.
+Roles will be assigned automatically for each robot.
+"""
 
 from controller import Robot
-from RedGoalKeeper import GoalKeeper
-from RedDefender1 import DefenderLeft
-from RedDefender2 import DefenderRight
-from RedStriker1 import Forward
+from RedGoalkeeper import Goalkeeper
+from RedDefenderLeft import DefenderLeft
+from RedDefenderRight import DefenderRight
+from RedForward import Forward
+
+# Create the Robot instance.
 robot = Robot()
+# Get the Robot Name to find the role.
 robotName = robot.getName()
-if robotName == ('Red_Goalkeeper'):
-    robotController = GoalKeeper(robot)
-elif robotName==('Red_Defender_1'):
+
+# Compare the Robot Name and assign the role.
+if robotName == "RED_GK":
+    robotController = Goalkeeper(robot)
+elif robotName == "RED_DEF_L":
     robotController = DefenderLeft(robot)
-elif robotName==('Red_Defender_2'):
+elif robotName == "RED_DEF_R":
     robotController = DefenderRight(robot)
-elif robotName==('Red_Striker_1'):
+else:
     robotController = Forward(robot)
 
+# Run the Robot Controller.
 robotController.run()

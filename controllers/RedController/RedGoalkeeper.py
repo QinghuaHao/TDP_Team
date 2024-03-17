@@ -1,79 +1,141 @@
 """
-守门员
-1.丢球就找球
-2.尽量和球保持在同一个Y轴坐标系上
-3.球到门口，就面向禁区外任何一个队友方向踢
+Red Team Goalkeeper robot behaviours.
 """
-import sys
-sys.path.append('.')
-sys.path.append('..')
-from GlobalEnv.GlobalConstant import TIME_STEP
-import RedTeamStrategy
-from GlobalEnv import BasicFunction
-from GlobalEnv import InitRobot
 
-class GoalKeeper(InitRobot.SoccerRobot):
+import os, sys
+
+currentdir = os.path.dirname(os.path.realpath(__file__))
+parentdir = os.path.dirname(currentdir)
+sys.path.append(parentdir)
+
+from Base.SoccerRobotBase import SoccerRobot
+from Utils.Consts import (TIME_STEP, Motions)
+from Utils import Functions
+import RedTeamStrategies
+
+class Goalkeeper(SoccerRobot):
     def run(self):
-        while self.robot.step(TIME_STEP)!= -1:
-            if self.isNewBallDataValuable():
-                self.getsupervisorData()
+
+        while self.robot.step(TIME_STEP) != -1:
+
+            if self.isNewBallDataAvailable():
+
+                # Do not remove this!
+                # ----------------------
+                self.getSupervisorData()
+                # ----------------------
+
+                # Use the ballData (location) to do something.
                 ballCoordinate = self.getBallData()
-                selfCoordinate = self.getselfPostiton()
-                decidedMotion = self.decidedMotion(ballCoordinate,selfCoordinate)
-                if self.isNewMotionValuable(decidedMotion):
-                    forwardSprintBreak = self.currentMoving and (self.currentMoving.name == self.motions.ForwardsSprint.name != self.motions.ForwardsSprint.name)
-                    leftShootCheck = self.currentMoving and self.currentMoving.name == self.motions.RightShoot.name and self.currentMoving.isOver() and decidedMotion.name == self.motions.RightShoot.name
-                self.clearMotionList()
-                if leftShootCheck:
-                    self.loadMotionToList(self.motions.Shoot)
-                else:
-                    self.loadMotionToList(decidedMotion)
-            self.startMotion()
-        else:
-            print("No_ball_data__Red_GoalKeeper")
-    def decidedMotion(self,ballCoordinate,selfCoordinate):
-        if self.checkGetScore() ==1:
-            return self.motions.HandWave
-        elif self.checkGetScore() == -1:
-            return self.motions.StandInit
-        robotHeightFromGound = self.getselfPostiton()[2]
-        if robotHeightFromGound <0.2:
-            if self.getleftsonarDistance()==2.55 and self.getrightsonarDistance()==2.25:
-                return self.motions.StandUpFromBack
-            else:
-                return self.motions.StandUpFromFront
+                # print("RedGoalkeeper - ballCoordinate: ", ballCoordinate)
+                selfCoordinate = self.getSelfCoordinate()
+                # print("RedGoalkeeper - selfCoordinate: ", selfCoordinate)
+                decidedMotion = self.decideMotion(ballCoordinate, selfCoordinate)
+                # print("RedGoalkeeper - decidedMotion: ", decidedMotion.Name)
+                if self.isNewMotionValid(decidedMotion):
 
-        if self.checkBallpriority() =='B':
-            return self.motions.StandInit
-        robotHeadAngle = self.getRollPitchYaw()[2]
+                    forwardsSprintInterrupt = self.currentlyMoving and (
+                                self.currentlyMoving.name == self.motions.forwardsSprint.name and decidedMotion.name != self.motions.forwardsSprint.name)
 
-        if RedTeamStrategy.getZone(ballCoordinate) == 2:
-            turn_angle = BasicFunction.calculateTurnAngle(ballCoordinate,selfCoordinate)
-            turn_motion = self.getTurnMotion(turn_angle)
-            if turn_motion is not None:
-                return turn_motion
-            body_distance_from_ball = BasicFunction.calculateDistance(ballCoordinate,selfCoordinate)
-            if body_distance_from_ball <0.25:
-                turn_angle_left = BasicFunction.calculateTurnAngle(RedTeamStrategy.RED_GOAL['Left'],selfCoordinate,robotHeadAngle)
-                turn_angle_right = BasicFunction.calculateTurnAngle(RedTeamStrategy.RED_GOAL['Right'], selfCoordinate,robotHeadAngle)
-                if (turn_angle_left>0 and turn_angle_right>0) or (turn_angle_left<0 and turn_angle_right<0) or\
-                        ((abs(turn_angle_left)>90)and (abs(turn_angle_left)>abs(turn_angle_right))) or\
-                        ((abs(turn_angle_left)>90 and (abs(turn_angle_left)<abs(turn_angle_right)))):
-                    if body_distance_from_ball<0.2:
-                        return self.motions.RightShoot
+                    # interruptCheck = self.currentlyMoving and\
+                    #          (self.currentlyMoving.name == self.motions.turnLeft40.name and decidedMotion.name != self.motions.turnLeft40.name and\
+                    #           decidedMotion.name != self.motions.sideStepLeft.name and decidedMotion.name != self.motions.sideStepRight.name) or\
+                    #          (self.currentlyMoving.name == self.motions.turnRight40.name and decidedMotion.name != self.motions.turnRight40.name)
+
+                    leftShootCheck = self.currentlyMoving and self.currentlyMoving.name == self.motions.rightShoot.name and self.currentlyMoving.isOver() and decidedMotion.name == self.motions.rightShoot.name
+
+                    # if interruptCheck:
+                    #   self.interruptMotion()
+                    # if forwardsSprintInterrupt:
+                    #   self.interruptForwardsSprint()
+                    # print("RedGoalkeeper - Motion interrupted!")
+                    self.clearMotionQueue()
+                    # if interruptCheck:
+                    #   self.addMotionToQueue(self.motions.standInit)
+                    if leftShootCheck:
+                        self.addMotionToQueue(self.motions.shoot)
                     else:
-                        return self.motions.ForwardsSprint
+                        self.addMotionToQueue(decidedMotion)
+
+                self.startMotion()
+            else:
+
+                # It seems there is a problem.
+                # print("NO BALL DATA!!!")
+                pass
+
+    # Override decideMotion
+    def decideMotion(self, ballCoordinate, selfCoordinate):
+
+        # Check the goal scored to balance itself.
+        if self.checkGoal() == 1:
+            return self.motions.handWave
+        elif self.checkGoal() == -1:
+            return self.motions.standInit
+
+        # Fall Detection
+        robotHeightFromGround = self.getSelfCoordinate()[2]
+        if robotHeightFromGround < 0.2:
+            if self.getLeftSonarValue() == 2.55 and self.getRightSonarValue() == 2.55:
+                return self.motions.standUpFromBack
+            else:
+                return self.motions.standUpFromFront
+
+        # Check the oponent has ball priority.
+        if self.getBallPriority() == "B":
+            return self.motions.standInit
+
+        robotHeadingAngle = self.getRollPitchYaw()[2]
+
+        # Ball at the 2nd zone.
+        if RedTeamStrategies.getZone(ballCoordinate) == 2:
+
+            # Find the angle between the ball and robot heading.
+            turningAngle = Functions.calculateTurningAngleAccordingToRobotHeading(ballCoordinate, selfCoordinate,
+                                                                                  robotHeadingAngle)
+            turningMotion = self.getTurningMotion(turningAngle)
+            if turningMotion is not None:
+                return turningMotion
+
+            bodyDistanceFromBall = Functions.calculateDistance(ballCoordinate, selfCoordinate)
+
+            # Decide wehere to shoot or pass.
+            if bodyDistanceFromBall < 0.25:
+                #  We have to look for the distance from left foot becuase or robots are left footed.
+
+                # If decided to shoot
+                # We have to calculate the goal angle and sideSteps according to this angle.
+                turningAngleForGoalLeft = Functions.calculateTurningAngleAccordingToRobotHeading(
+                    RedTeamStrategies.RED_GOAL["Left"], selfCoordinate, robotHeadingAngle)
+                turningAngleForGoalRight = Functions.calculateTurningAngleAccordingToRobotHeading(
+                    RedTeamStrategies.RED_GOAL["Right"], selfCoordinate, robotHeadingAngle)
+
+                if (turningAngleForGoalLeft > 0 and turningAngleForGoalRight > 0) or (
+                        turningAngleForGoalLeft < 0 and turningAngleForGoalRight < 0) or \
+                        ((abs(turningAngleForGoalLeft) > 90) and (
+                                abs(turningAngleForGoalLeft) > abs(turningAngleForGoalRight))) or \
+                        ((abs(turningAngleForGoalLeft) > 90) and (
+                                abs(turningAngleForGoalLeft) < abs(turningAngleForGoalRight))):
+                    if bodyDistanceFromBall < 0.2:
+                        return self.motions.rightShoot
+                    else:
+                        return self.motions.forwardsSprint
                 else:
-                    return self.motions.SideStepRight
-            if self.currentMoving and self.currentMoving.name == 'ForwardsSprint' and self.currentMoving.getTime()==1360:
-                self.currentMoving.setTime(360)
-            return self.motions.ForwardsSprint
+                    return self.motions.sideStepRight
+
+            if self.currentlyMoving and self.currentlyMoving.name == "forwardsSprint" and self.currentlyMoving.getTime() == 1360:  # we reached the end of forward.motion
+                self.currentlyMoving.setTime(360)  # loop back to the beginning of the walking sequence
+
+            return self.motions.forwardsSprint
+
+        # Head to ball.
         else:
-            turn_angle = BasicFunction.calculateTurnAngle(ballCoordinate,selfCoordinate,robotHeadAngle)
-            turn_motion = self.getTurnMotion(turn_angle)
-            if turn_motion is not None:
-                return turn_motion
-            return self.motions.StandInit
+            # Find the angle between the ball and robot heading.
+            turningAngle = Functions.calculateTurningAngleAccordingToRobotHeading(ballCoordinate, selfCoordinate,
+                                                                                  robotHeadingAngle)
+            turningMotion = self.getTurningMotion(turningAngle)
+            if turningMotion is not None:
+                return turningMotion
 
-
-
+        # Stand by.
+        return self.motions.standInit
